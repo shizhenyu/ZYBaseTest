@@ -1,0 +1,6 @@
+framework module Pods_ZYBaseTest {
+  umbrella header "Pods-ZYBaseTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

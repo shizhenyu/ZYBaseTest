@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TabBarBackgroundColor</key>
+	<string>0xffffff</string>
+	<key>TabBarBackgroundImageName</key>
+	<string></string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>首页</string>
+			<key>ImageName</key>
+			<string>home</string>
+			<key>VCName</key>
+			<string>HomeViewController</string>
+		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>会员</string>
+			<key>ImageName</key>
+			<string>love</string>
+			<key>VCName</key>
+			<string>LoveViewController</string>
+		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>消息</string>
+			<key>ImageName</key>
+			<string>message</string>
+			<key>VCName</key>
+			<string>MessageViewController</string>
+		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>我的</string>
+			<key>ImageName</key>
+			<string>mine</string>
+			<key>VCName</key>
+			<string>MineViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
