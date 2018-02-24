@@ -18,6 +18,9 @@ typedef NS_ENUM(NSUInteger, DateFormatType) {
 
 @interface TimeTransformTool : NSObject
 
+/**
+ * 实例化方法
+ */
 + (instancetype)sharedTimeTool;
 
 /**
@@ -51,5 +54,29 @@ typedef NS_ENUM(NSUInteger, DateFormatType) {
  @return 返回包含日期的数组 第一个元素是开始日期，第二个是结束日期
  */
 - (NSArray *)fetchWeekdayBeginAndEndTime;
+
+
+/**
+ 获取这个月的开始时间和结束时间
+ 
+ @return 返回包含日期的数组 第一个元素是开始日期，第二个是结束日期
+ */
+- (NSArray *)fetchThisMonthBeginAndEndTime;
+
+/**
+ 获取上个月的开始时间和结束时间
+ 
+ @return 返回包含日期的数组 第一个元素是开始日期，第二个是结束日期
+ */
+- (NSArray *)fetchLastMonthBeginAndEndTime;
+
+
+/**
+ 根据时间戳，返回改时间和当前时间的关系，例如：“刚刚”、“1分钟前”
+ 
+ @param timestamp 时间戳
+ @return 关系字符串
+ */
+- (NSString *)timeStatusWithTimeStamp:(NSTimeInterval)timestamp;
 
 @end
