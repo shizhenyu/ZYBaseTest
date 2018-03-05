@@ -15,6 +15,8 @@
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
 
+#import "ViewController.h"
 #import "ZYProgressHud.h"
+#import "ZYUserManager.h"
 
 #endif /* ZYHeaderFile_h */

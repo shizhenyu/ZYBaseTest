@@ -25,6 +25,9 @@
 /** 日志打印 **/
 #define LogFunc Log(@"%s", __func__)
 
+/** 打印生命周期方法名 */
+#define ZYLogLifeFunc(self) NSLog(@"%@", [NSString stringWithFormat:@"%@->%@",NSStringFromClass([self class]), NSStringFromSelector(_cmd)])
+
 #if DEBUG
 #define Log(FORMAT, ...) fprintf(stderr,"\nFunction:%s line:%d \n content:%s \n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else

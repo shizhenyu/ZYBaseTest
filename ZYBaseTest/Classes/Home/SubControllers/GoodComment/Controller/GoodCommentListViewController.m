@@ -11,7 +11,7 @@
 #import "ProductCommentMainViewModel.h"
 #import "ReportView.h"
 
-@interface GoodCommentListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface GoodCommentListViewController ()<UITableViewDelegate,UITableViewDataSource,UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -86,6 +86,26 @@
     cell.zanCountLabel.tag = indexPath.row + 10;
     
     [cell.zanCountLabel addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+  
+    // 注册3D Touch
+    /**
+     从iOS9开始，我们可以通过这个类来判断运行程序对应的设备是否支持3D Touch功能。
+     
+     UIForceTouchCapabilityUnknown = 0, //未知
+     UIForceTouchCapabilityUnavailable = 1, //不可用
+     UIForceTouchCapabilityAvailable = 2 // 可用
+     
+     */
+    if ([self respondsToSelector:@selector(traitCollection)]) {
+        
+        if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)]) {
+            
+            if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+                
+                [self registerForPreviewingWithDelegate:(id)self sourceView:cell];
+            }
+        }
+    }
     
     return cell;
 }
@@ -95,6 +115,26 @@
     UIViewController *vc = [NSClassFromString(@"CustomEstiheightViewController") new];
     
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+#pragma mark - UIViewControllerPreviewingDelegate
+// 3D Touch时预览的界面
+- (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    
+    UIViewController *presentationVC = [NSClassFromString(@"CustomEstiheightViewController") new];
+    
+    CGRect rect = CGRectMake(0, 0, kScreenWidth, 300);
+    
+    previewingContext.sourceRect = rect;
+    
+    return presentationVC;
+}
+
+// 深度按压之后跳转的界面
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    
+    [self showViewController:viewControllerToCommit sender:self];
 }
 
 #pragma mark - Lazy Load

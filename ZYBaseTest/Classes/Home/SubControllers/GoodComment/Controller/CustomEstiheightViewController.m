@@ -88,6 +88,24 @@
     return UITableViewAutomaticDimension;
 }
 
+// 预览界面时需要实现的功能
+- (NSArray<id<UIPreviewActionItem>> *)previewActionItems {
+
+    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"选项一" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        
+    }];
+    
+    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@"选项二" style:UIPreviewActionStyleSelected handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        
+    }];
+    
+    UIPreviewAction *action3 = [UIPreviewAction actionWithTitle:@"选项三" style:UIPreviewActionStyleDestructive handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        
+    }];
+    
+    return @[action1, action2, action3];
+}
+
 #pragma mark - Lazy Load
 - (UITableView *)tableView {
     

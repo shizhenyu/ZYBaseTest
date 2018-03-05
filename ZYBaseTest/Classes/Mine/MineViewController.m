@@ -17,6 +17,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [btn setTitle:@"退出登录" forState:UIControlStateNormal];
+    
+    btn.backgroundColor = [UIColor cyanColor];
+    
+    [btn addTargetForControlEvents:UIControlEventTouchUpInside action:^(id sender) {
+        
+        BOOL isSuccess = [ZYUserManager deleteLocalUser];
+        
+        if (isSuccess) {
+            
+            ViewController *vc = [[ViewController alloc] init];
+            
+            [vc Action_toLoginViewController];
+        }
+        
+    }];
+    
+    [self.view addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.center.mas_equalTo(0);
+        
+        make.width.mas_equalTo(80);
+        
+        make.height.mas_equalTo(40);
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

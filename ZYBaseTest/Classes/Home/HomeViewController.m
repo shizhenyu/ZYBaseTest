@@ -14,15 +14,25 @@
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
+@property (nonatomic, strong) NSMutableArray *viewControllerIdentifier;
+
 @end
 
 @implementation HomeViewController
+
+#pragma mark - Life Cycle
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UserPressTouch object:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self setupUI];
+    
+    [self addObserverForUserPressTouch];
 }
 
 - (void)setupUI
@@ -32,6 +42,38 @@
         make.edges.mas_equalTo(0);
         
     }];
+}
+
+- (void)addObserverForUserPressTouch {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressTouchAction:) name:UserPressTouch object:nil];
+}
+
+- (void)pressTouchAction:(NSNotification *)notifi {
+    
+    if ([ZYUserManager userIsLogin]) {
+       
+        // 用户已经登录的情况
+        
+        // 将要push过去的VC的name
+        NSString *VCName = [notifi.userInfo objectForKey:@"VCName"];
+        
+        // 当前navigationVC下的topviewController的name
+        NSString *desenVCName = NSStringFromClass([self.navigationController.topViewController class]);
+        
+        // 如果将要push的界面已经存在，则不做任何操作，否则会造成无限压栈的问题
+        if (![VCName isEqualToString:desenVCName]) {
+            
+            UIViewController *vc = [NSClassFromString(VCName) new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        
+    }else {
+        
+        // 用户暂未登录，请先登录
+        ViewController *vc = [[ViewController alloc] init];
+        [vc Action_toLoginViewController];
+    }
 }
 
 #pragma mark - UITableView Delegate && DataSource
@@ -53,67 +95,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
-        case 0:
-        {
-            UIViewController *TFVC = [NSClassFromString(@"TextFieldPlaceholderViewController") new];
+    NSString *viewControllerId = [self.viewControllerIdentifier objectAtIndex:indexPath.row];
+    
+    UIViewController *VC = [NSClassFromString(viewControllerId) new];
             
-            [self.navigationController pushViewController:TFVC animated:YES];
-        }
-            break;
-        case 1:
-        {
-            UIViewController *goodCommentListVC = [NSClassFromString(@"GoodCommentListViewController") new];
-            
-            [self.navigationController pushViewController:goodCommentListVC animated:YES];
-        }
-            break;
-        case 2:
-        {
-            UIViewController *orderListVC = [NSClassFromString(@"OrderListViewController") new];
-            
-            [self.navigationController pushViewController:orderListVC animated:YES];
-        }
-            break;
-        case 3:
-        {
-            UIViewController *reportVC = [NSClassFromString(@"ReportViewController") new];
-            
-            [self.navigationController pushViewController:reportVC animated:YES];
-        }
-            break;
-        case 4:
-        {
-            UIViewController *customAlertVC = [NSClassFromString(@"CustomAlertViewController") new];
-            
-            [self.navigationController pushViewController:customAlertVC animated:YES];
-        }
-            break;
-        case 5:
-        {
-            UIViewController *LandScapeVC = [NSClassFromString(@"LandScapeViewController") new];
-            LandScapeVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:LandScapeVC animated:YES];
-        }
-            break;
-        case 6:
-        {
-            UIViewController *MBProgressVC = [NSClassFromString(@"MBProgressHUDViewController") new];
-            
-            [self.navigationController pushViewController:MBProgressVC animated:YES];
-        }
-            break;
-            
-        case 7:
-        {
-            UIViewController *timeVC = [NSClassFromString(@"TimeTransformToolViewController") new];
-            
-            [self.navigationController pushViewController:timeVC animated:YES];
-        }
-            
-        default:
-            break;
-    }
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 #pragma mark - Lazy Load
@@ -127,6 +113,8 @@
         
         _tableView.dataSource = self;
         
+        _tableView.tableFooterView = [UIView new];
+        
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
         
         [self.view addSubview:_tableView];
@@ -139,10 +127,20 @@
     
     if (!_dataSource) {
         
-        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中", @"商品评论", @"订单列表", @"自定义举报弹框", @"自定义弹框", @"强制横屏", @"封装MBProgressHud", @"日期转换工具", nil];
+        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中", @"商品评论", @"订单列表", @"自定义举报弹框", @"自定义弹框", @"强制横屏", @"封装MBProgressHud", @"日期转换工具", @"不同位置的图片button", @"WebViewAndH5交互", @"界面之间连续Push", nil];
     }
     
     return _dataSource;
+}
+
+- (NSMutableArray *)viewControllerIdentifier {
+    
+    if (!_viewControllerIdentifier) {
+        
+        _viewControllerIdentifier = [[NSMutableArray alloc]initWithObjects:@"TextFieldPlaceholderViewController", @"GoodCommentListViewController", @"OrderListViewController", @"ReportViewController", @"CustomAlertViewController", @"LandScapeViewController", @"MBProgressHUDViewController", @"TimeTransformToolViewController", @"ImageButtonViewController", @"WebViewAndHtmlViewController", @"PushHomeViewController", nil];
+    }
+    
+    return _viewControllerIdentifier;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
