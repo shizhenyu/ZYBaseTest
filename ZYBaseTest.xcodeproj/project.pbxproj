@@ -78,6 +78,9 @@
 		DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF2D204931B800E35306 /* ZYUserManager.m */; };
 		DE31FF31204931C700E35306 /* ZYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF30204931C700E35306 /* ZYUser.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
+		DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */; };
+		DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */; };
+		DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */; };
 		DE5D17A820414E2600192504 /* ImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17A720414E2600192504 /* ImageButtonViewController.m */; };
 		DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AA2041503500192504 /* ImageLeftTitleRightButton.m */; };
 		DE5D17AE20416BDA00192504 /* ImageRightTitleLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AD20416BDA00192504 /* ImageRightTitleLeftButton.m */; };
@@ -227,6 +230,12 @@
 		DE31FF30204931C700E35306 /* ZYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUser.m; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
+		DE589BB6204D3BAC00C9581D /* ZYCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewController.h; sourceTree = "<group>"; };
+		DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewController.m; sourceTree = "<group>"; };
+		DE589BB9204D3BDD00C9581D /* ZYWaterflowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWaterflowLayout.h; sourceTree = "<group>"; };
+		DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWaterflowLayout.m; sourceTree = "<group>"; };
+		DE589BBC204D3EA600C9581D /* ZYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewCell.h; sourceTree = "<group>"; };
+		DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewCell.m; sourceTree = "<group>"; };
 		DE5D17A620414E2600192504 /* ImageButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageButtonViewController.h; sourceTree = "<group>"; };
 		DE5D17A720414E2600192504 /* ImageButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageButtonViewController.m; sourceTree = "<group>"; };
 		DE5D17A92041503500192504 /* ImageLeftTitleRightButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageLeftTitleRightButton.h; sourceTree = "<group>"; };
@@ -264,7 +273,6 @@
 				DE06CAE8202A8E810051550B /* ZyBaseModule.h */,
 				DE06CADD202A8E810051550B /* TabBar&Nav */,
 				DE06CAE9202A8E810051550B /* ZyExtension */,
-				DE06CB19202A8E810051550B /* ZyNetworkTool */,
 				DE06CB99202A95BA0051550B /* ZYProgressHud */,
 			);
 			path = ZyBaseModule;
@@ -348,21 +356,6 @@
 			path = ZyExtension;
 			sourceTree = "<group>";
 		};
-		DE06CB19202A8E810051550B /* ZyNetworkTool */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB1A202A8E810051550B /* CocoaSecurity */,
-			);
-			path = ZyNetworkTool;
-			sourceTree = "<group>";
-		};
-		DE06CB1A202A8E810051550B /* CocoaSecurity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CocoaSecurity;
-			sourceTree = "<group>";
-		};
 		DE06CB45202A904F0051550B /* SubControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +370,7 @@
 				DE5D17A520414DF900192504 /* ImageButton */,
 				DE2EDC872047B1F8004EDB89 /* WebAndHtml */,
 				DE2EDC8B2047E78B004EDB89 /* ViewPushMore */,
+				DE589BB3204D3ACD00C9581D /* WaterFlowLayout */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -806,6 +800,35 @@
 			path = "AppDelegate+Extension";
 			sourceTree = "<group>";
 		};
+		DE589BB3204D3ACD00C9581D /* WaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DE589BB4204D3B1100C9581D /* Controller */,
+				DE589BB5204D3B1900C9581D /* View */,
+			);
+			path = WaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		DE589BB4204D3B1100C9581D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE589BB6204D3BAC00C9581D /* ZYCollectionViewController.h */,
+				DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE589BB5204D3B1900C9581D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE589BB9204D3BDD00C9581D /* ZYWaterflowLayout.h */,
+				DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */,
+				DE589BBC204D3EA600C9581D /* ZYCollectionViewCell.h */,
+				DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE5D17A520414DF900192504 /* ImageButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,9 +997,11 @@
 			files = (
 				DE06CB32202A8E810051550B /* UISearchBar+ZYSearchBarPlaceholder.m in Sources */,
 				DE2EDC8A2047B273004EDB89 /* WebViewAndHtmlViewController.m in Sources */,
+				DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */,
 				DE06CB54202A91790051550B /* OrderListViewModel.m in Sources */,
 				DE13AD822029C19F00313655 /* ViewController.m in Sources */,
 				DE06CB5F202A920F0051550B /* CustomAlertViewController.m in Sources */,
+				DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */,
 				DE06CB6E202A92980051550B /* ReportView.m in Sources */,
 				DE06CB22202A8E810051550B /* NSAttributedString+ZYKit.m in Sources */,
 				DE13AD8D2029C19F00313655 /* main.m in Sources */,
@@ -1024,6 +1049,7 @@
 				DE2EDC8E2047E7D9004EDB89 /* PushHomeViewController.m in Sources */,
 				DE06CB36202A8E810051550B /* ZYAlertViewController.m in Sources */,
 				DE06CB1C202A8E810051550B /* ZYBaseViewController.m in Sources */,
+				DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */,
 				DE06CB1D202A8E810051550B /* ZyNavigationController.m in Sources */,
 				DE06CB44202A8FC40051550B /* MineViewController.m in Sources */,
 				DE06CB57202A91850051550B /* OrderListTableViewCell.m in Sources */,

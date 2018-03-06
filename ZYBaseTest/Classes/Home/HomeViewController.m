@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "ZYWaterflowLayout.h"
+#import "ZYCollectionViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,11 +46,13 @@
     }];
 }
 
+#pragma mark - 观察用户的3D Touch交互通知
 - (void)addObserverForUserPressTouch {
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressTouchAction:) name:UserPressTouch object:nil];
 }
 
+#pragma mark - 3D Touch快捷进入
 - (void)pressTouchAction:(NSNotification *)notifi {
     
     if ([ZYUserManager userIsLogin]) {
@@ -95,11 +99,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *viewControllerId = [self.viewControllerIdentifier objectAtIndex:indexPath.row];
-    
-    UIViewController *VC = [NSClassFromString(viewControllerId) new];
-            
-    [self.navigationController pushViewController:VC animated:YES];
+    if (indexPath.row == 11) {
+        
+        ZYWaterflowLayout *flowLayout = [[ZYWaterflowLayout alloc] init];
+        
+        ZYCollectionViewController *collectionVC = [[ZYCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+        
+        [self.navigationController pushViewController:collectionVC animated:YES];
+        
+    }else {
+        
+        NSString *viewControllerId = [self.viewControllerIdentifier objectAtIndex:indexPath.row];
+        
+        UIViewController *VC = [NSClassFromString(viewControllerId) new];
+        
+        [self.navigationController pushViewController:VC animated:YES];
+        
+    }
 }
 
 #pragma mark - Lazy Load
@@ -127,7 +143,7 @@
     
     if (!_dataSource) {
         
-        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中", @"商品评论", @"订单列表", @"自定义举报弹框", @"自定义弹框", @"强制横屏", @"封装MBProgressHud", @"日期转换工具", @"不同位置的图片button", @"WebViewAndH5交互", @"界面之间连续Push", nil];
+        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中", @"商品评论", @"订单列表", @"自定义举报弹框", @"自定义弹框", @"强制横屏", @"封装MBProgressHud", @"日期转换工具", @"不同位置的图片button", @"WebViewAndH5交互", @"界面之间连续Push", @"自定义瀑布流", nil];
     }
     
     return _dataSource;
@@ -137,7 +153,7 @@
     
     if (!_viewControllerIdentifier) {
         
-        _viewControllerIdentifier = [[NSMutableArray alloc]initWithObjects:@"TextFieldPlaceholderViewController", @"GoodCommentListViewController", @"OrderListViewController", @"ReportViewController", @"CustomAlertViewController", @"LandScapeViewController", @"MBProgressHUDViewController", @"TimeTransformToolViewController", @"ImageButtonViewController", @"WebViewAndHtmlViewController", @"PushHomeViewController", nil];
+        _viewControllerIdentifier = [[NSMutableArray alloc]initWithObjects:@"TextFieldPlaceholderViewController", @"GoodCommentListViewController", @"OrderListViewController", @"ReportViewController", @"CustomAlertViewController", @"LandScapeViewController", @"MBProgressHUDViewController", @"TimeTransformToolViewController", @"ImageButtonViewController", @"WebViewAndHtmlViewController", @"PushHomeViewController", @"ZYCollectionViewController", nil];
     }
     
     return _viewControllerIdentifier;

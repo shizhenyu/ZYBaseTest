@@ -56,6 +56,16 @@
     [self setupNav];
     
     [self setupUI];
+    
+    _titleStr = @"*****PushOneViewController先出来？";
+    NSLog(@"%@",_titleStr);
+}
+
+- (void)setTitleStr:(NSString *)titleStr {
+    
+    _titleStr = titleStr;
+    
+    NSLog(@"****%@",titleStr);
 }
 
 - (void)setupNav
@@ -75,14 +85,15 @@
     
     btn.backgroundColor = [UIColor cyanColor];
     
-    [btn addTargetForControlEvents:UIControlEventTouchUpInside action:^(id sender) {
-        
-        UIViewController *vc = [NSClassFromString(@"PushTwoViewController") new];
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    }];
+    [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btn];
+}
+
+- (void)buttonClick:(UIButton *)btn {
+    
+    UIViewController *vc = [NSClassFromString(@"PushTwoViewController") new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

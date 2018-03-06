@@ -7,6 +7,7 @@
 //
 
 #import "PushHomeViewController.h"
+#import "PushOneViewController.h"
 
 @interface PushHomeViewController ()
 
@@ -74,14 +75,16 @@
     
     btn.backgroundColor = [UIColor cyanColor];
     
-    [btn addTargetForControlEvents:UIControlEventTouchUpInside action:^(id sender) {
-        
-        UIViewController *vc = [NSClassFromString(@"PushOneViewController") new];
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    }];
+    [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btn];
+}
+
+- (void)buttonClick:(UIButton *)btn {
+    
+    PushOneViewController *oneVC = [[PushOneViewController alloc] init];
+    oneVC.titleStr = @"***PushHomeViewController先出来？？";
+    [self.navigationController pushViewController:oneVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

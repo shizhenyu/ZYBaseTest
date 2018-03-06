@@ -9,6 +9,7 @@
 #ifndef ZYUseDefine_h
 #define ZYUseDefine_h
 
+/** 3D Touch点击快捷进入 */
 #define UserPressTouch @"userPress3DTouch"
 
 #endif /* ZYUseDefine_h */

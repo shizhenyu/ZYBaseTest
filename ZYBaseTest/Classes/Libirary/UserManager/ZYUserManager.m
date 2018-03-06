@@ -8,8 +8,6 @@
 
 #import "ZYUserManager.h"
 
-static NSString *const userModel = @"userModel";
-
 @interface ZYUserManager ()
 
 @end

@@ -14,6 +14,7 @@
 
 @implementation ZYUser
 
+#pragma mark - NSCoding
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     
     [aCoder encodeObject:self.userName forKey:@"userName"];

@@ -35,17 +35,12 @@
 @property (nonatomic, strong) UIView *rightBarButtonView;
 
 /**
- 
  左侧侧按钮的点击事件
- 
 */
 - (void)leftBarButtonItemClick:(UIButton *)button;
 
-
 /**
- 
  右侧按钮的点击事件
- 
  */
 - (void)rightBarButtonItemClick:(UIButton *)button;
 @end

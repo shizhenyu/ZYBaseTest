@@ -39,7 +39,6 @@
     
     // 将返回按钮替换为我们的自定义按钮，并使滑动返回重新生效
     self.interactivePopGestureRecognizer.delegate = (id)self;
-    
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

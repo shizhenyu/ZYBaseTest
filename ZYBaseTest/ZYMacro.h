@@ -20,10 +20,11 @@
 #define kFont(size) [UIFont systemFontOfSize:size]
 #define kBFont(size) [UIFont boldSystemFontOfSize:size]
 
+/** 图片名字 */
 #define kImage(imageName) [UIImage imageNamed:imageName]
 
-/** 日志打印 **/
-#define LogFunc Log(@"%s", __func__)
+/** 弱引用 */
+#define kWeakSelf __weak typeof(self)weakSelf = self;
 
 /** 打印生命周期方法名 */
 #define ZYLogLifeFunc(self) NSLog(@"%@", [NSString stringWithFormat:@"%@->%@",NSStringFromClass([self class]), NSStringFromSelector(_cmd)])
@@ -34,7 +35,15 @@
 #define Log(FORMAT, ...) nil
 #endif
 
-#define kWeakSelf __weak typeof(self)weakSelf = self;
+
+/** 消除警告 */
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
 
 /** 弱引用 **/
 #ifndef weakify
