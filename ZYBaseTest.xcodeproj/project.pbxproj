@@ -78,6 +78,13 @@
 		DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF2D204931B800E35306 /* ZYUserManager.m */; };
 		DE31FF31204931C700E35306 /* ZYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF30204931C700E35306 /* ZYUser.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
+		DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC117204E3D1F0089D514 /* DiscussTabBarController.m */; };
+		DE4BC11F204E47860089D514 /* MemberIntergerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC11E204E47860089D514 /* MemberIntergerViewController.m */; };
+		DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC12A204E47FD0089D514 /* DownloadViewController.m */; };
+		DE4BC12E204E48190089D514 /* SystemServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC12D204E48190089D514 /* SystemServiceViewController.m */; };
+		DE4BC132204E73EA0089D514 /* SubTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4BC131204E73E90089D514 /* SubTabBarConfig.plist */; };
+		DE4BC135204E96C10089D514 /* DiscussViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC134204E96C10089D514 /* DiscussViewController.m */; };
+		DE4BC138204E9DCC0089D514 /* IntergerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC137204E9DCC0089D514 /* IntergerDetailViewController.m */; };
 		DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */; };
 		DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */; };
 		DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */; };
@@ -230,6 +237,19 @@
 		DE31FF30204931C700E35306 /* ZYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUser.m; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
+		DE4BC116204E3D1F0089D514 /* DiscussTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscussTabBarController.h; sourceTree = "<group>"; };
+		DE4BC117204E3D1F0089D514 /* DiscussTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscussTabBarController.m; sourceTree = "<group>"; };
+		DE4BC11D204E47860089D514 /* MemberIntergerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberIntergerViewController.h; sourceTree = "<group>"; };
+		DE4BC11E204E47860089D514 /* MemberIntergerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberIntergerViewController.m; sourceTree = "<group>"; };
+		DE4BC129204E47FD0089D514 /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		DE4BC12A204E47FD0089D514 /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		DE4BC12C204E48190089D514 /* SystemServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemServiceViewController.h; sourceTree = "<group>"; };
+		DE4BC12D204E48190089D514 /* SystemServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemServiceViewController.m; sourceTree = "<group>"; };
+		DE4BC131204E73E90089D514 /* SubTabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SubTabBarConfig.plist; sourceTree = "<group>"; };
+		DE4BC133204E96C10089D514 /* DiscussViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscussViewController.h; sourceTree = "<group>"; };
+		DE4BC134204E96C10089D514 /* DiscussViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscussViewController.m; sourceTree = "<group>"; };
+		DE4BC136204E9DCC0089D514 /* IntergerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntergerDetailViewController.h; sourceTree = "<group>"; };
+		DE4BC137204E9DCC0089D514 /* IntergerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntergerDetailViewController.m; sourceTree = "<group>"; };
 		DE589BB6204D3BAC00C9581D /* ZYCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewController.h; sourceTree = "<group>"; };
 		DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewController.m; sourceTree = "<group>"; };
 		DE589BB9204D3BDD00C9581D /* ZYWaterflowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWaterflowLayout.h; sourceTree = "<group>"; };
@@ -298,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				DE06CADF202A8E810051550B /* TabBarConfig.plist */,
+				DE4BC131204E73E90089D514 /* SubTabBarConfig.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -664,6 +685,7 @@
 				DE13AD992029C25300313655 /* Love */,
 				DE13AD982029C24A00313655 /* Message */,
 				DE13AD972029C23E00313655 /* Mine */,
+				DE4BC115204E3C9E0089D514 /* Discuss */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -800,6 +822,129 @@
 			path = "AppDelegate+Extension";
 			sourceTree = "<group>";
 		};
+		DE4BC115204E3C9E0089D514 /* Discuss */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC133204E96C10089D514 /* DiscussViewController.h */,
+				DE4BC134204E96C10089D514 /* DiscussViewController.m */,
+				DE4BC116204E3D1F0089D514 /* DiscussTabBarController.h */,
+				DE4BC117204E3D1F0089D514 /* DiscussTabBarController.m */,
+				DE4BC119204E47040089D514 /* SubViewController */,
+			);
+			path = Discuss;
+			sourceTree = "<group>";
+		};
+		DE4BC119204E47040089D514 /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC11C204E471C0089D514 /* MemberInterger */,
+				DE4BC11B204E47190089D514 /* Download */,
+				DE4BC11A204E47160089D514 /* SystemService */,
+			);
+			path = SubViewController;
+			sourceTree = "<group>";
+		};
+		DE4BC11A204E47160089D514 /* SystemService */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC128204E47DA0089D514 /* Controller */,
+				DE4BC127204E47D70089D514 /* Model */,
+				DE4BC126204E47D40089D514 /* View */,
+			);
+			path = SystemService;
+			sourceTree = "<group>";
+		};
+		DE4BC11B204E47190089D514 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC125204E47BC0089D514 /* Controller */,
+				DE4BC124204E47B90089D514 /* Model */,
+				DE4BC123204E47B30089D514 /* View */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		DE4BC11C204E471C0089D514 /* MemberInterger */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC122204E47960089D514 /* Controller */,
+				DE4BC121204E47930089D514 /* Model */,
+				DE4BC120204E478F0089D514 /* View */,
+			);
+			path = MemberInterger;
+			sourceTree = "<group>";
+		};
+		DE4BC120204E478F0089D514 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4BC121204E47930089D514 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4BC122204E47960089D514 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC11D204E47860089D514 /* MemberIntergerViewController.h */,
+				DE4BC11E204E47860089D514 /* MemberIntergerViewController.m */,
+				DE4BC136204E9DCC0089D514 /* IntergerDetailViewController.h */,
+				DE4BC137204E9DCC0089D514 /* IntergerDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE4BC123204E47B30089D514 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4BC124204E47B90089D514 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4BC125204E47BC0089D514 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC129204E47FD0089D514 /* DownloadViewController.h */,
+				DE4BC12A204E47FD0089D514 /* DownloadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE4BC126204E47D40089D514 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4BC127204E47D70089D514 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4BC128204E47DA0089D514 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BC12C204E48190089D514 /* SystemServiceViewController.h */,
+				DE4BC12D204E48190089D514 /* SystemServiceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE589BB3204D3ACD00C9581D /* WaterFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +1064,7 @@
 				DE13AD872029C19F00313655 /* Assets.xcassets in Resources */,
 				DE06CB87202A93B70051550B /* CustomHeightTableViewCell.xib in Resources */,
 				DE06CB1B202A8E810051550B /* TabBarConfig.plist in Resources */,
+				DE4BC132204E73EA0089D514 /* SubTabBarConfig.plist in Resources */,
 				DE13AD852029C19F00313655 /* Main.storyboard in Resources */,
 				DE06CB8A202A93C20051550B /* ProductCommentList.plist in Resources */,
 			);
@@ -998,6 +1144,7 @@
 				DE06CB32202A8E810051550B /* UISearchBar+ZYSearchBarPlaceholder.m in Sources */,
 				DE2EDC8A2047B273004EDB89 /* WebViewAndHtmlViewController.m in Sources */,
 				DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */,
+				DE4BC11F204E47860089D514 /* MemberIntergerViewController.m in Sources */,
 				DE06CB54202A91790051550B /* OrderListViewModel.m in Sources */,
 				DE13AD822029C19F00313655 /* ViewController.m in Sources */,
 				DE06CB5F202A920F0051550B /* CustomAlertViewController.m in Sources */,
@@ -1011,6 +1158,7 @@
 				DE06CB80202A93A80051550B /* ProductCommentModel.m in Sources */,
 				DE06CB24202A8E810051550B /* NSDateFormatter+ZYKit.m in Sources */,
 				DE06CB33202A8E810051550B /* UIStoryboard+UIViewController.m in Sources */,
+				DE4BC135204E96C10089D514 /* DiscussViewController.m in Sources */,
 				DE06CB51202A916F0051550B /* OrderListModel.m in Sources */,
 				DE06CB35202A8E810051550B /* UIViewController+Storyboard.m in Sources */,
 				DE06CB31202A8E810051550B /* UIImageView+SDWebImage.m in Sources */,
@@ -1020,6 +1168,8 @@
 				DE06CB41202A8FB80051550B /* MessageViewController.m in Sources */,
 				DE06CB1E202A8E810051550B /* ZyTabBar.m in Sources */,
 				DE06CB8F202A941E0051550B /* TextFieldPlaceholderViewController.m in Sources */,
+				DE4BC12E204E48190089D514 /* SystemServiceViewController.m in Sources */,
+				DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */,
 				DE06CB2D202A8E810051550B /* UIButton+ZYKit.m in Sources */,
 				DE2EDC922047FA9D004EDB89 /* PushOneViewController.m in Sources */,
 				DE06CB2E202A8E810051550B /* UIColor+ZYKit.m in Sources */,
@@ -1032,6 +1182,7 @@
 				DE5D17B1204172FA00192504 /* ImageTopTitleBottomButton.m in Sources */,
 				DE06CB28202A8E810051550B /* NSObject+Swizzle.m in Sources */,
 				DE06CB79202A93900051550B /* GoodCommentListViewController.m in Sources */,
+				DE4BC138204E9DCC0089D514 /* IntergerDetailViewController.m in Sources */,
 				DE06CB86202A93B70051550B /* CustomHeightTableViewCell.m in Sources */,
 				DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */,
 				DE06CB64202A921F0051550B /* AnimateAlertView.m in Sources */,
@@ -1061,6 +1212,7 @@
 				DE2EDC952047FAAD004EDB89 /* PushTwoViewController.m in Sources */,
 				DE06CB2C202A8E810051550B /* UIBarButtonItem+ZYKit.m in Sources */,
 				DE5D17A820414E2600192504 /* ImageButtonViewController.m in Sources */,
+				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
 				DE06CB98202A952F0051550B /* LandScapeViewController.m in Sources */,
 				DE13AD7F2029C19F00313655 /* AppDelegate.m in Sources */,

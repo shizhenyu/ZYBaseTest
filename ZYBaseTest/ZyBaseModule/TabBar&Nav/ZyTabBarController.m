@@ -32,7 +32,6 @@ NSString *const kTabBar = @"tabBar";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.delegate = self;
@@ -43,6 +42,7 @@ NSString *const kTabBar = @"tabBar";
     
     [self setValue:tabBar forKey:@"tabBar"];
     
+    self.tabBar.translucent = YES;
     
 }
 
@@ -141,7 +141,6 @@ NSString *const kTabBar = @"tabBar";
         [self addChildViewController:vc];
         
     }
-    
 }
 
 @end

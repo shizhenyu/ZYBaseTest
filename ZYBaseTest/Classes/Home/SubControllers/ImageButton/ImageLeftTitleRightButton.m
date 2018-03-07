@@ -17,7 +17,7 @@
     if(self.titleLabel.text && self.imageView.image)
     {
         CGPoint imageCenter = self.imageView.center;
-        imageCenter.x = self.frame.size.width/2 - 15;
+        imageCenter.x = self.frame.size.width/2 - 20;
         imageCenter.y = self.frame.size.height/2;
         self.imageView.center = imageCenter;
         

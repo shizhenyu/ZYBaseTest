@@ -12,4 +12,7 @@
 /** 3D Touch点击快捷进入 */
 #define UserPressTouch @"userPress3DTouch"
 
+/** 从次级TabBar返回 */
+#define PopFromSubTabBar @"PopFromSubTabBar"
+
 #endif /* ZYUseDefine_h */

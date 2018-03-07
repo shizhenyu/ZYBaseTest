@@ -48,6 +48,16 @@
 			<key>VCName</key>
 			<string>MineViewController</string>
 		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>泡泡</string>
+			<key>ImageName</key>
+			<string>discuss</string>
+			<key>VCName</key>
+			<string>DiscussViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>
