@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ViewController.h"
+#import <JPUSHService.h>
 
 @interface LoginViewController ()<UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTF;
@@ -52,6 +53,14 @@
    BOOL isSuccess = [ZYUserManager saveUserToLocal:user];
     
     if (isSuccess) {
+        
+        NSInteger random = arc4random()%1000 + 10;
+        
+        NSSet *tagSet = [NSSet setWithObjects:@"99523", nil];
+        
+        [JPUSHService setTags:tagSet completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
+            
+        } seq:random];
         
         ViewController *mainVC = [[ViewController alloc] init];
         

@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import <JPUSHService.h>
 
 @interface MineViewController ()
 
@@ -29,6 +30,10 @@
         BOOL isSuccess = [ZYUserManager deleteLocalUser];
         
         if (isSuccess) {
+            
+            [JPUSHService cleanTags:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
+                
+            } seq:1000];
             
             ViewController *vc = [[ViewController alloc] init];
             

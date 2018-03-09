@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+JPush.h"
 #import "AppDelegate+PressTouch.h"
 
 @interface AppDelegate ()
@@ -21,11 +22,14 @@
     
     [self addShortTouchItem];
     
+    [self initJPushService:launchOptions];
+    
     [self pt_application:application didFinishLaunchingWithOptions:launchOptions];
     
     return YES;
 }
 
+#pragma mark - 设置横竖屏方向
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
     if (self.isForceLandscape) {
@@ -40,15 +44,39 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
+#pragma mark - 3D Touch快捷进入
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
 {
     // //不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
     [self pt_application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
 }
 
+#pragma mark - 注册通知
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    [self JPush_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    
+}
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    
+    [self JPush_application:application didFailToRegisterForRemoteNotificationsWithError:error];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    [self JPush_application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    [self JPush_application:application didReceiveRemoteNotification:userInfo];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    [self JPush_cleanApplicationBadge:application];
 }
 
 

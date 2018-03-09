@@ -19,7 +19,14 @@
 @implementation DiscussViewController
 
 #pragma mark - Life Cycle
-
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    if (self.isFromSubTabBar) {
+        
+    }
+}
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];

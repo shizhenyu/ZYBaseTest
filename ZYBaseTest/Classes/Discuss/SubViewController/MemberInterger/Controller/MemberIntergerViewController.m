@@ -30,7 +30,7 @@
     
     ImageLeftTitleRightButton *backBtn = [[ImageLeftTitleRightButton alloc] init];
     [backBtn setImage:kImage(@"navigationButtonReturn") forState:UIControlStateNormal];
-    backBtn.frame = CGRectMake(-10, 0, 50, 30);
+    backBtn.frame = CGRectMake(-10, 0, 70, 30);
     [backBtn setTitle:@"返回首页" forState:UIControlStateNormal];
     backBtn.titleLabel.font = kFont(15);
     [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -44,7 +44,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:PopFromSubTabBar object:nil];
     
     [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
-    
 }
 
 #pragma mark - Init UI

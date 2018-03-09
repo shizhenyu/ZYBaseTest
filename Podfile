@@ -7,4 +7,5 @@ target 'ZYBaseTest' do
   pod 'Masonry', '~> 1.1.0'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'MJExtension', '~> 3.0.13'
+  pod 'JPush', '~> 3.0.7'
 end

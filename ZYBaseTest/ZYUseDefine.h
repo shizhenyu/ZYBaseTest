@@ -15,4 +15,6 @@
 /** 从次级TabBar返回 */
 #define PopFromSubTabBar @"PopFromSubTabBar"
 
+#define UserIsCloseVoice  @"UserIsCloseVoice"
+
 #endif /* ZYUseDefine_h */
