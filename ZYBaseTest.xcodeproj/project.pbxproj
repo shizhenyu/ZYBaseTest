@@ -99,8 +99,34 @@
 		DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AA2041503500192504 /* ImageLeftTitleRightButton.m */; };
 		DE5D17AE20416BDA00192504 /* ImageRightTitleLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AD20416BDA00192504 /* ImageRightTitleLeftButton.m */; };
 		DE5D17B1204172FA00192504 /* ImageTopTitleBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17B0204172FA00192504 /* ImageTopTitleBottomButton.m */; };
+		DE6136AA205B50EB000ABE1E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6136A9205B50EB000ABE1E /* NotificationService.m */; };
+		DE6136AE205B50EB000ABE1E /* ZYBaseTestPushExtend.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE6136AC205B50EB000ABE1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE13AD722029C19F00313655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE6136A5205B50EB000ABE1E;
+			remoteInfo = ZYBaseTestPushExtend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE6136B2205B50EB000ABE1E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE6136AE205B50EB000ABE1E /* ZYBaseTestPushExtend.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7310D72C63FC0D647BEAA6E8 /* Pods_ZYBaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYBaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +261,7 @@
 		DE13AD892029C19F00313655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE13AD8B2029C19F00313655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE13AD8C2029C19F00313655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE1FC843205A709B00689208 /* ZYBaseTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTest.entitlements; sourceTree = "<group>"; };
 		DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindQRCodeViewController.h; sourceTree = "<group>"; };
 		DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindQRCodeViewController.m; sourceTree = "<group>"; };
 		DE2EDC882047B273004EDB89 /* WebViewAndHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewAndHtmlViewController.h; sourceTree = "<group>"; };
@@ -286,6 +313,11 @@
 		DE5D17AD20416BDA00192504 /* ImageRightTitleLeftButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRightTitleLeftButton.m; sourceTree = "<group>"; };
 		DE5D17AF204172FA00192504 /* ImageTopTitleBottomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTopTitleBottomButton.h; sourceTree = "<group>"; };
 		DE5D17B0204172FA00192504 /* ImageTopTitleBottomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTopTitleBottomButton.m; sourceTree = "<group>"; };
+		DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZYBaseTestPushExtend.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6136A8205B50EB000ABE1E /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		DE6136A9205B50EB000ABE1E /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		DE6136AB205B50EB000ABE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6136B3205B5122000ABE1E /* ZYBaseTestPushExtend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTestPushExtend.entitlements; sourceTree = "<group>"; };
 		DE62687A2056058500CC8928 /* BindCodeStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindCodeStatusView.h; sourceTree = "<group>"; };
 		DE62687B2056058500CC8928 /* BindCodeStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindCodeStatusView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,6 +328,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D401CD91898811B9EE748F4A /* Pods_ZYBaseTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6136A3205B50EB000ABE1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +455,7 @@
 				DE2EDC872047B1F8004EDB89 /* WebAndHtml */,
 				DE2EDC8B2047E78B004EDB89 /* ViewPushMore */,
 				DE589BB3204D3ACD00C9581D /* WaterFlowLayout */,
+				DE0D330B204FEEB90071846B /* PieChart */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -695,6 +735,7 @@
 			isa = PBXGroup;
 			children = (
 				DE13AD7C2029C19F00313655 /* ZYBaseTest */,
+				DE6136A7205B50EB000ABE1E /* ZYBaseTestPushExtend */,
 				DE13AD7B2029C19F00313655 /* Products */,
 				9A366094A72311ACFF38A7E0 /* Pods */,
 				EA3D5C7A06CDEC30D51EA08A /* Frameworks */,
@@ -705,6 +746,7 @@
 			isa = PBXGroup;
 			children = (
 				DE13AD7A2029C19F00313655 /* ZYBaseTest.app */,
+				DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -712,6 +754,7 @@
 		DE13AD7C2029C19F00313655 /* ZYBaseTest */ = {
 			isa = PBXGroup;
 			children = (
+				DE1FC843205A709B00689208 /* ZYBaseTest.entitlements */,
 				DE13AD952029C20000313655 /* Other */,
 				DE13AD962029C21A00313655 /* Classes */,
 			);
@@ -758,7 +801,6 @@
 				DE13AD982029C24A00313655 /* Message */,
 				DE13AD972029C23E00313655 /* Mine */,
 				DE4BC115204E3C9E0089D514 /* Discuss */,
-				DE0D330B204FEEB90071846B /* PieChart */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1109,6 +1151,17 @@
 			path = ImageButton;
 			sourceTree = "<group>";
 		};
+		DE6136A7205B50EB000ABE1E /* ZYBaseTestPushExtend */ = {
+			isa = PBXGroup;
+			children = (
+				DE6136B3205B5122000ABE1E /* ZYBaseTestPushExtend.entitlements */,
+				DE6136A8205B50EB000ABE1E /* NotificationService.h */,
+				DE6136A9205B50EB000ABE1E /* NotificationService.m */,
+				DE6136AB205B50EB000ABE1E /* Info.plist */,
+			);
+			path = ZYBaseTestPushExtend;
+			sourceTree = "<group>";
+		};
 		EA3D5C7A06CDEC30D51EA08A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1130,15 +1183,34 @@
 				DE13AD782029C19F00313655 /* Resources */,
 				41A59E465F9C40E148E511C9 /* [CP] Embed Pods Frameworks */,
 				436DDCCA43FF6FF3E209D606 /* [CP] Copy Pods Resources */,
+				DE6136B2205B50EB000ABE1E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE6136AD205B50EB000ABE1E /* PBXTargetDependency */,
 			);
 			name = ZYBaseTest;
 			productName = ZYBaseTest;
 			productReference = DE13AD7A2029C19F00313655 /* ZYBaseTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DE6136A5205B50EB000ABE1E /* ZYBaseTestPushExtend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE6136B1205B50EB000ABE1E /* Build configuration list for PBXNativeTarget "ZYBaseTestPushExtend" */;
+			buildPhases = (
+				DE6136A2205B50EB000ABE1E /* Sources */,
+				DE6136A3205B50EB000ABE1E /* Frameworks */,
+				DE6136A4205B50EB000ABE1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYBaseTestPushExtend;
+			productName = ZYBaseTestPushExtend;
+			productReference = DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1152,6 +1224,23 @@
 					DE13AD792029C19F00313655 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					DE6136A5205B50EB000ABE1E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1169,6 +1258,7 @@
 			projectRoot = "";
 			targets = (
 				DE13AD792029C19F00313655 /* ZYBaseTest */,
+				DE6136A5205B50EB000ABE1E /* ZYBaseTestPushExtend */,
 			);
 		};
 /* End PBXProject section */
@@ -1187,6 +1277,13 @@
 				DE4BC132204E73EA0089D514 /* SubTabBarConfig.plist in Resources */,
 				DE13AD852029C19F00313655 /* Main.storyboard in Resources */,
 				DE06CB8A202A93C20051550B /* ProductCommentList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6136A4205B50EB000ABE1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1347,7 +1444,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE6136A2205B50EB000ABE1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6136AA205B50EB000ABE1E /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE6136AD205B50EB000ABE1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE6136A5205B50EB000ABE1E /* ZYBaseTestPushExtend */;
+			targetProxy = DE6136AC205B50EB000ABE1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE13AD832029C19F00313655 /* Main.storyboard */ = {
@@ -1478,6 +1591,7 @@
 			baseConfigurationReference = 7DCBDD0E525103EBA6D23B2B /* Pods-ZYBaseTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZYBaseTest/ZYBaseTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49WT3PKZV8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYBaseTest/PrefixHeader.pch";
@@ -1495,6 +1609,7 @@
 			baseConfigurationReference = C42541D6808A9DDE94BA90A4 /* Pods-ZYBaseTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZYBaseTest/ZYBaseTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49WT3PKZV8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYBaseTest/PrefixHeader.pch";
@@ -1503,6 +1618,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TechDoge.KeFu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE6136AF205B50EB000ABE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZYBaseTestPushExtend/ZYBaseTestPushExtend.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49WT3PKZV8;
+				INFOPLIST_FILE = ZYBaseTestPushExtend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechDoge.KeFu.ZYBaseTestPushExtend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE6136B0205B50EB000ABE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZYBaseTestPushExtend/ZYBaseTestPushExtend.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49WT3PKZV8;
+				INFOPLIST_FILE = ZYBaseTestPushExtend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechDoge.KeFu.ZYBaseTestPushExtend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1524,6 +1671,15 @@
 			buildConfigurations = (
 				DE13AD912029C19F00313655 /* Debug */,
 				DE13AD922029C19F00313655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE6136B1205B50EB000ABE1E /* Build configuration list for PBXNativeTarget "ZYBaseTestPushExtend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6136AF205B50EB000ABE1E /* Debug */,
+				DE6136B0205B50EB000ABE1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

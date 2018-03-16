@@ -10,13 +10,9 @@
 
 // 引 JPush功能所需头 件
 #import "JPUSHService.h"
-// iOS10注册APNs所需头 件
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#import <UserNotifications/UserNotifications.h>
-#endif
 
 static NSString *appKey = @"de9d47fa26e23738b16ed62f";
-static BOOL isProduction = TRUE;
+static BOOL isProduction = NO;
 
 @interface AppDelegate (JPush)<JPUSHRegisterDelegate>
 

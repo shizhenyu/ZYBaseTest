@@ -31,9 +31,9 @@
         
         if (isSuccess) {
             
-            [JPUSHService cleanTags:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
+            [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
                 
-            } seq:1000];
+            } seq:0];
             
             ViewController *vc = [[ViewController alloc] init];
             
@@ -54,6 +54,21 @@
         
     }];
     
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 70, 120, 30)];
+    label.text = @"开启语音播报";
+    label.font = kFont(15);
+    [self.view addSubview:label];
+    
+    UISwitch *swith = [[UISwitch alloc] initWithFrame:CGRectMake(150, 70, 100, 30)];
+    [swith addTarget:self action:@selector(openVoiceSpeak:) forControlEvents:UIControlEventTouchUpInside];
+    [swith setOn:[ZYUserDefault boolForKey:UserIsCloseVoice] animated:YES];
+    [self.view addSubview:swith];
+}
+
+- (void)openVoiceSpeak:(UISwitch *)swith {
+    
+    [ZYUserDefault setBool:swith.isOn forKey:UserIsCloseVoice];
+    [ZYUserDefault synchronize];
 }
 
 - (void)didReceiveMemoryWarning {

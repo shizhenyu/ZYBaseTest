@@ -53,14 +53,10 @@
    BOOL isSuccess = [ZYUserManager saveUserToLocal:user];
     
     if (isSuccess) {
-        
-        NSInteger random = arc4random()%1000 + 10;
-        
-        NSSet *tagSet = [NSSet setWithObjects:@"99523", nil];
-        
-        [JPUSHService setTags:tagSet completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
+                
+        [JPUSHService setAlias:@"99523" completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
             
-        } seq:random];
+        } seq:0];
         
         ViewController *mainVC = [[ViewController alloc] init];
         

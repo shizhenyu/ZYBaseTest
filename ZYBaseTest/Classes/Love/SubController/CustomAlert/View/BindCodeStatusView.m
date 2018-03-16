@@ -128,21 +128,21 @@
                 
             }];
             
-            [self.merchantLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-                make.leading.trailing.mas_equalTo(0);
-                
-                make.top.equalTo(self.lineView.mas_bottom).offset(kWidth(24));
-                
-                make.height.mas_equalTo(16);
-                
-            }];
+//            [self.merchantLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//                make.leading.trailing.mas_equalTo(0);
+//
+//                make.top.equalTo(self.lineView.mas_bottom).offset(kWidth(24));
+//
+//                make.height.mas_equalTo(16);
+//
+//            }];
             
             [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
                
                 make.centerX.equalTo(self.bgImageView).multipliedBy(0.5);
                 
-                make.top.equalTo(self.merchantLabel.mas_bottom).offset(kWidth(22));
+                make.top.equalTo(self.lineView.mas_bottom).offset(kWidth(22));
                 
                 make.width.mas_equalTo(kWidth(334/3.0));
                 
@@ -373,7 +373,7 @@
                 
                 self.containerWidthCons = make.width.mas_equalTo(kWidth(1026/3.0));
                 
-                self.containerHeightCons = make.height.mas_equalTo(kWidth(762/3.0));
+                self.containerHeightCons = make.height.mas_equalTo(kWidth(642/3.0));
                 
             }];
             

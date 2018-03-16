@@ -23,6 +23,8 @@
 /** 图片名字 */
 #define kImage(imageName) [UIImage imageNamed:imageName]
 
+#define ZYUserDefault [NSUserDefaults standardUserDefaults]
+
 /** 弱引用 */
 #define kWeakSelf __weak typeof(self)weakSelf = self;
 

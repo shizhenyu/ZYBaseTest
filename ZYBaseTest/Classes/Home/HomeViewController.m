@@ -32,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self setupUI];
     
     [self addObserverForUserPressTouch];
@@ -126,6 +128,14 @@
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         
         _tableView.delegate = self;
+        
+        _tableView.backgroundColor = [UIColor whiteColor];
+        
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        } else {
+            // Fallback on earlier versions
+        }
         
         _tableView.dataSource = self;
         

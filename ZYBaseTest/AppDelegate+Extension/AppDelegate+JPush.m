@@ -7,11 +7,19 @@
 //
 
 #import "AppDelegate+JPush.h"
+#import <AVFoundation/AVFoundation.h>
+
+// iOS10注册APNs所需头 件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
 @implementation AppDelegate (JPush)
 
 #pragma mark - 注册JPush服务
 - (void)initJPushService:(NSDictionary *)launchOptions {
+    
+    [self initAVSpeech]; // 注册音频播放服务
     
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
     
@@ -27,6 +35,29 @@
     [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
     
     [JPUSHService setupWithOption:launchOptions appKey:appKey channel:nil apsForProduction:isProduction advertisingIdentifier:nil];
+    
+    [JPUSHService registrationIDCompletionHandler:^(int resCode, NSString *registrationID) {
+        
+        if(resCode == 0){
+            NSLog(@"registrationID获取成功：%@",registrationID);
+            
+        }
+        else{
+            NSLog(@"registrationID获取失败，code：%d",resCode);
+        }
+        
+    }];
+    
+}
+
+#pragma mark - 配置AVSpeech
+- (void)initAVSpeech {
+    
+    NSError *activeErr = nil;
+    NSError *cateroyErr = nil;
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&cateroyErr];
+    [[AVAudioSession sharedInstance] setActive:YES error:&activeErr];
 }
 
 - (void)JPush_application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -37,6 +68,30 @@
 - (void)JPush_application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     
     NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
+}
+
+- (void)JPush_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    [JPUSHService handleRemoteNotification:userInfo];
+    
+    completionHandler(UIBackgroundFetchResultNewData);
+
+    if ([ZYUserDefault boolForKey:UserIsCloseVoice]) {
+        
+    }else {
+     
+        // 如果iOS系统低于10.0，则没有通知扩展服务，采用直接播报
+        if ([[[UIDevice currentDevice] systemVersion] doubleValue] < 10.0) {
+            
+            NSString *voice = userInfo[@"aps"][@"alert"][@"body"];
+            [self speakNotifiVoice:voice];
+        }
+    }
+}
+
+- (void)JPush_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    [JPUSHService handleRemoteNotification:userInfo];
 }
 
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
@@ -62,7 +117,7 @@
         // 判断为本地通知
         NSLog(@"iOS10 前台收到本地通知:{\nbody:%@，\ntitle:%@,\nsubtitle:%@,\nbadge：%@，\nsound：%@，\nuserInfo：%@\n}",body,title,subtitle,badge,sound,userInfo);
     }
-    completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
+    completionHandler(UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
 }
 
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
@@ -92,23 +147,34 @@
 }
 #endif
 
-- (void)JPush_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    
-    [JPUSHService handleRemoteNotification:userInfo];
-    
-    completionHandler(UIBackgroundFetchResultNewData);
-}
-
-- (void)JPush_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
-    [JPUSHService handleRemoteNotification:userInfo];
-}
-
 - (void)JPush_cleanApplicationBadge:(UIApplication *)application {
 
     [application setApplicationIconBadgeNumber:0];
     
     [JPUSHService setBadge:0];
+}
+
+#pragma mark - 语音合成播报
+- (void)speakNotifiVoice:(NSString *)content {
+    
+    if (content && content.length > 0) {
+        
+        AVSpeechSynthesizer *player  = [[AVSpeechSynthesizer alloc]init];
+        
+        AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc]initWithString:content];//设置语音内容
+        
+        utterance.voice  = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];//设置语言
+        
+        utterance.rate   = 0.5;  //设置语速
+        
+        utterance.volume = 1;  //设置音量（0.0~1.0）默认为1.0
+        
+        utterance.pitchMultiplier    = 1;  //设置语调 (0.5-2.0)
+        
+        utterance.postUtteranceDelay = 1; //目的是让语音合成器播放下一语句前有短暂的暂停
+        
+        [player speakUtterance:utterance];
+    }
 }
 
 @end

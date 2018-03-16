@@ -42,7 +42,7 @@ NSString *const kTabBar = @"tabBar";
     
     [self setValue:tabBar forKey:@"tabBar"];
     
-    self.tabBar.translucent = YES;
+//    self.tabBar.translucent = YES;
     
 }
 
