@@ -7,9 +7,14 @@
 //
 
 #import "MineViewController.h"
-#import <JPUSHService.h>
 
-@interface MineViewController ()
+@interface MineViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray *titleArr;
+
+@property (nonatomic, strong) NSMutableArray *viewControllerArr;
 
 @end
 
@@ -19,56 +24,83 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    [btn setTitle:@"退出登录" forState:UIControlStateNormal];
-    
-    btn.backgroundColor = [UIColor cyanColor];
-    
-    [btn addTargetForControlEvents:UIControlEventTouchUpInside action:^(id sender) {
-        
-        BOOL isSuccess = [ZYUserManager deleteLocalUser];
-        
-        if (isSuccess) {
-            
-            [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
-                
-            } seq:0];
-            
-            ViewController *vc = [[ViewController alloc] init];
-            
-            [vc Action_toLoginViewController];
-        }
-        
-    }];
-    
-    [self.view addSubview:btn];
-    
-    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-       
-        make.center.mas_equalTo(0);
-        
-        make.width.mas_equalTo(80);
-        
-        make.height.mas_equalTo(40);
-        
-    }];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 70, 120, 30)];
-    label.text = @"开启语音播报";
-    label.font = kFont(15);
-    [self.view addSubview:label];
-    
-    UISwitch *swith = [[UISwitch alloc] initWithFrame:CGRectMake(150, 70, 100, 30)];
-    [swith addTarget:self action:@selector(openVoiceSpeak:) forControlEvents:UIControlEventTouchUpInside];
-    [swith setOn:[ZYUserDefault boolForKey:UserIsCloseVoice] animated:YES];
-    [self.view addSubview:swith];
+    [self setupUI];
 }
 
-- (void)openVoiceSpeak:(UISwitch *)swith {
+#pragma mark - Init UI
+- (void)setupUI
+{
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.edges.mas_equalTo(0);
+        
+    }];
+}
+#pragma mark - tableView Delegate && DataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    [ZYUserDefault setBool:swith.isOn forKey:UserIsCloseVoice];
-    [ZYUserDefault synchronize];
+    return self.titleArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    cell.textLabel.text = self.titleArr[indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *className = [self.viewControllerArr objectAtIndex:indexPath.row];
+    
+    UIViewController *classVC = [NSClassFromString(className) new];
+    
+    [self.navigationController pushViewController:classVC animated:YES];
+}
+
+#pragma mark - Lazy Load
+- (UITableView *)tableView {
+    
+    if (!_tableView) {
+        
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        
+        _tableView.delegate = self;
+        
+        _tableView.dataSource = self;
+        
+        _tableView.tableFooterView = [UIView new];
+        
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+        
+        [self.view addSubview:_tableView];
+    }
+    
+    return _tableView;
+}
+
+- (NSMutableArray *)titleArr {
+    
+    if (!_titleArr) {
+        
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"设置", nil];
+    }
+    
+    return _titleArr;
+}
+
+- (NSMutableArray *)viewControllerArr {
+    
+    if (!_viewControllerArr) {
+        
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"SettingViewController", nil];
+    }
+    
+    return _viewControllerArr;
 }
 
 - (void)didReceiveMemoryWarning {

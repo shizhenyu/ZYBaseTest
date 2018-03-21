@@ -33,8 +33,11 @@ typedef void(^PlayVoiceBlock)(void);
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:UserIsCloseVoice]) {
         
+        // 用户关闭了语音播报，不播报
+        
     }else {
         
+        // 开启语音播报
         __weak typeof(self)weakSelf = self;
         
         [self playVoiceWithAVSpeechSynthesisVoiceWithContent:self.bestAttemptContent.body finshBlock:^{

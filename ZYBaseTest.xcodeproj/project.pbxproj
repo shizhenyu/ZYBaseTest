@@ -92,6 +92,7 @@
 		DE4BC132204E73EA0089D514 /* SubTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4BC131204E73E90089D514 /* SubTabBarConfig.plist */; };
 		DE4BC135204E96C10089D514 /* DiscussViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC134204E96C10089D514 /* DiscussViewController.m */; };
 		DE4BC138204E9DCC0089D514 /* IntergerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BC137204E9DCC0089D514 /* IntergerDetailViewController.m */; };
+		DE4C460120620D01001DD5D9 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C460020620D01001DD5D9 /* SettingViewController.m */; };
 		DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */; };
 		DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */; };
 		DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */; };
@@ -299,6 +300,8 @@
 		DE4BC134204E96C10089D514 /* DiscussViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscussViewController.m; sourceTree = "<group>"; };
 		DE4BC136204E9DCC0089D514 /* IntergerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntergerDetailViewController.h; sourceTree = "<group>"; };
 		DE4BC137204E9DCC0089D514 /* IntergerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntergerDetailViewController.m; sourceTree = "<group>"; };
+		DE4C45FF20620D01001DD5D9 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		DE4C460020620D01001DD5D9 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		DE589BB6204D3BAC00C9581D /* ZYCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewController.h; sourceTree = "<group>"; };
 		DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewController.m; sourceTree = "<group>"; };
 		DE589BB9204D3BDD00C9581D /* ZYWaterflowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWaterflowLayout.h; sourceTree = "<group>"; };
@@ -447,6 +450,7 @@
 				DE06CB6F202A92AB0051550B /* GoodComment */,
 				DE06CB46202A907B0051550B /* OrderList */,
 				DE06CB66202A924B0051550B /* Report */,
+				DE0D330B204FEEB90071846B /* PieChart */,
 				DE06CB5A202A91BE0051550B /* CustomAlert */,
 				DE06CB94202A94860051550B /* Landscape */,
 				DE06CB90202A94500051550B /* MBProgressHUD */,
@@ -455,7 +459,7 @@
 				DE2EDC872047B1F8004EDB89 /* WebAndHtml */,
 				DE2EDC8B2047E78B004EDB89 /* ViewPushMore */,
 				DE589BB3204D3ACD00C9581D /* WaterFlowLayout */,
-				DE0D330B204FEEB90071846B /* PieChart */,
+				DE2E3A642053B82B007FAA6B /* CustomAlert */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -810,6 +814,7 @@
 			children = (
 				DE06CB42202A8FC40051550B /* MineViewController.h */,
 				DE06CB43202A8FC40051550B /* MineViewController.m */,
+				DE4C45FD20620CBE001DD5D9 /* SubViewController */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -855,7 +860,6 @@
 		DE2E3A632053B815007FAA6B /* SubController */ = {
 			isa = PBXGroup;
 			children = (
-				DE2E3A642053B82B007FAA6B /* CustomAlert */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -867,7 +871,8 @@
 				DE2E3A662053B843007FAA6B /* Model */,
 				DE2E3A652053B840007FAA6B /* View */,
 			);
-			path = CustomAlert;
+			name = CustomAlert;
+			path = ../../Love/SubController/CustomAlert;
 			sourceTree = "<group>";
 		};
 		DE2E3A652053B840007FAA6B /* View */ = {
@@ -1107,6 +1112,47 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE4C45FD20620CBE001DD5D9 /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C45FE20620CDC001DD5D9 /* Setting */,
+			);
+			path = SubViewController;
+			sourceTree = "<group>";
+		};
+		DE4C45FE20620CDC001DD5D9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C460220620DC9001DD5D9 /* Controller */,
+				DE4C460420620DD7001DD5D9 /* Model */,
+				DE4C460320620DD2001DD5D9 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		DE4C460220620DC9001DD5D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C45FF20620D01001DD5D9 /* SettingViewController.h */,
+				DE4C460020620D01001DD5D9 /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE4C460320620DD2001DD5D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4C460420620DD7001DD5D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE589BB3204D3ACD00C9581D /* WaterFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1237,6 +1283,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1417,6 +1466,7 @@
 				DE3118D1202BE8490073A672 /* TimeTransformToolViewController.m in Sources */,
 				DE06CB30202A8E810051550B /* UIImage+Extension.m in Sources */,
 				DE06CB29202A8E810051550B /* NSObject+ZYKit.m in Sources */,
+				DE4C460120620D01001DD5D9 /* SettingViewController.m in Sources */,
 				DE06CB34202A8E810051550B /* UIView+ZYKit.m in Sources */,
 				DE06CB21202A8E810051550B /* NSArray+ZYKit.m in Sources */,
 				DE0D3308204FEE7A0071846B /* XYPieChartView.m in Sources */,

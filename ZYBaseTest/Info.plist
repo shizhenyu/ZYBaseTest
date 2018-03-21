@@ -52,5 +52,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ZYBaseTest为了给您最方便的服务，需要访问您的相册</string>
+	<key>NSCameraUsageDescription</key>
+	<string>ZYBaseTest为了给您最方便的服务，需要访问您的摄像头</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>ZYBaseTest为了给您最方便的服务，需要访问您的相册</string>
 </dict>
 </plist>

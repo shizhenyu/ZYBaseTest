@@ -87,7 +87,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"绑定收款码", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"", nil];
     }
     
     return _titleArr;
@@ -97,7 +97,7 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"BindQRCodeViewController", nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"", nil];
     }
     
     return _viewControllerArr;
