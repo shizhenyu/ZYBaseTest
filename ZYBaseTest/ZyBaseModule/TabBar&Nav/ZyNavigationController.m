@@ -74,23 +74,6 @@
     
 }
 
-#pragma mark - 设置支持的屏幕旋转方向
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    
-    return self.interfaceOrientationMask;
-}
-
-#pragma mark - 设置presentation方式展示的屏幕方向
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    
-    if (self.interfaceOrientation) {
-        
-        return self.interfaceOrientation;
-    }
-    
-    return UIInterfaceOrientationPortrait;
-}
-
 - (UIStatusBarStyle)preferredStatusBarStyle {
     
     if (self.visibleViewController) {

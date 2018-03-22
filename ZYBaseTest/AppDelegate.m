@@ -28,21 +28,6 @@
     return YES;
 }
 
-#pragma mark - 设置横竖屏方向
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
-{
-    if (self.isForceLandscape) {
-        
-        return UIInterfaceOrientationMaskLandscape;
-        
-    }else if (self.isForcePortrait){
-        
-        return UIInterfaceOrientationMaskPortrait;
-    }
-    
-    return UIInterfaceOrientationMaskPortrait;
-}
-
 #pragma mark - 3D Touch快捷进入
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
 {

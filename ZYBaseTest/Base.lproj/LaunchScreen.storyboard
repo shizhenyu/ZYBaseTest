@@ -20,7 +20,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="750-1334.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pd7-gK-ooV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="llC-AI-eHI" firstAttribute="top" secondItem="Pd7-gK-ooV" secondAttribute="bottom" id="7Y8-XT-LCT"/>
+                            <constraint firstItem="Pd7-gK-ooV" firstAttribute="top" secondItem="3J2-Kp-Wk6" secondAttribute="bottom" id="Dlj-4y-eOQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Pd7-gK-ooV" secondAttribute="trailing" id="R2c-l9-l0t"/>
+                            <constraint firstItem="Pd7-gK-ooV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UpV-3w-HYD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +39,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="750-1334.png" width="750" height="1334"/>
+    </resources>
 </document>

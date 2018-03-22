@@ -87,7 +87,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器", nil];
     }
     
     return _titleArr;
@@ -97,7 +97,7 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"", nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", nil];
     }
     
     return _viewControllerArr;
