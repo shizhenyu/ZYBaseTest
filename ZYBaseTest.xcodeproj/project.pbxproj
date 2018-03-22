@@ -2117,6 +2117,7 @@
 			baseConfigurationReference = 7DCBDD0E525103EBA6D23B2B /* Pods-ZYBaseTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ZYBaseTest/ZYBaseTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49WT3PKZV8;
@@ -2135,6 +2136,7 @@
 			baseConfigurationReference = C42541D6808A9DDE94BA90A4 /* Pods-ZYBaseTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ZYBaseTest/ZYBaseTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49WT3PKZV8;
