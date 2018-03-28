@@ -8,7 +8,7 @@
 
 #import "LoveViewController.h"
 
-@interface LoveViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface LoveViewController ()<UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -30,6 +30,8 @@
 #pragma mark - Init UI
 - (void)setupUI
 {
+    self.navigationController.delegate = self;
+    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.edges.mas_equalTo(0);
@@ -87,7 +89,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息",  nil];
     }
     
     return _titleArr;
@@ -97,10 +99,17 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", nil];
     }
     
     return _viewControllerArr;
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    BOOL isShow = [viewController isKindOfClass:[self class]];
+    
+    [self.navigationController setNavigationBarHidden:isShow animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

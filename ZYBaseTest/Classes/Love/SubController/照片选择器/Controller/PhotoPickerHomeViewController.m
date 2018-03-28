@@ -9,6 +9,7 @@
 #import "PhotoPickerHomeViewController.h"
 #import "HXPhotoManager.h"
 #import "HXPhotoViewController.h"
+#import "ZyNavigationController.h"
 
 @interface PhotoPickerHomeViewController ()<HXPhotoViewControllerDelegate>
 
@@ -101,7 +102,7 @@
     photoVC.delegate = self;
     photoVC.manager = self.manager;
     
-    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:photoVC] animated:YES completion:nil];
+    [self presentViewController:[[ZyNavigationController alloc] initWithRootViewController:photoVC] animated:YES completion:nil];
 }
 
 - (void)selectAlbum

@@ -131,12 +131,6 @@
         
         _tableView.backgroundColor = [UIColor whiteColor];
         
-        if (@available(iOS 11.0, *)) {
-            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        } else {
-            // Fallback on earlier versions
-        }
-        
         _tableView.dataSource = self;
         
         _tableView.tableFooterView = [UIView new];

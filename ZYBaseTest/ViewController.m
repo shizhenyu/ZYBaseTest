@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor orangeColor];
+    
     if ([ZYUserManager userIsLogin]) {
         
         // 用户已经登录
@@ -39,7 +41,7 @@
     ZyTabBarController *tabBarVC = [ZyTabBarController new];
     
     [tabBarVC configTabBarWithPlist:@"TabBarConfig"];
-    
+     
     UIWindow *window = [[UIApplication sharedApplication].delegate window];
     
     window.rootViewController = tabBarVC;

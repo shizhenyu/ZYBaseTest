@@ -14,19 +14,17 @@
 
 @implementation ZyNavigationController
 
-
 + (void)load {
     
     UINavigationBar *navigationBar = [UINavigationBar appearance];
-    
+
     [navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor zy_colorWithHex:0xf2f7fa]] forBarMetrics:UIBarMetricsDefault];
-    
+
     [navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor zy_colorWithHex:0x333434]}];
-    
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:13 weight:UIFontWeightMedium]} forState:UIControlStateNormal];
-    
+
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor zy_colorWithHex:0x333434],NSFontAttributeName:[UIFont systemFontOfSize:15 weight:UIFontWeightMedium]} forState:UIControlStateNormal];
+
     navigationBar.shadowImage = [UIImage new];
-    
 }
 
 - (void)viewDidLoad {
