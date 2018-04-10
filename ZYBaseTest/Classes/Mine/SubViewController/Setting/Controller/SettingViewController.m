@@ -47,6 +47,8 @@
             
             [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
                 
+                NSLog(@"%ld--%@--%ld", iResCode, iAlias, seq);
+                
             } seq:0];
             
             ViewController *vc = [[ViewController alloc] init];
@@ -68,22 +70,54 @@
         
     }];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 70, 120, 30)];
-    label.text = @"开启语音播报";
-    label.font = kFont(15);
-    [self.view addSubview:label];
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(30, 70, 120, 30)];
+    label1.text = @"关闭语音播报";
+    label1.font = kFont(15);
+    [self.view addSubview:label1];
     
-    UISwitch *swith = [[UISwitch alloc] initWithFrame:CGRectMake(150, 70, 100, 30)];
-    [swith addTarget:self action:@selector(openVoiceSpeak:) forControlEvents:UIControlEventTouchUpInside];
-    [swith setOn:[ZYUserDefault boolForKey:UserIsCloseVoice] animated:YES];
-    [self.view addSubview:swith];
+    UISwitch *swith1 = [[UISwitch alloc] initWithFrame:CGRectMake(150, 70, 100, 30)];
+    [swith1 addTarget:self action:@selector(openVoiceSpeak:) forControlEvents:UIControlEventValueChanged];
+    
+    NSUserDefaults *stand = [[NSUserDefaults alloc] initWithSuiteName:kNotificationServiceGroupName];
+    
+    BOOL isCloseVoice = [stand boolForKey:kUserIsCloseVoiceSpeak];
+    
+    [swith1 setOn:isCloseVoice animated:YES];
+    [self.view addSubview:swith1];
+    
+    
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(30, 120, 120, 30)];
+    label2.text = @"是否简易播报";
+    label2.font = kFont(15);
+    [self.view addSubview:label2];
+    
+    UISwitch *swith2 = [[UISwitch alloc] initWithFrame:CGRectMake(150, 120, 100, 30)];
+    [swith2 addTarget:self action:@selector(openSimpleSpeak:) forControlEvents:UIControlEventValueChanged];
+    
+    BOOL isSimple = [stand boolForKey:kUserIsOpenSimpleVoiceSpeak];
+    
+    [swith2 setOn:isSimple animated:YES];
+    [self.view addSubview:swith2];
 }
 
 #pragma mark - 开启语音播报
 - (void)openVoiceSpeak:(UISwitch *)swith {
     
-    [ZYUserDefault setBool:swith.isOn forKey:UserIsCloseVoice];
-    [ZYUserDefault synchronize];
+    NSUserDefaults *stand = [[NSUserDefaults alloc] initWithSuiteName:kNotificationServiceGroupName];
+    
+    [stand setBool:swith.isOn forKey:kUserIsCloseVoiceSpeak];
+    
+    [stand synchronize];
+}
+
+#pragma mark - 是否开启简易的语音播报
+- (void)openSimpleSpeak:(UISwitch *)swith {
+    
+    NSUserDefaults *stand = [[NSUserDefaults alloc] initWithSuiteName:kNotificationServiceGroupName];
+    
+    [stand setBool:swith.isOn forKey:kUserIsOpenSimpleVoiceSpeak];
+    
+    [stand synchronize];
 }
 
 - (void)didReceiveMemoryWarning {

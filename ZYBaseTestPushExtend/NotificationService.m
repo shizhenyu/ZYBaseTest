@@ -31,19 +31,31 @@ typedef void(^PlayVoiceBlock)(void);
     // Modify the notification content here...
     self.bestAttemptContent.title = self.bestAttemptContent.title;
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:UserIsCloseVoice]) {
-        
+    NSUserDefaults *stand = [[NSUserDefaults alloc] initWithSuiteName:kNotificationServiceGroupName];
+    
+    if ([stand boolForKey:kUserIsCloseVoiceSpeak]) {
+
         // 用户关闭了语音播报，不播报
         
+    }else if ([stand boolForKey:kUserIsOpenSimpleVoiceSpeak]){
+        
+        // 用户开启了语音播报，但是是简易的语音播报
+        
+        __weak typeof(self)weakSelf = self;
+        
+        [self playVoiceWithAVSpeechSynthesisVoiceWithContent:kSimpleVoiceSpeakContent finshBlock:^{
+            
+            weakSelf.contentHandler(self.bestAttemptContent);
+        }];
+
     }else {
         
-        // 开启语音播报
+        // 用户开启了完全体的语音播报
         __weak typeof(self)weakSelf = self;
         
         [self playVoiceWithAVSpeechSynthesisVoiceWithContent:self.bestAttemptContent.body finshBlock:^{
             
             weakSelf.contentHandler(self.bestAttemptContent);
-            
         }];
     }
 

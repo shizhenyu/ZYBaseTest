@@ -15,6 +15,17 @@
 /** 从次级TabBar返回 */
 #define PopFromSubTabBar @"PopFromSubTabBar"
 
-#define UserIsCloseVoice  @"UserIsCloseVoice"
+// 创建NSUserDefaults对应的名字
+#define kNotificationServiceGroupName @"group.ZYNotificationServiceGr"
+
+// 用户是否关闭了语音播报
+#define kUserIsCloseVoiceSpeak  @"kUserIsCloseVoiceSpeak"
+
+// 用户是否开启了简易播报
+#define kUserIsOpenSimpleVoiceSpeak @"kUserIsOpenSimpleVoiceSpeak"
+
+// 简易语音播报的内容
+#define kSimpleVoiceSpeakContent @"收款成功"
+
 
 #endif /* ZYUseDefine_h */

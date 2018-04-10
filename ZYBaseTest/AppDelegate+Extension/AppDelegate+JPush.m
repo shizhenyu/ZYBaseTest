@@ -76,14 +76,31 @@
     
     completionHandler(UIBackgroundFetchResultNewData);
 
-    if ([ZYUserDefault boolForKey:UserIsCloseVoice]) {
+    NSUserDefaults *stand = [[NSUserDefaults alloc] initWithSuiteName:kNotificationServiceGroupName];
+    
+    if ([stand boolForKey:kUserIsCloseVoiceSpeak]) {
+    
+        // 用户关闭了语音播报，不播报
         
-    }else {
+    }else if ([stand boolForKey:kUserIsOpenSimpleVoiceSpeak]) {
      
+        // 用户开启了语音播报，但是是简易的语音播报
+        
+        // 如果iOS系统低于10.0，则没有通知扩展服务，采用直接播报
+        if ([[[UIDevice currentDevice] systemVersion] doubleValue] < 10.0) {
+            
+            [self speakNotifiVoice:kSimpleVoiceSpeakContent];
+        }
+
+    }else {
+        
+        // 用户开启了完全体的语音播报
+        
         // 如果iOS系统低于10.0，则没有通知扩展服务，采用直接播报
         if ([[[UIDevice currentDevice] systemVersion] doubleValue] < 10.0) {
             
             NSString *voice = userInfo[@"aps"][@"alert"][@"body"];
+            
             [self speakNotifiVoice:voice];
         }
     }
