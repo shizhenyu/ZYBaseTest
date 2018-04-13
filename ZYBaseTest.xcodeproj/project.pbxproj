@@ -86,6 +86,7 @@
 		DE31FF272049308200E35306 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE31FF252049308200E35306 /* LoginViewController.xib */; };
 		DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF2D204931B800E35306 /* ZYUserManager.m */; };
 		DE31FF31204931C700E35306 /* ZYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF30204931C700E35306 /* ZYUser.m */; };
+		DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE331E56208089F900997829 /* AppDelegate+ThirdService.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
 		DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */; };
 		DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C6206B1C4D008AEA82 /* PersonInfoTableViewCell.m */; };
@@ -398,6 +399,8 @@
 		DE31FF2D204931B800E35306 /* ZYUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUserManager.m; sourceTree = "<group>"; };
 		DE31FF2F204931C700E35306 /* ZYUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUser.h; sourceTree = "<group>"; };
 		DE31FF30204931C700E35306 /* ZYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUser.m; sourceTree = "<group>"; };
+		DE331E55208089F900997829 /* AppDelegate+ThirdService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdService.h"; sourceTree = "<group>"; };
+		DE331E56208089F900997829 /* AppDelegate+ThirdService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdService.m"; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
 		DE3A69C2206B1C22008AEA82 /* PersonInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoViewController.h; sourceTree = "<group>"; };
@@ -1287,6 +1290,8 @@
 				DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */,
 				DE0D32F6204FCB770071846B /* AppDelegate+JPush.h */,
 				DE0D32F7204FCB770071846B /* AppDelegate+JPush.m */,
+				DE331E55208089F900997829 /* AppDelegate+ThirdService.h */,
+				DE331E56208089F900997829 /* AppDelegate+ThirdService.m */,
 			);
 			path = "AppDelegate+Extension";
 			sourceTree = "<group>";
@@ -2064,8 +2069,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZYBaseTest/Pods-ZYBaseTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
@@ -2073,8 +2080,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
@@ -2214,6 +2223,7 @@
 				DE06CB30202A8E810051550B /* UIImage+Extension.m in Sources */,
 				DE4C467620625627001DD5D9 /* HXCameraPreviewViewController.m in Sources */,
 				DE06CB29202A8E810051550B /* NSObject+ZYKit.m in Sources */,
+				DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */,
 				DE4C460120620D01001DD5D9 /* SettingViewController.m in Sources */,
 				DE06CB34202A8E810051550B /* UIView+ZYKit.m in Sources */,
 				DE06CB21202A8E810051550B /* NSArray+ZYKit.m in Sources */,

@@ -8,4 +8,6 @@ target 'ZYBaseTest' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'MJExtension', '~> 3.0.13'
   pod 'JPush', '~> 3.0.7'
+  pod 'MJRefresh', '~> 3.1.15.1'
+  pod 'IQKeyboardManager', '~> 5.0.6'
 end

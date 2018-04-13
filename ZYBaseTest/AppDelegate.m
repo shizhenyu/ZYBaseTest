@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AppDelegate+JPush.h"
 #import "AppDelegate+PressTouch.h"
+#import "AppDelegate+ThirdService.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,8 @@
     [self addShortTouchItem];
     
     [self initJPushService:launchOptions];
+    
+    [self setupThirdService];
     
     [self pt_application:application didFinishLaunchingWithOptions:launchOptions];
     

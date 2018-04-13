@@ -31,6 +31,12 @@
     [self.tableView registerClass:[PersonInfoTableViewCell class] forCellReuseIdentifier:@"PersonInfoTableViewCell"];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     [self.view addSubview:self.tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.mas_equalTo(0);
+        
+    }];
 }
 
 #pragma mark - UITableView Delegate && DataSource
@@ -53,6 +59,11 @@
     cell.contentStr = [self.infoDic objectForKey:[NSString stringWithFormat:@"%ld", indexPath.row]];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return kWidth(50);
 }
 
 #pragma mark - UITableViewCell Delegate
