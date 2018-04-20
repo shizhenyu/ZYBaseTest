@@ -75,6 +75,8 @@
 		DE13AD8A2029C19F00313655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE13AD882029C19F00313655 /* LaunchScreen.storyboard */; };
 		DE13AD8D2029C19F00313655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AD8C2029C19F00313655 /* main.m */; };
 		DE1E369620688CA300228A94 /* TopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1E369520688CA300228A94 /* TopMenuTableViewCell.m */; };
+		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
+		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
 		DE2EDC8A2047B273004EDB89 /* WebViewAndHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EDC892047B273004EDB89 /* WebViewAndHtmlViewController.m */; };
 		DE2EDC8E2047E7D9004EDB89 /* PushHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EDC8D2047E7D9004EDB89 /* PushHomeViewController.m */; };
@@ -87,6 +89,7 @@
 		DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF2D204931B800E35306 /* ZYUserManager.m */; };
 		DE31FF31204931C700E35306 /* ZYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF30204931C700E35306 /* ZYUser.m */; };
 		DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE331E56208089F900997829 /* AppDelegate+ThirdService.m */; };
+		DE34C51C2089D7F500739F0A /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE34C51B2089D7F500739F0A /* QRView.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
 		DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */; };
 		DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C6206B1C4D008AEA82 /* PersonInfoTableViewCell.m */; };
@@ -377,6 +380,10 @@
 		DE1E369420688CA300228A94 /* TopMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuTableViewCell.h; sourceTree = "<group>"; };
 		DE1E369520688CA300228A94 /* TopMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuTableViewCell.m; sourceTree = "<group>"; };
 		DE1FC843205A709B00689208 /* ZYBaseTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTest.entitlements; sourceTree = "<group>"; };
+		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
+		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
+		DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPlaceImageView.h; sourceTree = "<group>"; };
+		DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPlaceImageView.m; sourceTree = "<group>"; };
 		DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindQRCodeViewController.h; sourceTree = "<group>"; };
 		DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindQRCodeViewController.m; sourceTree = "<group>"; };
 		DE2EDC882047B273004EDB89 /* WebViewAndHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewAndHtmlViewController.h; sourceTree = "<group>"; };
@@ -401,6 +408,8 @@
 		DE31FF30204931C700E35306 /* ZYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUser.m; sourceTree = "<group>"; };
 		DE331E55208089F900997829 /* AppDelegate+ThirdService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdService.h"; sourceTree = "<group>"; };
 		DE331E56208089F900997829 /* AppDelegate+ThirdService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdService.m"; sourceTree = "<group>"; };
+		DE34C51A2089D7F500739F0A /* QRView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		DE34C51B2089D7F500739F0A /* QRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
 		DE3A69C2206B1C22008AEA82 /* PersonInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoViewController.h; sourceTree = "<group>"; };
@@ -1149,12 +1158,48 @@
 		DE13AD9B2029C27900313655 /* Libirary */ = {
 			isa = PBXGroup;
 			children = (
+				DE34C5192089D7C600739F0A /* QRScanView */,
 				DE4900F72065E71900EB9EA8 /* SDCycleScrollView */,
 				DE4C460520625627001DD5D9 /* HXWeiboPhotoPicker */,
 				DE0D32FE204FEE7A0071846B /* PieChartView */,
 				DE31FF28204930A400E35306 /* UserManager */,
 			);
 			path = Libirary;
+			sourceTree = "<group>";
+		};
+		DE2A181220874A5400F4E6C6 /* 线程相关 */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A181520874A9100F4E6C6 /* Controller */,
+				DE2A181420874A8F00F4E6C6 /* Model */,
+				DE2A181320874A8200F4E6C6 /* View */,
+			);
+			path = "线程相关";
+			sourceTree = "<group>";
+		};
+		DE2A181320874A8200F4E6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */,
+				DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2A181420874A8F00F4E6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2A181520874A9100F4E6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */,
+				DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DE2E3A632053B815007FAA6B /* SubController */ = {
@@ -1165,6 +1210,7 @@
 				DE4900F62065E6C100EB9EA8 /* 轮播图 */,
 				DE49011420661D4200EB9EA8 /* 下拉菜单 */,
 				DE3A69BE206B1BD2008AEA82 /* 个人信息采集 */,
+				DE2A181220874A5400F4E6C6 /* 线程相关 */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -1281,6 +1327,15 @@
 				DE31FF2D204931B800E35306 /* ZYUserManager.m */,
 			);
 			path = UserManager;
+			sourceTree = "<group>";
+		};
+		DE34C5192089D7C600739F0A /* QRScanView */ = {
+			isa = PBXGroup;
+			children = (
+				DE34C51A2089D7F500739F0A /* QRView.h */,
+				DE34C51B2089D7F500739F0A /* QRView.m */,
+			);
+			path = QRScanView;
 			sourceTree = "<group>";
 		};
 		DE36366720439B0100B44BD8 /* AppDelegate+Extension */ = {
@@ -2172,6 +2227,7 @@
 				DE06CB9C202A95D80051550B /* ZYProgressHud.m in Sources */,
 				DE4C467F20625627001DD5D9 /* HXPhotoTools.m in Sources */,
 				DE4C467320625627001DD5D9 /* HXAlbumListView.m in Sources */,
+				DE34C51C2089D7F500739F0A /* QRView.m in Sources */,
 				DE0D330A204FEE7A0071846B /* XYRotatedView.m in Sources */,
 				DE06CB2B202A8E810051550B /* NSTimer+Block.m in Sources */,
 				DE06CB41202A8FB80051550B /* MessageViewController.m in Sources */,
@@ -2184,6 +2240,7 @@
 				DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */,
 				DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */,
 				DE4901132065FB4A00EB9EA8 /* ScrollingViewController.m in Sources */,
+				DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */,
 				DE06CB2D202A8E810051550B /* UIButton+ZYKit.m in Sources */,
 				DE2EDC922047FA9D004EDB89 /* PushOneViewController.m in Sources */,
 				DE49010C2065E71900EB9EA8 /* SDCycleScrollView.m in Sources */,
@@ -2253,6 +2310,7 @@
 				DE5D17A820414E2600192504 /* ImageButtonViewController.m in Sources */,
 				DE4C467C20625627001DD5D9 /* HXPhotoPreviewViewCell.m in Sources */,
 				DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */,
+				DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */,
 				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
