@@ -170,35 +170,23 @@
 {
     UIWindow *window = [[UIApplication sharedApplication].delegate window];
     
+    self.alpha = 0;
+    
     [window addSubview:self];
     
-    [self layoutIfNeeded];
-    
-    CGFloat messageHeight = [_message boundingRectWithSize:CGSizeMake(kWidth(280), CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:kFont(16)} context:nil].size.height;
-    
-    CGFloat containerHeight = kHeight(107) + messageHeight;
+    self.containerView.transform = CGAffineTransformMakeScale(1.2, 1.2);
 
-    [self.containerWidthCons uninstall];
-
-    [self.containerHeightCons uninstall];
-
-    [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
-
-        self.containerWidthCons = make.width.equalTo(self).multipliedBy(300/375.0);
-
-        self.containerHeightCons = make.height.mas_equalTo(containerHeight);
-
-    }];
-    
-    [UIView animateWithDuration:0.25 delay:0.01 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.20 delay:0.01 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
-        self.bgButton.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        self.bgButton.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
         
-        [self layoutIfNeeded];
+        self.alpha = 1;
+        
+        self.containerView.transform = CGAffineTransformIdentity;
 
-        [self.containerView layoutSubviews];
-        
     } completion:^(BOOL finished) {
+        
+        self.containerView.transform = CGAffineTransformIdentity;
         
     }];
 }
@@ -385,6 +373,23 @@
     _message = message;
     
     self.messageLabel.text = message;
+    
+    [self.containerWidthCons uninstall];
+    [self.containerHeightCons uninstall];
+    
+    CGFloat messageHeight = [message boundingRectWithSize:CGSizeMake(kWidth(280), CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:kFont(16)} context:nil].size.height;
+    
+    CGFloat containerHeight = kHeight(107) + messageHeight;
+    
+    [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+        self.containerWidthCons = make.width.equalTo(self).multipliedBy(300/375.0);
+        
+        self.containerHeightCons = make.height.mas_equalTo(containerHeight);
+        
+    }];
+    
+    [self layoutIfNeeded];
 }
 
 - (void)setCancelTitle:(NSString *)cancelTitle
