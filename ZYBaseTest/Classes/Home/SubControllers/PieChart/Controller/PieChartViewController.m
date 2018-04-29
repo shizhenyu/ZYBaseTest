@@ -47,7 +47,7 @@
     self.pieChartView.delegate = self;
     
     // 当有一项数据的百分比小于你所校验的数值时，会将该项数值百分比移出饼图展示（校验数值从0~100）
-    [self.pieChartView setCheckLessThanPercent:0.1];
+    [self.pieChartView setCheckLessThanPercent:1];
     
     // 刷新加载
     [self.pieChartView reloadChart];
@@ -110,7 +110,7 @@
     
     if (!_precentArr) {
         
-        _precentArr = [[NSMutableArray alloc] initWithObjects:@"40", @"45", @"15", @"5", nil];
+        _precentArr = [[NSMutableArray alloc] initWithObjects:@"45", @"45", @"9.5", @"0.5", nil];
     }
     
     return _precentArr;
