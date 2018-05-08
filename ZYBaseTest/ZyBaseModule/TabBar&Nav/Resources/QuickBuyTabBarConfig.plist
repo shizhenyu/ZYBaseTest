@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TabBarBackgroundColor</key>
+	<string>0xffffff</string>
+	<key>TabBarBackgroundImageName</key>
+	<string></string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>闪购</string>
+			<key>ImageName</key>
+			<string>integral</string>
+			<key>VCName</key>
+			<string>QBHomeViewController</string>
+		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>购物车</string>
+			<key>ImageName</key>
+			<string>download</string>
+			<key>VCName</key>
+			<string>QBShopCartViewController</string>
+		</dict>
+		<dict>
+			<key>SubJoin</key>
+			<string></string>
+			<key>Title</key>
+			<string>我的</string>
+			<key>ImageName</key>
+			<string>service</string>
+			<key>VCName</key>
+			<string>QBMineViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
