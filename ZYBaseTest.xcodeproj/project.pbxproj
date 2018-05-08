@@ -78,6 +78,12 @@
 		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
 		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
+		DE2EB1A020A181C900DDB3C3 /* QuickBuyTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */; };
+		DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1A220A1823800DDB3C3 /* QuickBuyTabBarViewController.m */; };
+		DE2EB1AF20A182C400DDB3C3 /* QBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1AE20A182C400DDB3C3 /* QBHomeViewController.m */; };
+		DE2EB1B220A182D800DDB3C3 /* QBShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1B120A182D800DDB3C3 /* QBShopCartViewController.m */; };
+		DE2EB1B520A182E600DDB3C3 /* QBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1B420A182E600DDB3C3 /* QBMineViewController.m */; };
+		DE2EB1B820A188AB00DDB3C3 /* QBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1B720A188AB00DDB3C3 /* QBSettingViewController.m */; };
 		DE2EDC8A2047B273004EDB89 /* WebViewAndHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EDC892047B273004EDB89 /* WebViewAndHtmlViewController.m */; };
 		DE2EDC8E2047E7D9004EDB89 /* PushHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EDC8D2047E7D9004EDB89 /* PushHomeViewController.m */; };
 		DE2EDC922047FA9D004EDB89 /* PushOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EDC912047FA9D004EDB89 /* PushOneViewController.m */; };
@@ -93,6 +99,9 @@
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
 		DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */; };
 		DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C6206B1C4D008AEA82 /* PersonInfoTableViewCell.m */; };
+		DE3EA5D3209EE19800D16D5C /* NoDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3EA5D2209EE19800D16D5C /* NoDataViewController.m */; };
+		DE3EA5D9209EE2F900D16D5C /* UIScrollView+NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */; };
+		DE3EA5F4209EF2E600D16D5C /* UITableView+NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */; };
 		DE4901072065E71900EB9EA8 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4900FA2065E71900EB9EA8 /* TAAbstractDotView.m */; };
 		DE4901082065E71900EB9EA8 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4900FC2065E71900EB9EA8 /* TAAnimatedDotView.m */; };
 		DE4901092065E71900EB9EA8 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4900FE2065E71900EB9EA8 /* TADotView.m */; };
@@ -386,6 +395,17 @@
 		DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPlaceImageView.m; sourceTree = "<group>"; };
 		DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindQRCodeViewController.h; sourceTree = "<group>"; };
 		DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindQRCodeViewController.m; sourceTree = "<group>"; };
+		DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickBuyTabBarConfig.plist; sourceTree = "<group>"; };
+		DE2EB1A120A1823800DDB3C3 /* QuickBuyTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickBuyTabBarViewController.h; sourceTree = "<group>"; };
+		DE2EB1A220A1823800DDB3C3 /* QuickBuyTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickBuyTabBarViewController.m; sourceTree = "<group>"; };
+		DE2EB1AD20A182C400DDB3C3 /* QBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBHomeViewController.h; sourceTree = "<group>"; };
+		DE2EB1AE20A182C400DDB3C3 /* QBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBHomeViewController.m; sourceTree = "<group>"; };
+		DE2EB1B020A182D800DDB3C3 /* QBShopCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBShopCartViewController.h; sourceTree = "<group>"; };
+		DE2EB1B120A182D800DDB3C3 /* QBShopCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBShopCartViewController.m; sourceTree = "<group>"; };
+		DE2EB1B320A182E600DDB3C3 /* QBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBMineViewController.h; sourceTree = "<group>"; };
+		DE2EB1B420A182E600DDB3C3 /* QBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBMineViewController.m; sourceTree = "<group>"; };
+		DE2EB1B620A188AB00DDB3C3 /* QBSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBSettingViewController.h; sourceTree = "<group>"; };
+		DE2EB1B720A188AB00DDB3C3 /* QBSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBSettingViewController.m; sourceTree = "<group>"; };
 		DE2EDC882047B273004EDB89 /* WebViewAndHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewAndHtmlViewController.h; sourceTree = "<group>"; };
 		DE2EDC892047B273004EDB89 /* WebViewAndHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewAndHtmlViewController.m; sourceTree = "<group>"; };
 		DE2EDC8C2047E7D9004EDB89 /* PushHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushHomeViewController.h; sourceTree = "<group>"; };
@@ -416,6 +436,12 @@
 		DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoViewController.m; sourceTree = "<group>"; };
 		DE3A69C5206B1C4D008AEA82 /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
 		DE3A69C6206B1C4D008AEA82 /* PersonInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoTableViewCell.m; sourceTree = "<group>"; };
+		DE3EA5D1209EE19800D16D5C /* NoDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoDataViewController.h; sourceTree = "<group>"; };
+		DE3EA5D2209EE19800D16D5C /* NoDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataViewController.m; sourceTree = "<group>"; };
+		DE3EA5D7209EE2F900D16D5C /* UIScrollView+NoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NoDataView.h"; sourceTree = "<group>"; };
+		DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NoDataView.m"; sourceTree = "<group>"; };
+		DE3EA5F2209EF2E600D16D5C /* UITableView+NoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoDataView.h"; sourceTree = "<group>"; };
+		DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoDataView.m"; sourceTree = "<group>"; };
 		DE4900F92065E71900EB9EA8 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		DE4900FA2065E71900EB9EA8 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		DE4900FB2065E71900EB9EA8 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -658,6 +684,7 @@
 			isa = PBXGroup;
 			children = (
 				DE06CADF202A8E810051550B /* TabBarConfig.plist */,
+				DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */,
 				DE4BC131204E73E90089D514 /* SubTabBarConfig.plist */,
 			);
 			path = Resources;
@@ -1211,6 +1238,8 @@
 				DE49011420661D4200EB9EA8 /* 下拉菜单 */,
 				DE3A69BE206B1BD2008AEA82 /* 个人信息采集 */,
 				DE2A181220874A5400F4E6C6 /* 线程相关 */,
+				DE3EA5D0209EE15B00D16D5C /* 空白TableView */,
+				DE2EB19B20A1811400DDB3C3 /* 闪购 */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -1247,6 +1276,119 @@
 			children = (
 				DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */,
 				DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2EB19B20A1811400DDB3C3 /* 闪购 */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1A120A1823800DDB3C3 /* QuickBuyTabBarViewController.h */,
+				DE2EB1A220A1823800DDB3C3 /* QuickBuyTabBarViewController.m */,
+				DE2EB19E20A1813700DDB3C3 /* 首页 */,
+				DE2EB19D20A1813400DDB3C3 /* 购物车 */,
+				DE2EB19C20A1813200DDB3C3 /* 我的 */,
+			);
+			path = "闪购";
+			sourceTree = "<group>";
+		};
+		DE2EB19C20A1813200DDB3C3 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1AC20A1828700DDB3C3 /* Controller */,
+				DE2EB1AB20A1828500DDB3C3 /* Model */,
+				DE2EB1AA20A1828300DDB3C3 /* View */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		DE2EB19D20A1813400DDB3C3 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1A920A1827D00DDB3C3 /* Controller */,
+				DE2EB1A820A1827A00DDB3C3 /* Model */,
+				DE2EB1A720A1827800DDB3C3 /* View */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		DE2EB19E20A1813700DDB3C3 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1A620A1826200DDB3C3 /* Controller */,
+				DE2EB1A520A1826000DDB3C3 /* Model */,
+				DE2EB1A420A1825D00DDB3C3 /* View */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		DE2EB1A420A1825D00DDB3C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2EB1A520A1826000DDB3C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2EB1A620A1826200DDB3C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1AD20A182C400DDB3C3 /* QBHomeViewController.h */,
+				DE2EB1AE20A182C400DDB3C3 /* QBHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2EB1A720A1827800DDB3C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2EB1A820A1827A00DDB3C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2EB1A920A1827D00DDB3C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1B020A182D800DDB3C3 /* QBShopCartViewController.h */,
+				DE2EB1B120A182D800DDB3C3 /* QBShopCartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2EB1AA20A1828300DDB3C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2EB1AB20A1828500DDB3C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2EB1AC20A1828700DDB3C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EB1B320A182E600DDB3C3 /* QBMineViewController.h */,
+				DE2EB1B420A182E600DDB3C3 /* QBMineViewController.m */,
+				DE2EB1B620A188AB00DDB3C3 /* QBSettingViewController.h */,
+				DE2EB1B720A188AB00DDB3C3 /* QBSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1382,6 +1524,44 @@
 			children = (
 				DE3A69C2206B1C22008AEA82 /* PersonInfoViewController.h */,
 				DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE3EA5D0209EE15B00D16D5C /* 空白TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EA5D6209EE2A600D16D5C /* Controller */,
+				DE3EA5D5209EE2A300D16D5C /* Model */,
+				DE3EA5D4209EE2A000D16D5C /* View */,
+			);
+			path = "空白TableView";
+			sourceTree = "<group>";
+		};
+		DE3EA5D4209EE2A000D16D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DE3EA5D5209EE2A300D16D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EA5D7209EE2F900D16D5C /* UIScrollView+NoDataView.h */,
+				DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */,
+				DE3EA5F2209EF2E600D16D5C /* UITableView+NoDataView.h */,
+				DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE3EA5D6209EE2A600D16D5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EA5D1209EE19800D16D5C /* NoDataViewController.h */,
+				DE3EA5D2209EE19800D16D5C /* NoDataViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2055,6 +2235,7 @@
 				DE06CB59202A918F0051550B /* OrderListData.plist in Resources */,
 				DE4C46BA20625627001DD5D9 /* page_score_pic_background@2x.png in Resources */,
 				DE13AD8A2029C19F00313655 /* LaunchScreen.storyboard in Resources */,
+				DE2EB1A020A181C900DDB3C3 /* QuickBuyTabBarConfig.plist in Resources */,
 				DE13AD872029C19F00313655 /* Assets.xcassets in Resources */,
 				DE4C468C20625627001DD5D9 /* camera_close_highlighted@2x.png in Resources */,
 				DE4C46B520625627001DD5D9 /* headlines_icon_arrow@2x.png in Resources */,
@@ -2220,6 +2401,7 @@
 				DE4BC135204E96C10089D514 /* DiscussViewController.m in Sources */,
 				DE4C467B20625627001DD5D9 /* HXPhotoModel.m in Sources */,
 				DE06CB51202A916F0051550B /* OrderListModel.m in Sources */,
+				DE2EB1B520A182E600DDB3C3 /* QBMineViewController.m in Sources */,
 				DE06CB35202A8E810051550B /* UIViewController+Storyboard.m in Sources */,
 				DE06CB31202A8E810051550B /* UIImageView+SDWebImage.m in Sources */,
 				DE06CB23202A8E810051550B /* NSDate+ZYKit.m in Sources */,
@@ -2239,8 +2421,10 @@
 				DE4BC12E204E48190089D514 /* SystemServiceViewController.m in Sources */,
 				DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */,
 				DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */,
+				DE2EB1B220A182D800DDB3C3 /* QBShopCartViewController.m in Sources */,
 				DE4901132065FB4A00EB9EA8 /* ScrollingViewController.m in Sources */,
 				DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */,
+				DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */,
 				DE06CB2D202A8E810051550B /* UIButton+ZYKit.m in Sources */,
 				DE2EDC922047FA9D004EDB89 /* PushOneViewController.m in Sources */,
 				DE49010C2065E71900EB9EA8 /* SDCycleScrollView.m in Sources */,
@@ -2277,6 +2461,7 @@
 				DE5043BE20650B88000C173E /* YBPieView.m in Sources */,
 				DE5043BF20650B88000C173E /* YBPieViewMath.m in Sources */,
 				DE3118D1202BE8490073A672 /* TimeTransformToolViewController.m in Sources */,
+				DE3EA5D9209EE2F900D16D5C /* UIScrollView+NoDataView.m in Sources */,
 				DE06CB30202A8E810051550B /* UIImage+Extension.m in Sources */,
 				DE4C467620625627001DD5D9 /* HXCameraPreviewViewController.m in Sources */,
 				DE06CB29202A8E810051550B /* NSObject+ZYKit.m in Sources */,
@@ -2285,8 +2470,10 @@
 				DE06CB34202A8E810051550B /* UIView+ZYKit.m in Sources */,
 				DE06CB21202A8E810051550B /* NSArray+ZYKit.m in Sources */,
 				DE0D3308204FEE7A0071846B /* XYPieChartView.m in Sources */,
+				DE3EA5F4209EF2E600D16D5C /* UITableView+NoDataView.m in Sources */,
 				DE06CB1F202A8E810051550B /* ZyTabBarController.m in Sources */,
 				DE2EDC8E2047E7D9004EDB89 /* PushHomeViewController.m in Sources */,
+				DE2EB1AF20A182C400DDB3C3 /* QBHomeViewController.m in Sources */,
 				DE06CB36202A8E810051550B /* ZYAlertViewController.m in Sources */,
 				DE06CB1C202A8E810051550B /* ZYBaseViewController.m in Sources */,
 				DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */,
@@ -2302,6 +2489,7 @@
 				DE06CB88202A93B70051550B /* ProductCommentTableViewCell.m in Sources */,
 				DE4C467920625627001DD5D9 /* HXPhotoConst.m in Sources */,
 				DE06CB3B202A8F9B0051550B /* HomeViewController.m in Sources */,
+				DE2EB1B820A188AB00DDB3C3 /* QBSettingViewController.m in Sources */,
 				DE06CB6B202A928E0051550B /* ReportViewController.m in Sources */,
 				DE2EDC952047FAAD004EDB89 /* PushTwoViewController.m in Sources */,
 				DE4C467420625627001DD5D9 /* HXAlbumModel.m in Sources */,
@@ -2310,6 +2498,7 @@
 				DE5D17A820414E2600192504 /* ImageButtonViewController.m in Sources */,
 				DE4C467C20625627001DD5D9 /* HXPhotoPreviewViewCell.m in Sources */,
 				DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */,
+				DE3EA5D3209EE19800D16D5C /* NoDataViewController.m in Sources */,
 				DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */,
 				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,

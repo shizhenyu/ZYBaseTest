@@ -48,7 +48,7 @@
         [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        [backButton sizeToFit];
+        backButton.frame = CGRectMake(0, 0, kWidth(35), kWidth(35));
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
         
         // 隐藏底部的工具条

@@ -7,8 +7,9 @@
 //
 
 #import "LoveViewController.h"
+#import "QuickBuyTabBarViewController.h"
 
-@interface LoveViewController ()<UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
+@interface LoveViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -20,6 +21,14 @@
 
 @implementation LoveViewController
 
+#pragma mark - 生命周期
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setHidden:NO];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,8 +39,6 @@
 #pragma mark - Init UI
 - (void)setupUI
 {
-    self.navigationController.delegate = self;
-    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.edges.mas_equalTo(0);
@@ -57,11 +64,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *className = [self.viewControllerArr objectAtIndex:indexPath.row];
-    
-    UIViewController *classVC = [NSClassFromString(className) new];
-    
-    [self.navigationController pushViewController:classVC animated:YES];
+    if (indexPath.row == 7) {
+        
+        QuickBuyTabBarViewController *tabBarVC = [[QuickBuyTabBarViewController alloc] init];
+                
+        [self.navigationController.navigationBar setHidden:YES];
+        
+        [self.tabBarController.tabBar setHidden:YES];
+        
+        [self.navigationController pushViewController:tabBarVC animated:YES];
+        
+    }else {
+        
+        NSString *className = [self.viewControllerArr objectAtIndex:indexPath.row];
+        
+        UIViewController *classVC = [NSClassFromString(className) new];
+        
+        [self.navigationController pushViewController:classVC animated:YES];
+    }
 }
 
 #pragma mark - Lazy Load
@@ -89,7 +109,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序",  nil];
     }
     
     return _titleArr;
@@ -99,17 +119,10 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", @"NoDataViewController", @"", nil];
     }
     
     return _viewControllerArr;
-}
-
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
-    BOOL isShow = [viewController isKindOfClass:[self class]];
-    
-    [self.navigationController setNavigationBarHidden:isShow animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,9 +12,6 @@
 /** 3D Touch点击快捷进入 */
 #define UserPressTouch @"userPress3DTouch"
 
-/** 从次级TabBar返回 */
-#define PopFromSubTabBar @"PopFromSubTabBar"
-
 // 创建NSUserDefaults对应的名字
 #define kNotificationServiceGroupName @"group.ZYNotificationServiceGr"
 

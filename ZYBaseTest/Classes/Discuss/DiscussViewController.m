@@ -18,53 +18,42 @@
 
 @implementation DiscussViewController
 
-#pragma mark - Life Cycle
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    if (self.isFromSubTabBar) {
-        
-    }
-}
+#pragma mark - 生命周期
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
     
     if (self.isFromSubTabBar) {
         
+        // 如果是从 泡泡模块返回的，则跳转到主tabBar 的首页
+        
         self.isFromSubTabBar = NO;
+        
         self.tabBarController.selectedIndex = 0;
         
     }else {
         
+        // 如果是点击泡泡选项，则跳转到泡泡模块
         DiscussTabBarController *tabBarVC = [[DiscussTabBarController alloc] init];
         
         [self.navigationController.navigationBar setHidden:YES];
         
         [self.tabBarController.tabBar setHidden:YES];
         
+        self.isFromSubTabBar = YES;
+        
         [self.navigationController pushViewController:tabBarVC animated:YES];
     }
+    
 }
 
-- (void)dealloc {
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:PopFromSubTabBar object:nil];
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.isFromSubTabBar = NO;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FromSubTabBar) name:PopFromSubTabBar object:nil];
-}
-
-#pragma mark - Notification Event Response
-- (void)FromSubTabBar {
-   
-    self.isFromSubTabBar = YES;
+    // 这个VC主要是作为跳转tabBar 的过渡页，让跳转时不突兀
 }
 
 - (void)didReceiveMemoryWarning {
