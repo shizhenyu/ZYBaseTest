@@ -16,6 +16,18 @@
 #define kWidth(width) width * kScreenWidth / 375.0
 #define kHeight(height) height * kScreenHeight / 667.0
 
+// 状态栏高度
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+
+// 是否为iPhone X
+#define IsIPhone_X  kStatusBarHeight == 44.f ? YES : NO
+
+// 导航栏高度
+#define kNavigationBarHeight (IsIPhone_X ? 88.f : 64.f)
+
+// tabBar 高度
+#define kTabBarHeight    (IsIPhone_X ? 83.f : 49.f)
+
 /** 字体设置 **/
 #define kFont(size) [UIFont systemFontOfSize:size]
 #define kBFont(size) [UIFont boldSystemFontOfSize:size]

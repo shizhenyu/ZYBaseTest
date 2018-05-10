@@ -109,7 +109,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序",  nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序", @"支付宝首页", nil];
     }
     
     return _titleArr;
@@ -119,7 +119,7 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", @"NoDataViewController", @"", nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", @"NoDataViewController", @"", @"AliPayHomeViewController", nil];
     }
     
     return _viewControllerArr;

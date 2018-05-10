@@ -226,6 +226,8 @@
 		DE6136AA205B50EB000ABE1E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6136A9205B50EB000ABE1E /* NotificationService.m */; };
 		DE6136AE205B50EB000ABE1E /* ZYBaseTestPushExtend.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
+		DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */; };
+		DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -623,6 +625,10 @@
 		DE6136B3205B5122000ABE1E /* ZYBaseTestPushExtend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTestPushExtend.entitlements; sourceTree = "<group>"; };
 		DE62687A2056058500CC8928 /* BindCodeStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindCodeStatusView.h; sourceTree = "<group>"; };
 		DE62687B2056058500CC8928 /* BindCodeStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindCodeStatusView.m; sourceTree = "<group>"; };
+		DE68669F20A4336F00CA94C3 /* AliPayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeViewController.h; sourceTree = "<group>"; };
+		DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeViewController.m; sourceTree = "<group>"; };
+		DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeTableView.h; sourceTree = "<group>"; };
+		DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1240,6 +1246,7 @@
 				DE2A181220874A5400F4E6C6 /* 线程相关 */,
 				DE3EA5D0209EE15B00D16D5C /* 空白TableView */,
 				DE2EB19B20A1811400DDB3C3 /* 闪购 */,
+				DE68669B20A4331700CA94C3 /* 支付宝首页 */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -2094,6 +2101,41 @@
 			path = ZYBaseTestPushExtend;
 			sourceTree = "<group>";
 		};
+		DE68669B20A4331700CA94C3 /* 支付宝首页 */ = {
+			isa = PBXGroup;
+			children = (
+				DE68669E20A4333700CA94C3 /* Controller */,
+				DE68669D20A4333500CA94C3 /* Model */,
+				DE68669C20A4333200CA94C3 /* View */,
+			);
+			path = "支付宝首页";
+			sourceTree = "<group>";
+		};
+		DE68669C20A4333200CA94C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */,
+				DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE68669D20A4333500CA94C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE68669E20A4333700CA94C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE68669F20A4336F00CA94C3 /* AliPayHomeViewController.h */,
+				DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EA3D5C7A06CDEC30D51EA08A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2473,6 +2515,7 @@
 				DE3EA5F4209EF2E600D16D5C /* UITableView+NoDataView.m in Sources */,
 				DE06CB1F202A8E810051550B /* ZyTabBarController.m in Sources */,
 				DE2EDC8E2047E7D9004EDB89 /* PushHomeViewController.m in Sources */,
+				DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */,
 				DE2EB1AF20A182C400DDB3C3 /* QBHomeViewController.m in Sources */,
 				DE06CB36202A8E810051550B /* ZYAlertViewController.m in Sources */,
 				DE06CB1C202A8E810051550B /* ZYBaseViewController.m in Sources */,
@@ -2482,6 +2525,7 @@
 				DE06CB44202A8FC40051550B /* MineViewController.m in Sources */,
 				DE0D3311204FEF030071846B /* PieChartViewController.m in Sources */,
 				DE06CB57202A91850051550B /* OrderListTableViewCell.m in Sources */,
+				DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */,
 				DE31FF31204931C700E35306 /* ZYUser.m in Sources */,
 				DE4C468020625627001DD5D9 /* HXPhotoView.m in Sources */,
 				DE06CB27202A8E810051550B /* NSObject+Property.m in Sources */,
