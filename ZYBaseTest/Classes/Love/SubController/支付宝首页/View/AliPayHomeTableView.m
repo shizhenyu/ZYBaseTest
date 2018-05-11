@@ -47,7 +47,7 @@
 #pragma mark - UITableView Delegate && DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 50;
+    return self.numberRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,7 +71,7 @@
     
     self.changeContentSize(self.contentSize);
 }
-- (void)setScrollViewContentOffSet:(CGPoint )point {
+- (void)setScrollViewContentOffSet:(CGPoint)point {
     
     if (!self.mj_header.isRefreshing) {
         

@@ -7,6 +7,7 @@
 //
 
 #import "AliPayHomeViewController.h"
+#import "ImageLeftTitleRightButton.h"
 #import "ImageTopTitleBottomButton.h"
 #import "AliPayHomeTableView.h"
 
@@ -17,21 +18,28 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
 
 @interface AliPayHomeViewController ()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
+/** 背景视图的bgScrollView */
 @property (nonatomic, strong) UIScrollView *mainScrollView;
 
+/** nav视图 */
 @property (nonatomic, strong) UIView *navView;
 
+/** 订单列表的nav */
 @property (nonatomic, strong) UIView *mainNavView;
 
+/** 显示缩小版 扫描按钮、相机按钮的导航栏（scrollView滑上去显示出的nav） */
 @property (nonatomic, strong) UIView *coverNavView;
 
+/** 顶部按钮 功能按钮 */
 @property (nonatomic, strong) UIView *functionHeaderView;
 
-@property (nonatomic, strong) AliPayHomeTableView *mainTableView;
-
+/** 顶部视图 功能模块 */
 @property (nonatomic, strong) UIView *appHeaderView;
 
+/** 顶部视图 功能按钮+功能模块 */
 @property (nonatomic, strong) UIView *headerView;
+
+@property (nonatomic, strong) AliPayHomeTableView *mainTableView;
 
 @end
 
@@ -81,17 +89,16 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
         [weakSelf updateContentSize:contentSize];
     };
     
-    self.mainTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+    self.mainScrollView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
-            [weakSelf.mainTableView.mj_footer endRefreshing];
-            [weakSelf.mainTableView reloadData];
+            [weakSelf.mainScrollView.mj_footer endRefreshing];
+            [weakSelf.mainTableView loadMoreData];
         });
         
     }];
 }
-
 
 #pragma mark - 当tableView的contentSize改变时 对应的修改主界面的frame
 - (void)updateContentSize:(CGSize)size {
@@ -121,6 +128,7 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
 #pragma mark - UIScrollView Delegate
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
     
+    // 松手时判断是否刷新
     CGFloat y = scrollView.contentOffset.y;
     
     if (y < -65) {
@@ -135,59 +143,63 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-    CGFloat y = scrollView.contentOffset.y;
-    
-    if (y <= 0) {
+    if ([scrollView isEqual:self.mainScrollView]) {
         
-        self.mainNavView.alpha = 1;
-        self.coverNavView.alpha = 0;
+        CGFloat y = scrollView.contentOffset.y;
         
-        CGRect newFrame = self.headerView.frame;
-        newFrame.origin.y = y;
-        self.headerView.frame = newFrame;
-        
-        newFrame = self.mainTableView.frame;
-        newFrame.origin.y = y + topOffsetY;
-        self.mainTableView.frame = newFrame;
-        
-        //偏移量给到tableview，tableview自己来滑动
-        [self.mainTableView setScrollViewContentOffSet:CGPointMake(0, y)];
-        
-        //功能区状态回归
-        newFrame = self.functionHeaderView.frame;
-        newFrame.origin.y = 0;
-        self.functionHeaderView.frame = newFrame;
-        
-    }else if (y < functionHeaderViewHeight && y > 0) {
-        
-        //处理功能区隐藏和视差
-        CGRect newFrame = self.functionHeaderView.frame;
-        newFrame.origin.y = y/2;
-        self.functionHeaderView.frame = newFrame;
-        
-        //处理透明度
-        CGFloat alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0;
-        
-        self.functionHeaderView.alpha = alpha;
-        
-        if (alpha > 0.5) {
+        if (y <= 0) {
             
-            CGFloat newAlpha =  alpha*2 - 1;
+            CGRect newFrame = self.headerView.frame;
+            newFrame.origin.y = y;
+            self.headerView.frame = newFrame;
             
-            self.mainNavView.alpha = newAlpha;
+            newFrame = self.mainTableView.frame;
+            newFrame.origin.y = y + topOffsetY;
+            self.mainTableView.frame = newFrame;
             
+            //偏移量给到tableview，tableview自己来滑动
+            [self.mainTableView setScrollViewContentOffSet:CGPointMake(0, y)];
+            
+            //功能区状态回归
+            newFrame = self.functionHeaderView.frame;
+            newFrame.origin.y = 0;
+            self.functionHeaderView.frame = newFrame;
+            
+            self.mainNavView.alpha = 1;
             self.coverNavView.alpha = 0;
             
-        }else {
+        }else if (y < functionHeaderViewHeight && y > 0) {
             
-            CGFloat newAlpha =  alpha*2;
+            //处理功能区隐藏和视差
+            CGRect newFrame = self.functionHeaderView.frame;
+            newFrame.origin.y = y/2;
+            self.functionHeaderView.frame = newFrame;
             
-            self.mainNavView.alpha = 0;
+            //处理透明度
+            CGFloat alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0;
             
-            self.coverNavView.alpha = 1 - newAlpha;
+            self.functionHeaderView.alpha = alpha;
+            
+            if (alpha > 0.5) {
+                
+                CGFloat newAlpha =  alpha*2 - 1;
+                
+                self.mainNavView.alpha = newAlpha;
+                
+                self.coverNavView.alpha = 0;
+                
+            }else {
+                
+                CGFloat newAlpha =  alpha*2;
+                
+                self.mainNavView.alpha = 0;
+                
+                self.coverNavView.alpha = 1 - newAlpha;
+            }
+            
         }
-        
     }
+
 }
 #pragma mark - 懒加载
 - (UIScrollView *)mainScrollView {
@@ -198,9 +210,11 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
         
         _mainScrollView.delegate = self;
         
+        // contentSize是scrollView需要显示的内容大小，是一个矩形框，因为contentSize是可以滚动的
         _mainScrollView.contentSize = CGSizeMake(kScreenWidth, kWidth(100));
         
-        _mainScrollView.scrollIndicatorInsets = UIEdgeInsetsMake(kWidth(155), 0, 0, 0);
+        // 状态条和scrollView边距的距离
+        _mainScrollView.scrollIndicatorInsets = UIEdgeInsetsMake(functionHeaderViewHeight + singleAppHeaderViewHeight, 0, 0, 0);
     }
     
     return _mainScrollView;
@@ -226,17 +240,16 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
         
         _mainNavView.backgroundColor = [UIColor clearColor];
         
-        UIButton *payButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        ImageLeftTitleRightButton *payButton = [ImageLeftTitleRightButton buttonWithType:UIButtonTypeCustom];
         [payButton setImage:kImage(@"home_bill_320") forState:UIControlStateNormal];
         [payButton setTitle:@"账单" forState:UIControlStateNormal];
         payButton.titleLabel.font = kFont(kWidth(13));
-        payButton.titleEdgeInsets = UIEdgeInsetsMake(0, kWidth(10), 0, 0);
         [payButton sizeToFit];
         
         CGRect newFrame = payButton.frame;
-        newFrame.origin.y = kWidth(20) + kWidth(10);
-        newFrame.origin.x = kWidth(10);
-        newFrame.size.width = CGRectGetWidth(payButton.frame) + kWidth(10);
+        newFrame.origin.y = kStatusBarHeight + kWidth(10);
+        newFrame.origin.x = kWidth(15);
+        newFrame.size.width = newFrame.size.width + kWidth(10);
         payButton.frame = newFrame;
         
         [_mainNavView addSubview:payButton];
@@ -258,7 +271,7 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
         [scanButton sizeToFit];
         
         CGRect newFrame = scanButton.frame;
-        newFrame.origin.y = kWidth(20) + kWidth(10);
+        newFrame.origin.y = kStatusBarHeight + kWidth(10);
         newFrame.origin.x = kWidth(10);
         newFrame.size.width = newFrame.size.width + kWidth(10);
         scanButton.frame = newFrame;
@@ -330,20 +343,6 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
     return _functionHeaderView;
 }
 
-- (AliPayHomeTableView *)mainTableView {
-    
-    if (!_mainTableView) {
-        
-        CGFloat originY = functionHeaderViewHeight + singleAppHeaderViewHeight;
-        CGFloat tableViewHeight = kWidth(1000) - originY;
-        
-        _mainTableView = [[AliPayHomeTableView alloc] initWithFrame:CGRectMake(0, originY, kScreenWidth, tableViewHeight) style:UITableViewStylePlain];
-        _mainTableView.scrollEnabled = NO;
-    }
-    
-    return _mainTableView;
-}
-
 - (UIView *)appHeaderView {
     
     if (!_appHeaderView) {
@@ -365,6 +364,20 @@ CGFloat const topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight;
     }
     
     return _headerView;
+}
+
+- (AliPayHomeTableView *)mainTableView {
+    
+    if (!_mainTableView) {
+        
+        CGFloat originY = functionHeaderViewHeight + singleAppHeaderViewHeight;
+        CGFloat tableViewHeight = kScreenHeight - originY;
+        
+        _mainTableView = [[AliPayHomeTableView alloc] initWithFrame:CGRectMake(0, originY, kScreenWidth, tableViewHeight) style:UITableViewStylePlain];
+        _mainTableView.scrollEnabled = NO;
+    }
+    
+    return _mainTableView;
 }
 
 - (void)didReceiveMemoryWarning {

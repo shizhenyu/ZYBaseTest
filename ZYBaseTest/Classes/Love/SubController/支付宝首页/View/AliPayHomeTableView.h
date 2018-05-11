@@ -10,10 +10,10 @@
 
 @interface AliPayHomeTableView : UITableView
 
-@property (nonatomic, assign) void (^changeContentSize)(CGSize contentSize);
+@property (nonatomic, copy) void (^changeContentSize)(CGSize contentSize);
 
 - (void)loadMoreData;
 
-- (void)setScrollViewContentOffSet:(CGPoint )point;
+- (void)setScrollViewContentOffSet:(CGPoint)point;
 
 @end
