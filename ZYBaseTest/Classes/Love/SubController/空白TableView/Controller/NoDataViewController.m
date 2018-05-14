@@ -77,7 +77,7 @@
     
     SEL selector = NSSelectorFromString(selectorName);
     
-    [self performSelector:selector withObject:nil];
+    SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:nil]);
 }
 
 #pragma mark - 方法创建
