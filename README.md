@@ -30,4 +30,4 @@
 6.研究线程相关的内容(莫名的原因导致二维码扫描框图片无法加载)<br>
 7.研究PerformSelector方法在NSRunLoop下运行的各种情况<br>
 8.高仿支付宝点击蚂蚁信用进入新的TabBar界面<br>
-9.高仿支付宝9.x版本首页（有缺陷，可以查看另一个仓库下的完整版）<br>
+9.高仿支付宝9.x版本首页（有缺陷，可以查看另一个仓库下的完整版）[传送门](https://github.com/shizhenyu/AliPayHomeDemo)<br>
