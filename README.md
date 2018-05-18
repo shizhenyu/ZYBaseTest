@@ -3,7 +3,8 @@
 * 极光推送<br>
 * 通知扩展<br>
 * APP线程间通讯<br>
-* 类似于爱奇艺泡泡模块的实现
+* 类似于爱奇艺泡泡模块的实现<br>
+* 3DTouch功能
 
 ### 首页模块
 1.UITextField如果字体大小和placeholder字体大小相差太大，导致placeholder无法垂直居中<br>
@@ -20,6 +21,7 @@
 12.界面连续push观察生命周期<br>
 13.自定义collectionView的瀑布流<br>
 14.绑定收款码时出现的不同的弹框<br>
+15.研究KVC和KVO<br>
 
 ### 会员模块
 1.实用的照片选择器第三方<br>
@@ -31,3 +33,4 @@
 7.研究PerformSelector方法在NSRunLoop下运行的各种情况<br>
 8.高仿支付宝点击蚂蚁信用进入新的TabBar界面<br>
 9.高仿支付宝9.x版本首页（有缺陷，可以查看另一个仓库下的完整版）[传送门](https://github.com/shizhenyu/AliPayHomeDemo)<br>
+10.仿QQ右上角点击pop出Menu视图，不规则标签集合视图<br>

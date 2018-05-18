@@ -75,6 +75,12 @@
 		DE13AD8A2029C19F00313655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE13AD882029C19F00313655 /* LaunchScreen.storyboard */; };
 		DE13AD8D2029C19F00313655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AD8C2029C19F00313655 /* main.m */; };
 		DE1E369620688CA300228A94 /* TopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1E369520688CA300228A94 /* TopMenuTableViewCell.m */; };
+		DE20CB2720AE606F00D26547 /* TipGatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB2620AE606F00D26547 /* TipGatherViewController.m */; };
+		DE20CB2E20AE619E00D26547 /* QQPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB2D20AE619D00D26547 /* QQPopMenuView.m */; };
+		DE20CB3120AE7F0200D26547 /* TipGatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3020AE7F0200D26547 /* TipGatherTableViewCell.m */; };
+		DE20CB3620AEA7C000D26547 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3520AEA7C000D26547 /* KVOViewController.m */; };
+		DE20CB3A20AEAA5400D26547 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3920AEAA5400D26547 /* Father.m */; };
+		DE20CB3D20AEAA6000D26547 /* Children.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3C20AEAA6000D26547 /* Children.m */; };
 		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
 		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
@@ -391,6 +397,18 @@
 		DE1E369420688CA300228A94 /* TopMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuTableViewCell.h; sourceTree = "<group>"; };
 		DE1E369520688CA300228A94 /* TopMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuTableViewCell.m; sourceTree = "<group>"; };
 		DE1FC843205A709B00689208 /* ZYBaseTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTest.entitlements; sourceTree = "<group>"; };
+		DE20CB2520AE606F00D26547 /* TipGatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipGatherViewController.h; sourceTree = "<group>"; };
+		DE20CB2620AE606F00D26547 /* TipGatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipGatherViewController.m; sourceTree = "<group>"; };
+		DE20CB2C20AE619D00D26547 /* QQPopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPopMenuView.h; sourceTree = "<group>"; };
+		DE20CB2D20AE619D00D26547 /* QQPopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPopMenuView.m; sourceTree = "<group>"; };
+		DE20CB2F20AE7F0200D26547 /* TipGatherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipGatherTableViewCell.h; sourceTree = "<group>"; };
+		DE20CB3020AE7F0200D26547 /* TipGatherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipGatherTableViewCell.m; sourceTree = "<group>"; };
+		DE20CB3420AEA7C000D26547 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		DE20CB3520AEA7C000D26547 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		DE20CB3820AEAA5400D26547 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		DE20CB3920AEAA5400D26547 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		DE20CB3B20AEAA6000D26547 /* Children.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Children.h; sourceTree = "<group>"; };
+		DE20CB3C20AEAA6000D26547 /* Children.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
 		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
 		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
 		DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPlaceImageView.h; sourceTree = "<group>"; };
@@ -759,6 +777,7 @@
 				DE06CB66202A924B0051550B /* Report */,
 				DE0D330B204FEEB90071846B /* PieChart */,
 				DE06CB5A202A91BE0051550B /* CustomAlert */,
+				DE20CB3220AEA5C600D26547 /* KVC&&KVO */,
 				DE06CB94202A94860051550B /* Landscape */,
 				DE06CB90202A94500051550B /* MBProgressHUD */,
 				DE3118CE202BE7D10073A672 /* TimeTransformTool */,
@@ -1200,6 +1219,75 @@
 			path = Libirary;
 			sourceTree = "<group>";
 		};
+		DE20CB2420AE5FD900D26547 /* 不规则标签 */ = {
+			isa = PBXGroup;
+			children = (
+				DE20CB2A20AE611C00D26547 /* Controller */,
+				DE20CB2920AE611100D26547 /* Model */,
+				DE20CB2B20AE614D00D26547 /* View */,
+			);
+			path = "不规则标签";
+			sourceTree = "<group>";
+		};
+		DE20CB2920AE611100D26547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE20CB2A20AE611C00D26547 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE20CB2520AE606F00D26547 /* TipGatherViewController.h */,
+				DE20CB2620AE606F00D26547 /* TipGatherViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE20CB2B20AE614D00D26547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE20CB2C20AE619D00D26547 /* QQPopMenuView.h */,
+				DE20CB2D20AE619D00D26547 /* QQPopMenuView.m */,
+				DE20CB2F20AE7F0200D26547 /* TipGatherTableViewCell.h */,
+				DE20CB3020AE7F0200D26547 /* TipGatherTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE20CB3220AEA5C600D26547 /* KVC&&KVO */ = {
+			isa = PBXGroup;
+			children = (
+				DE20CB3420AEA7C000D26547 /* KVOViewController.h */,
+				DE20CB3520AEA7C000D26547 /* KVOViewController.m */,
+				DE20CB3720AEAA3D00D26547 /* Model */,
+			);
+			path = "KVC&&KVO";
+			sourceTree = "<group>";
+		};
+		DE20CB3320AEA6C500D26547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EA5D7209EE2F900D16D5C /* UIScrollView+NoDataView.h */,
+				DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */,
+				DE3EA5F2209EF2E600D16D5C /* UITableView+NoDataView.h */,
+				DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE20CB3720AEAA3D00D26547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE20CB3820AEAA5400D26547 /* Father.h */,
+				DE20CB3920AEAA5400D26547 /* Father.m */,
+				DE20CB3B20AEAA6000D26547 /* Children.h */,
+				DE20CB3C20AEAA6000D26547 /* Children.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE2A181220874A5400F4E6C6 /* 线程相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1247,6 +1335,7 @@
 				DE3EA5D0209EE15B00D16D5C /* 空白TableView */,
 				DE2EB19B20A1811400DDB3C3 /* 闪购 */,
 				DE68669B20A4331700CA94C3 /* 支付宝首页 */,
+				DE20CB2420AE5FD900D26547 /* 不规则标签 */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -1540,26 +1629,14 @@
 			children = (
 				DE3EA5D6209EE2A600D16D5C /* Controller */,
 				DE3EA5D5209EE2A300D16D5C /* Model */,
-				DE3EA5D4209EE2A000D16D5C /* View */,
+				DE20CB3320AEA6C500D26547 /* View */,
 			);
 			path = "空白TableView";
-			sourceTree = "<group>";
-		};
-		DE3EA5D4209EE2A000D16D5C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DE3EA5D5209EE2A300D16D5C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DE3EA5D7209EE2F900D16D5C /* UIScrollView+NoDataView.h */,
-				DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */,
-				DE3EA5F2209EF2E600D16D5C /* UITableView+NoDataView.h */,
-				DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2425,6 +2502,7 @@
 				DE06CB6E202A92980051550B /* ReportView.m in Sources */,
 				DE1E369620688CA300228A94 /* TopMenuTableViewCell.m in Sources */,
 				DE06CB22202A8E810051550B /* NSAttributedString+ZYKit.m in Sources */,
+				DE20CB2720AE606F00D26547 /* TipGatherViewController.m in Sources */,
 				DE13AD8D2029C19F00313655 /* main.m in Sources */,
 				DE0D32F8204FCB770071846B /* AppDelegate+JPush.m in Sources */,
 				DE4C467520625627001DD5D9 /* HXAlbumTitleButton.m in Sources */,
@@ -2439,6 +2517,7 @@
 				DE06CB80202A93A80051550B /* ProductCommentModel.m in Sources */,
 				DE06CB24202A8E810051550B /* NSDateFormatter+ZYKit.m in Sources */,
 				DE0D3307204FEE7A0071846B /* XYCommon.m in Sources */,
+				DE20CB3620AEA7C000D26547 /* KVOViewController.m in Sources */,
 				DE06CB33202A8E810051550B /* UIStoryboard+UIViewController.m in Sources */,
 				DE4BC135204E96C10089D514 /* DiscussViewController.m in Sources */,
 				DE4C467B20625627001DD5D9 /* HXPhotoModel.m in Sources */,
@@ -2453,6 +2532,7 @@
 				DE4C467320625627001DD5D9 /* HXAlbumListView.m in Sources */,
 				DE34C51C2089D7F500739F0A /* QRView.m in Sources */,
 				DE0D330A204FEE7A0071846B /* XYRotatedView.m in Sources */,
+				DE20CB2E20AE619E00D26547 /* QQPopMenuView.m in Sources */,
 				DE06CB2B202A8E810051550B /* NSTimer+Block.m in Sources */,
 				DE06CB41202A8FB80051550B /* MessageViewController.m in Sources */,
 				DE06CB1E202A8E810051550B /* ZyTabBar.m in Sources */,
@@ -2467,6 +2547,7 @@
 				DE4901132065FB4A00EB9EA8 /* ScrollingViewController.m in Sources */,
 				DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */,
 				DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */,
+				DE20CB3A20AEAA5400D26547 /* Father.m in Sources */,
 				DE06CB2D202A8E810051550B /* UIButton+ZYKit.m in Sources */,
 				DE2EDC922047FA9D004EDB89 /* PushOneViewController.m in Sources */,
 				DE49010C2065E71900EB9EA8 /* SDCycleScrollView.m in Sources */,
@@ -2485,6 +2566,7 @@
 				DE49011E2066221100EB9EA8 /* TopMenuView.m in Sources */,
 				DE4BC138204E9DCC0089D514 /* IntergerDetailViewController.m in Sources */,
 				DE06CB86202A93B70051550B /* CustomHeightTableViewCell.m in Sources */,
+				DE20CB3D20AEAA6000D26547 /* Children.m in Sources */,
 				DE4901072065E71900EB9EA8 /* TAAbstractDotView.m in Sources */,
 				DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */,
 				DE4C467D20625627001DD5D9 /* HXPhotoPreviewViewController.m in Sources */,
@@ -2545,6 +2627,7 @@
 				DE3EA5D3209EE19800D16D5C /* NoDataViewController.m in Sources */,
 				DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */,
 				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
+				DE20CB3120AE7F0200D26547 /* TipGatherTableViewCell.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
