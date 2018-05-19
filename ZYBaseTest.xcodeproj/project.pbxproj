@@ -81,6 +81,7 @@
 		DE20CB3620AEA7C000D26547 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3520AEA7C000D26547 /* KVOViewController.m */; };
 		DE20CB3A20AEAA5400D26547 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3920AEAA5400D26547 /* Father.m */; };
 		DE20CB3D20AEAA6000D26547 /* Children.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3C20AEAA6000D26547 /* Children.m */; };
+		DE20CB4020AECB2400D26547 /* MBProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3F20AECB2400D26547 /* MBProgressTool.m */; };
 		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
 		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
@@ -409,6 +410,8 @@
 		DE20CB3920AEAA5400D26547 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		DE20CB3B20AEAA6000D26547 /* Children.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Children.h; sourceTree = "<group>"; };
 		DE20CB3C20AEAA6000D26547 /* Children.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
+		DE20CB3E20AECB2400D26547 /* MBProgressTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressTool.h; sourceTree = "<group>"; };
+		DE20CB3F20AECB2400D26547 /* MBProgressTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressTool.m; sourceTree = "<group>"; };
 		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
 		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
 		DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPlaceImageView.h; sourceTree = "<group>"; };
@@ -983,6 +986,8 @@
 			children = (
 				DE06CB91202A947E0051550B /* MBProgressHUDViewController.h */,
 				DE06CB92202A947E0051550B /* MBProgressHUDViewController.m */,
+				DE20CB3E20AECB2400D26547 /* MBProgressTool.h */,
+				DE20CB3F20AECB2400D26547 /* MBProgressTool.m */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
@@ -2515,6 +2520,7 @@
 				DE4901092065E71900EB9EA8 /* TADotView.m in Sources */,
 				DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */,
 				DE06CB80202A93A80051550B /* ProductCommentModel.m in Sources */,
+				DE20CB4020AECB2400D26547 /* MBProgressTool.m in Sources */,
 				DE06CB24202A8E810051550B /* NSDateFormatter+ZYKit.m in Sources */,
 				DE0D3307204FEE7A0071846B /* XYCommon.m in Sources */,
 				DE20CB3620AEA7C000D26547 /* KVOViewController.m in Sources */,
