@@ -68,6 +68,8 @@
 		DE0D330A204FEE7A0071846B /* XYRotatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D3306204FEE7A0071846B /* XYRotatedView.m */; };
 		DE0D3311204FEF030071846B /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D3310204FEF030071846B /* PieChartViewController.m */; };
 		DE1382B5206390580065AD58 /* 750-1334.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1382B4206390580065AD58 /* 750-1334.png */; };
+		DE13AA5920B6CA5100ECBE28 /* VoiceSpeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AA5820B6CA5100ECBE28 /* VoiceSpeakViewController.m */; };
+		DE13AA5F20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AA5E20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m */; };
 		DE13AD7F2029C19F00313655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AD7E2029C19F00313655 /* AppDelegate.m */; };
 		DE13AD822029C19F00313655 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13AD812029C19F00313655 /* ViewController.m */; };
 		DE13AD852029C19F00313655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE13AD832029C19F00313655 /* Main.storyboard */; };
@@ -385,6 +387,10 @@
 		DE0D330F204FEF030071846B /* PieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
 		DE0D3310204FEF030071846B /* PieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
 		DE1382B4206390580065AD58 /* 750-1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "750-1334.png"; sourceTree = "<group>"; };
+		DE13AA5720B6CA5100ECBE28 /* VoiceSpeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceSpeakViewController.h; sourceTree = "<group>"; };
+		DE13AA5820B6CA5100ECBE28 /* VoiceSpeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceSpeakViewController.m; sourceTree = "<group>"; };
+		DE13AA5D20B6D0B300ECBE28 /* ZYSpeechSynthesizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYSpeechSynthesizer.h; sourceTree = "<group>"; };
+		DE13AA5E20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYSpeechSynthesizer.m; sourceTree = "<group>"; };
 		DE13AD7A2029C19F00313655 /* ZYBaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYBaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE13AD7D2029C19F00313655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE13AD7E2029C19F00313655 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1098,6 +1104,41 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		DE13AA5320B6C9F300ECBE28 /* VoiceSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				DE13AA5620B6CA1900ECBE28 /* Controller */,
+				DE13AA5520B6CA1600ECBE28 /* Model */,
+				DE13AA5420B6CA1300ECBE28 /* View */,
+			);
+			path = VoiceSpeak;
+			sourceTree = "<group>";
+		};
+		DE13AA5420B6CA1300ECBE28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE13AA5520B6CA1600ECBE28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE13AA5D20B6D0B300ECBE28 /* ZYSpeechSynthesizer.h */,
+				DE13AA5E20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE13AA5620B6CA1900ECBE28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE13AA5720B6CA5100ECBE28 /* VoiceSpeakViewController.h */,
+				DE13AA5820B6CA5100ECBE28 /* VoiceSpeakViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE13AD712029C19F00313655 = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1382,7 @@
 				DE2EB19B20A1811400DDB3C3 /* 闪购 */,
 				DE68669B20A4331700CA94C3 /* 支付宝首页 */,
 				DE20CB2420AE5FD900D26547 /* 不规则标签 */,
+				DE13AA5320B6C9F300ECBE28 /* VoiceSpeak */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -2433,6 +2475,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MOFSPickerManager/MOFSPickerManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
@@ -2444,6 +2487,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOFSPickerManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
@@ -2507,8 +2551,10 @@
 				DE06CB6E202A92980051550B /* ReportView.m in Sources */,
 				DE1E369620688CA300228A94 /* TopMenuTableViewCell.m in Sources */,
 				DE06CB22202A8E810051550B /* NSAttributedString+ZYKit.m in Sources */,
+				DE13AA5920B6CA5100ECBE28 /* VoiceSpeakViewController.m in Sources */,
 				DE20CB2720AE606F00D26547 /* TipGatherViewController.m in Sources */,
 				DE13AD8D2029C19F00313655 /* main.m in Sources */,
+				DE13AA5F20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m in Sources */,
 				DE0D32F8204FCB770071846B /* AppDelegate+JPush.m in Sources */,
 				DE4C467520625627001DD5D9 /* HXAlbumTitleButton.m in Sources */,
 				DE06CB3E202A8FAA0051550B /* LoveViewController.m in Sources */,

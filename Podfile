@@ -10,4 +10,5 @@ target 'ZYBaseTest' do
   pod 'JPush', '~> 3.0.7'
   pod 'MJRefresh', '~> 3.1.15.1'
   pod 'IQKeyboardManager', '~> 5.0.6'
+  pod 'MOFSPickerManager', '~> 2.0.2'
 end

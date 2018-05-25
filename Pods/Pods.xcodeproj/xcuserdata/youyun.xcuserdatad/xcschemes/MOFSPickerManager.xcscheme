@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '47B36DF20C75BB5BDA5419E0EF5D07C8'
-               BlueprintName = 'YTKNetwork'
+               BlueprintIdentifier = 'F58CC74CA47EFF5FDDD5A7BCE482E501'
+               BlueprintName = 'MOFSPickerManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'YTKNetwork.framework'>
+               BuildableName = 'MOFSPickerManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
