@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D401CD91898811B9EE748F4A /* Pods_ZYBaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7310D72C63FC0D647BEAA6E8 /* Pods_ZYBaseTest.framework */; };
+		DE065C7620B9678B00FF6A09 /* ZYPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE065C7520B9678B00FF6A09 /* ZYPopAnimation.m */; };
+		DE065C7A20B96C0600FF6A09 /* ZYNavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE065C7920B96C0600FF6A09 /* ZYNavigationInteractiveTransition.m */; };
 		DE06CB1B202A8E810051550B /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE06CADF202A8E810051550B /* TabBarConfig.plist */; };
 		DE06CB1C202A8E810051550B /* ZYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CAE1202A8E810051550B /* ZYBaseViewController.m */; };
 		DE06CB1D202A8E810051550B /* ZyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CAE3202A8E810051550B /* ZyNavigationController.m */; };
@@ -267,6 +269,10 @@
 		7310D72C63FC0D647BEAA6E8 /* Pods_ZYBaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYBaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCBDD0E525103EBA6D23B2B /* Pods-ZYBaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBaseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYBaseTest/Pods-ZYBaseTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C42541D6808A9DDE94BA90A4 /* Pods-ZYBaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYBaseTest/Pods-ZYBaseTest.release.xcconfig"; sourceTree = "<group>"; };
+		DE065C7420B9678B00FF6A09 /* ZYPopAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPopAnimation.h; sourceTree = "<group>"; };
+		DE065C7520B9678B00FF6A09 /* ZYPopAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPopAnimation.m; sourceTree = "<group>"; };
+		DE065C7820B96C0600FF6A09 /* ZYNavigationInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYNavigationInteractiveTransition.h; sourceTree = "<group>"; };
+		DE065C7920B96C0600FF6A09 /* ZYNavigationInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationInteractiveTransition.m; sourceTree = "<group>"; };
 		DE06CADB202A8C550051550B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DE06CADF202A8E810051550B /* TabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
 		DE06CAE0202A8E810051550B /* ZYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseViewController.h; sourceTree = "<group>"; };
@@ -686,6 +692,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DE065C7720B96B9B00FF6A09 /* ViewControllerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DE065C7420B9678B00FF6A09 /* ZYPopAnimation.h */,
+				DE065C7520B9678B00FF6A09 /* ZYPopAnimation.m */,
+				DE065C7820B96C0600FF6A09 /* ZYNavigationInteractiveTransition.h */,
+				DE065C7920B96C0600FF6A09 /* ZYNavigationInteractiveTransition.m */,
+			);
+			path = ViewControllerAnimation;
+			sourceTree = "<group>";
+		};
 		DE06CADC202A8E810051550B /* ZyBaseModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +725,7 @@
 				DE06CAE5202A8E810051550B /* ZyTabBar.m */,
 				DE06CAE6202A8E810051550B /* ZyTabBarController.h */,
 				DE06CAE7202A8E810051550B /* ZyTabBarController.m */,
+				DE065C7720B96B9B00FF6A09 /* ViewControllerAnimation */,
 				DE06CADE202A8E810051550B /* Resources */,
 			);
 			path = "TabBar&Nav";
@@ -2568,6 +2586,7 @@
 				DE06CB80202A93A80051550B /* ProductCommentModel.m in Sources */,
 				DE20CB4020AECB2400D26547 /* MBProgressTool.m in Sources */,
 				DE06CB24202A8E810051550B /* NSDateFormatter+ZYKit.m in Sources */,
+				DE065C7620B9678B00FF6A09 /* ZYPopAnimation.m in Sources */,
 				DE0D3307204FEE7A0071846B /* XYCommon.m in Sources */,
 				DE20CB3620AEA7C000D26547 /* KVOViewController.m in Sources */,
 				DE06CB33202A8E810051550B /* UIStoryboard+UIViewController.m in Sources */,
@@ -2610,6 +2629,7 @@
 				DE06CB7D202A939B0051550B /* ProductCommentMainViewModel.m in Sources */,
 				DE06CB7A202A93900051550B /* CustomEstiheightViewController.m in Sources */,
 				DE06CB25202A8E810051550B /* NSDictionary+SafeGetValue.m in Sources */,
+				DE065C7A20B96C0600FF6A09 /* ZYNavigationInteractiveTransition.m in Sources */,
 				DE0D3309204FEE7A0071846B /* XYRenderView.m in Sources */,
 				DE5D17B1204172FA00192504 /* ImageTopTitleBottomButton.m in Sources */,
 				DE06CB28202A8E810051550B /* NSObject+Swizzle.m in Sources */,

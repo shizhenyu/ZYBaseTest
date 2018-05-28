@@ -7,8 +7,13 @@
 //
 
 #import "ZyNavigationController.h"
+#import "ZYNavigationInteractiveTransition.h"
 
 @interface ZyNavigationController ()<UIGestureRecognizerDelegate>
+
+@property (nonatomic, weak) UIPanGestureRecognizer *popGestureRecognizer;
+
+@property (nonatomic, strong) ZYNavigationInteractiveTransition *navTransition;
 
 @end
 
@@ -32,11 +37,28 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
+    /**
+     
     // 全屏滑动返回
     self.interactivePopGestureRecognizer.enabled = YES;
     
     // 将返回按钮替换为我们的自定义按钮，并使滑动返回重新生效
     self.interactivePopGestureRecognizer.delegate = (id)self;
+     
+     */
+    
+    UIGestureRecognizer *gesture = self.interactivePopGestureRecognizer;
+    gesture.enabled = NO;
+    UIView *gestureView = gesture.view;
+    
+    UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc] init];
+    popRecognizer.delegate = self;
+    popRecognizer.maximumNumberOfTouches = 1;
+    popRecognizer.delaysTouchesEnded = YES;
+    [gestureView addGestureRecognizer:popRecognizer];
+    
+    _navTransition = [[ZYNavigationInteractiveTransition alloc] initWithViewController:self];
+    [popRecognizer addTarget:_navTransition action:@selector(handleControllerPop:)];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -90,6 +112,13 @@
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     
     return [gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    /**
+     *  这里有两个条件不允许手势执行，1、当前控制器为根控制器；2、如果这个push、pop动画正在执行（私有属性）
+     */
+    return self.viewControllers.count != 1 && ![[self valueForKey:@"_isTransitioning"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning {
