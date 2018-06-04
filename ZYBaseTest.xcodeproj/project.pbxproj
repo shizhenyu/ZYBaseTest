@@ -86,6 +86,13 @@
 		DE20CB3A20AEAA5400D26547 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3920AEAA5400D26547 /* Father.m */; };
 		DE20CB3D20AEAA6000D26547 /* Children.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3C20AEAA6000D26547 /* Children.m */; };
 		DE20CB4020AECB2400D26547 /* MBProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20CB3F20AECB2400D26547 /* MBProgressTool.m */; };
+		DE243A3820BFDE7400B7D438 /* JSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A3720BFDE7400B7D438 /* JSTabBar.m */; };
+		DE243A3B20BFF25B00B7D438 /* JSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A3A20BFF25B00B7D438 /* JSTabBarViewController.m */; };
+		DE243A3E20BFF56400B7D438 /* JSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A3D20BFF56400B7D438 /* JSHomeViewController.m */; };
+		DE243A4120BFF57600B7D438 /* JSLoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4020BFF57600B7D438 /* JSLoveViewController.m */; };
+		DE243A4420BFF58500B7D438 /* JSPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4320BFF58500B7D438 /* JSPublishViewController.m */; };
+		DE243A4720BFF59E00B7D438 /* JSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */; };
+		DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */; };
 		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
 		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
@@ -424,6 +431,20 @@
 		DE20CB3C20AEAA6000D26547 /* Children.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
 		DE20CB3E20AECB2400D26547 /* MBProgressTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressTool.h; sourceTree = "<group>"; };
 		DE20CB3F20AECB2400D26547 /* MBProgressTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressTool.m; sourceTree = "<group>"; };
+		DE243A3620BFDE7400B7D438 /* JSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTabBar.h; sourceTree = "<group>"; };
+		DE243A3720BFDE7400B7D438 /* JSTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTabBar.m; sourceTree = "<group>"; };
+		DE243A3920BFF25B00B7D438 /* JSTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTabBarViewController.h; sourceTree = "<group>"; };
+		DE243A3A20BFF25B00B7D438 /* JSTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTabBarViewController.m; sourceTree = "<group>"; };
+		DE243A3C20BFF56400B7D438 /* JSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSHomeViewController.h; sourceTree = "<group>"; };
+		DE243A3D20BFF56400B7D438 /* JSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSHomeViewController.m; sourceTree = "<group>"; };
+		DE243A3F20BFF57600B7D438 /* JSLoveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSLoveViewController.h; sourceTree = "<group>"; };
+		DE243A4020BFF57600B7D438 /* JSLoveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSLoveViewController.m; sourceTree = "<group>"; };
+		DE243A4220BFF58500B7D438 /* JSPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSPublishViewController.h; sourceTree = "<group>"; };
+		DE243A4320BFF58500B7D438 /* JSPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSPublishViewController.m; sourceTree = "<group>"; };
+		DE243A4520BFF59E00B7D438 /* JSMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMessageViewController.h; sourceTree = "<group>"; };
+		DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMessageViewController.m; sourceTree = "<group>"; };
+		DE243A4820BFF5AE00B7D438 /* JSMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMineViewController.h; sourceTree = "<group>"; };
+		DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMineViewController.m; sourceTree = "<group>"; };
 		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
 		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
 		DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPlaceImageView.h; sourceTree = "<group>"; };
@@ -1352,6 +1373,51 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DE243A3220BFDD8A00B7D438 /* 简书 */ = {
+			isa = PBXGroup;
+			children = (
+				DE243A3920BFF25B00B7D438 /* JSTabBarViewController.h */,
+				DE243A3A20BFF25B00B7D438 /* JSTabBarViewController.m */,
+				DE243A3520BFDDA300B7D438 /* Controller */,
+				DE243A3420BFDDA100B7D438 /* Model */,
+				DE243A3320BFDD9E00B7D438 /* View */,
+			);
+			path = "简书";
+			sourceTree = "<group>";
+		};
+		DE243A3320BFDD9E00B7D438 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE243A3620BFDE7400B7D438 /* JSTabBar.h */,
+				DE243A3720BFDE7400B7D438 /* JSTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE243A3420BFDDA100B7D438 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE243A3520BFDDA300B7D438 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE243A3C20BFF56400B7D438 /* JSHomeViewController.h */,
+				DE243A3D20BFF56400B7D438 /* JSHomeViewController.m */,
+				DE243A3F20BFF57600B7D438 /* JSLoveViewController.h */,
+				DE243A4020BFF57600B7D438 /* JSLoveViewController.m */,
+				DE243A4220BFF58500B7D438 /* JSPublishViewController.h */,
+				DE243A4320BFF58500B7D438 /* JSPublishViewController.m */,
+				DE243A4520BFF59E00B7D438 /* JSMessageViewController.h */,
+				DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */,
+				DE243A4820BFF5AE00B7D438 /* JSMineViewController.h */,
+				DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE2A181220874A5400F4E6C6 /* 线程相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1401,6 +1467,7 @@
 				DE68669B20A4331700CA94C3 /* 支付宝首页 */,
 				DE20CB2420AE5FD900D26547 /* 不规则标签 */,
 				DE13AA5320B6C9F300ECBE28 /* VoiceSpeak */,
+				DE243A3220BFDD8A00B7D438 /* 简书 */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -2578,6 +2645,7 @@
 				DE06CB3E202A8FAA0051550B /* LoveViewController.m in Sources */,
 				DE06CB2A202A8E810051550B /* NSString+ZYKit.m in Sources */,
 				DE4901082065E71900EB9EA8 /* TAAnimatedDotView.m in Sources */,
+				DE243A4720BFF59E00B7D438 /* JSMessageViewController.m in Sources */,
 				DE4C468620625627001DD5D9 /* HXVideoPreviewViewController.m in Sources */,
 				DE5043BD20650B88000C173E /* RotateGestureRecognizer.m in Sources */,
 				DE49010B2065E71900EB9EA8 /* SDCollectionViewCell.m in Sources */,
@@ -2610,6 +2678,8 @@
 				DE4C468420625627001DD5D9 /* HXTransition.m in Sources */,
 				DE4C46CE2062571A001DD5D9 /* PhotoPickerHomeViewController.m in Sources */,
 				DE06CB8F202A941E0051550B /* TextFieldPlaceholderViewController.m in Sources */,
+				DE243A4420BFF58500B7D438 /* JSPublishViewController.m in Sources */,
+				DE243A3B20BFF25B00B7D438 /* JSTabBarViewController.m in Sources */,
 				DE5043BC20650B88000C173E /* CircleLayer.m in Sources */,
 				DE4BC12E204E48190089D514 /* SystemServiceViewController.m in Sources */,
 				DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */,
@@ -2650,6 +2720,7 @@
 				DE49010A2065E71900EB9EA8 /* TAPageControl.m in Sources */,
 				DE4C468320625627001DD5D9 /* HXPresentTransition.m in Sources */,
 				DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */,
+				DE243A3E20BFF56400B7D438 /* JSHomeViewController.m in Sources */,
 				DE4C46C520625627001DD5D9 /* UIButton+HXExtension.m in Sources */,
 				DE06CB93202A947E0051550B /* MBProgressHUDViewController.m in Sources */,
 				DE31FF262049308200E35306 /* LoginViewController.m in Sources */,
@@ -2687,8 +2758,10 @@
 				DE06CB88202A93B70051550B /* ProductCommentTableViewCell.m in Sources */,
 				DE4C467920625627001DD5D9 /* HXPhotoConst.m in Sources */,
 				DE06CB3B202A8F9B0051550B /* HomeViewController.m in Sources */,
+				DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */,
 				DE2EB1B820A188AB00DDB3C3 /* QBSettingViewController.m in Sources */,
 				DE06CB6B202A928E0051550B /* ReportViewController.m in Sources */,
+				DE243A3820BFDE7400B7D438 /* JSTabBar.m in Sources */,
 				DE2EDC952047FAAD004EDB89 /* PushTwoViewController.m in Sources */,
 				DE4C467420625627001DD5D9 /* HXAlbumModel.m in Sources */,
 				DE06CB2C202A8E810051550B /* UIBarButtonItem+ZYKit.m in Sources */,
@@ -2702,6 +2775,7 @@
 				DE20CB3120AE7F0200D26547 /* TipGatherTableViewCell.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
+				DE243A4120BFF57600B7D438 /* JSLoveViewController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
 				DE06CB98202A952F0051550B /* LandScapeViewController.m in Sources */,
 				DE4C467E20625627001DD5D9 /* HXPhotoSubViewCell.m in Sources */,

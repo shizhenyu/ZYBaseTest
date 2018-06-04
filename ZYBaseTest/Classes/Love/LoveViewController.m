@@ -8,6 +8,7 @@
 
 #import "LoveViewController.h"
 #import "QuickBuyTabBarViewController.h"
+#import "JSTabBarViewController.h"
 
 @interface LoveViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -74,6 +75,16 @@
         
         [self.navigationController pushViewController:tabBarVC animated:YES];
         
+    }else if (indexPath.row == 11) {
+        
+        JSTabBarViewController *jsTabBarVC = [[JSTabBarViewController alloc] init];
+        
+        [self.navigationController.navigationBar setHidden:YES];
+        
+        [self.tabBarController.tabBar setHidden:YES];
+        
+        [self.navigationController pushViewController:jsTabBarVC animated:YES];
+
     }else {
         
         NSString *className = [self.viewControllerArr objectAtIndex:indexPath.row];
@@ -109,7 +120,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序", @"支付宝首页", @"不规则标签集合", @"语音播报", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序", @"支付宝首页", @"不规则标签集合", @"语音播报", @"简书APP", nil];
     }
     
     return _titleArr;
@@ -119,7 +130,7 @@
     
     if (!_viewControllerArr) {
         
-        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", @"NoDataViewController", @"", @"AliPayHomeViewController", @"TipGatherViewController", @"VoiceSpeakViewController",nil];
+        _viewControllerArr = [[NSMutableArray alloc] initWithObjects:@"PhotoPickerHomeViewController", @"AliPayPieChartViewController", @"ScrollingViewController", @"DownMenuViewController", @"PersonInfoViewController", @"ThreadUseViewController", @"NoDataViewController", @"", @"AliPayHomeViewController", @"TipGatherViewController", @"VoiceSpeakViewController", @"JSTabBarController", nil];
     }
     
     return _viewControllerArr;

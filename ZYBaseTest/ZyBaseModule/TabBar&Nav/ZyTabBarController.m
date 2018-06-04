@@ -81,7 +81,6 @@ NSString *const kTabBar = @"tabBar";
     
     NSArray *subViews = tabBar.subviews;
     
-    
     UIButton *touchBtn = [subViews objectAtIndex:tabBarController.selectedIndex + 2];
     
     touchBtn = [touchBtn.subviews objectAtIndex:0];

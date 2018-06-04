@@ -35,3 +35,4 @@
 9.高仿支付宝9.x版本首页（有缺陷，可以查看另一个仓库下的完整版）[传送门](https://github.com/shizhenyu/AliPayHomeDemo)<br>
 10.仿QQ右上角点击pop出Menu视图，不规则标签集合视图<br>
 11.封装语音播报，调用方便简易<br>
+12.新增中间凸起的不规则的tabBar<br>
