@@ -246,6 +246,8 @@
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
 		DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */; };
 		DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */; };
+		DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */; };
+		DE7BB0BF20D0F1BC00B20F0C /* YYTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7BB0BE20D0F1BC00B20F0C /* YYTextTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -683,6 +685,10 @@
 		DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeViewController.m; sourceTree = "<group>"; };
 		DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeTableView.h; sourceTree = "<group>"; };
 		DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeTableView.m; sourceTree = "<group>"; };
+		DE7BB0BA20D0EFA500B20F0C /* YYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextViewController.h; sourceTree = "<group>"; };
+		DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextViewController.m; sourceTree = "<group>"; };
+		DE7BB0BD20D0F1BC00B20F0C /* YYTextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextTableViewCell.h; sourceTree = "<group>"; };
+		DE7BB0BE20D0F1BC00B20F0C /* YYTextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1468,6 +1474,7 @@
 				DE20CB2420AE5FD900D26547 /* 不规则标签 */,
 				DE13AA5320B6C9F300ECBE28 /* VoiceSpeak */,
 				DE243A3220BFDD8A00B7D438 /* 简书 */,
+				DE7BB0B920D0CD9800B20F0C /* YYText */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -2345,6 +2352,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE7BB0B920D0CD9800B20F0C /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				DE7BB0BA20D0EFA500B20F0C /* YYTextViewController.h */,
+				DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */,
+				DE7BB0BD20D0F1BC00B20F0C /* YYTextTableViewCell.h */,
+				DE7BB0BE20D0F1BC00B20F0C /* YYTextTableViewCell.m */,
+			);
+			path = YYText;
+			sourceTree = "<group>";
+		};
 		EA3D5C7A06CDEC30D51EA08A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2564,6 +2582,7 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2576,6 +2595,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2631,6 +2651,8 @@
 				DE06CB54202A91790051550B /* OrderListViewModel.m in Sources */,
 				DE4C46C620625627001DD5D9 /* UIImage+HXExtension.m in Sources */,
 				DE13AD822029C19F00313655 /* ViewController.m in Sources */,
+				DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */,
+				DE7BB0BF20D0F1BC00B20F0C /* YYTextTableViewCell.m in Sources */,
 				DE06CB5F202A920F0051550B /* CustomAlertViewController.m in Sources */,
 				DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */,
 				DE06CB6E202A92980051550B /* ReportView.m in Sources */,

@@ -9,8 +9,11 @@
 #ifndef ZYUseDefine_h
 #define ZYUseDefine_h
 
+// 通知
+#define ZYNotification [NSNotificationCenter defaultCenter]
+
 /** 3D Touch点击快捷进入 */
-#define UserPressTouch @"userPress3DTouch"
+#define kUserPressTouch @"userPress3DTouch"
 
 // 创建NSUserDefaults对应的名字
 #define kNotificationServiceGroupName @"group.ZYNotificationServiceGr"
@@ -23,6 +26,5 @@
 
 // 简易语音播报的内容
 #define kSimpleVoiceSpeakContent @"收款成功"
-
 
 #endif /* ZYUseDefine_h */

@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "ZYWaterflowLayout.h"
 #import "ZYCollectionViewController.h"
+#import "ZyNavigationController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,7 +26,7 @@
 #pragma mark - Life Cycle
 - (void)dealloc {
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UserPressTouch object:nil];
+    [ZYNotification removeObserver:self name:kUserPressTouch object:nil];
 }
 
 - (void)viewDidLoad {
@@ -51,35 +52,84 @@
 #pragma mark - 观察用户的3D Touch交互通知
 - (void)addObserverForUserPressTouch {
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressTouchAction:) name:UserPressTouch object:nil];
+    [ZYNotification addObserver:self selector:@selector(pressTouchAction:) name:kUserPressTouch object:nil];
 }
 
 #pragma mark - 3D Touch快捷进入
 - (void)pressTouchAction:(NSNotification *)notifi {
-    
-    if ([ZYUserManager userIsLogin]) {
-       
-        // 用户已经登录的情况
+
+    if ([ZYUserManager userIsLogin]) {  // 如果已经登录，则跳转到对应的VC
         
-        // 将要push过去的VC的name
-        NSString *VCName = [notifi.userInfo objectForKey:@"VCName"];
+        // 将要push的VC的name
+        NSString *destinationVCName = [notifi.userInfo objectForKey:@"VCName"];
         
-        // 当前navigationVC下的topviewController的name
-        NSString *desenVCName = NSStringFromClass([self.navigationController.topViewController class]);
-        
-        // 如果将要push的界面已经存在，则不做任何操作，否则会造成无限压栈的问题
-        if (![VCName isEqualToString:desenVCName]) {
+        if ([destinationVCName isEqualToString:@"SettingViewController"]) {  // 点击的是个人中心的设置
             
-            UIViewController *vc = [NSClassFromString(VCName) new];
-            [self.navigationController pushViewController:vc animated:YES];
+            // 先将之前的其他tabBar的跳转到首页
+            ZyNavigationController *homeNav = [self.tabBarController.viewControllers firstObject];
+            [homeNav popToRootViewControllerAnimated:NO];
+            
+            [self.tabBarController setSelectedIndex:3]; //先跳转tabBar
+            
+            // 取出以MineViewController为根视图的nav，以后就用这个nav去实现跳转
+            ZyNavigationController *nav = [self.tabBarController.viewControllers objectAtIndex:3];
+            
+            // 当前navigationVC下的topviewController的name
+            NSString *currentVCName = NSStringFromClass([nav.topViewController class]);
+            
+            if ([currentVCName isEqualToString:@"MineViewController"]) {
+                
+                // 当前的navigationVC下的topViewController是rootVC, 可以直接push，不存在无限入栈的情况
+                
+                UIViewController *destinationVC = [NSClassFromString(destinationVCName) new];
+                [nav pushViewController:destinationVC animated:YES];
+                
+            }else {  // 如果当前的navigationVC下的topViewController不是rootVC，pop到rootVC
+                
+                [nav popToRootViewControllerAnimated:NO]; // 先pop到根视图，防止无限入栈的bug
+                
+                UIViewController *destinationVC = [NSClassFromString(destinationVCName) new];
+                [nav pushViewController:destinationVC animated:YES];
+                
+            }
+            
+        }else {  // 点击的是首页中的几个选项
+            
+            // 先将之前的其他tabBar的跳转到首页
+            ZyNavigationController *mineNav = [self.tabBarController.viewControllers objectAtIndex:3];
+            [mineNav popToRootViewControllerAnimated:NO];
+            
+            [self.tabBarController setSelectedIndex:0];
+            
+            // 取出以HomeViewController为根视图的nav，以后就用这个nav去实现跳转
+            ZyNavigationController *nav = [self.tabBarController.viewControllers firstObject];
+            
+            // 当前navigationVC下的topviewController的name
+            NSString *currentVCName = NSStringFromClass([nav.topViewController class]);
+            
+            if ([currentVCName isEqualToString:NSStringFromClass([HomeViewController class])]) {
+                
+                // 当前的navigationVC下的topViewController是rootVC, 可以直接push，不存在无限入栈的情况
+                    
+                UIViewController *destinationVC = [NSClassFromString(destinationVCName) new];
+                [nav pushViewController:destinationVC animated:YES];
+                
+            }else {  // 如果当前的navigationVC下的topViewController不是rootVC，pop到rootVC
+                
+                [nav popToRootViewControllerAnimated:NO];
+
+                UIViewController *destinationVC = [NSClassFromString(destinationVCName) new];
+                [nav pushViewController:destinationVC animated:YES];
+            }
         }
         
-    }else {
+    }else {  // 如果没有登录，则跳转到登录界面
         
-        // 用户暂未登录，请先登录
-        ViewController *vc = [[ViewController alloc] init];
-        [vc Action_toLoginViewController];
+        ViewController *mainVC = [[ViewController alloc] init];
+        
+        [mainVC Action_toLoginViewController];
     }
+    
 }
 
 #pragma mark - UITableView Delegate && DataSource

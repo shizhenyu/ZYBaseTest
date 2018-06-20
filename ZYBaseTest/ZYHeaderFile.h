@@ -16,6 +16,7 @@
 #import <MJExtension/MJExtension.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <MJRefresh/MJRefresh.h>
+#import <YYText/YYText.h>
 
 #import "ViewController.h"
 #import "ZYProgressHud.h"

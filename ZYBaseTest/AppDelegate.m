@@ -20,13 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self addShortTouchItem];
+    [self setup3DTouch:application];
     
     [self initJPushService:launchOptions];
     
     [self setupThirdService];
     
-    [self pt_application:application didFinishLaunchingWithOptions:launchOptions];
+    [self pressTouch_application:application didFinishLaunchingWithOptions:launchOptions];
     
     return YES;
 }
@@ -35,7 +35,7 @@
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
 {
     // //不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
-    [self pt_application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
+    [self pressTouch_application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
 }
 
 #pragma mark - 注册通知

@@ -11,9 +11,11 @@
 @interface AppDelegate (PressTouch)
 
 /**
- 添加3DTouch
+ 初始化3DTouch
+
+ @param application application
  */
-- (void)addShortTouchItem ;
+- (void)setup3DTouch:(UIApplication *)application;
 
 /**
  首次启动应用时调用的方法
@@ -21,7 +23,7 @@
  @param application application
  @param launchOptions launchOptions
  */
-- (BOOL)pt_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (BOOL)pressTouch_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 /**
  如果APP没被杀死，还存在后台，点开Touch会调用该代理方法
@@ -30,6 +32,6 @@
  @param shortcutItem shortcutItem
  @param completionHandler 点击回调
  */
-- (void)pt_application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler;
+- (void)pressTouch_application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler;
 
 @end

@@ -59,35 +59,43 @@
     window.rootViewController = nav;
 }
 
-- (void)Action_toPressTouchController:(NSString *)viewControllerIdentifier
-{
-    if ([ZYUserManager userIsLogin]) {
+#pragma mark - 通过3DTouch点击启动
+- (void)Action_toPressTouchViewControllerIdentifier:(NSString *)viewControllerIdentifier {
+    
+    if ([ZYUserManager userIsLogin]) {  //如果用户已经登录，则对应的跳转到相应的界面
         
-        // 如果用户已经登录的话，展示tabBar界面
         ZyTabBarController *tabBarVC = [ZyTabBarController new];
-        
         [tabBarVC configTabBarWithPlist:@"TabBarConfig"];
-        
+    
         UIWindow *window = [[UIApplication sharedApplication].delegate window];
-        
         window.rootViewController = tabBarVC;
         
+        if ([viewControllerIdentifier isEqualToString:@"SettingViewController"]) {
+            
+            // 如果选择的是“我的”中的“设置”
+            [tabBarVC setSelectedIndex:3];  //选择tabBar中的mine
+            
+            // 选择以MineViewController为根视图的nav
+            ZyNavigationController *nav = [tabBarVC.viewControllers objectAtIndex:3];
+            
+            UIViewController *settingVC = [NSClassFromString(@"SettingViewController") new];
+            
+            [nav pushViewController:settingVC animated:YES];
+            
+        }else {
+            
+            //  选择以HomeViewController为根视图的nav
+            ZyNavigationController *nav = [tabBarVC.viewControllers firstObject];
+            
+            // 选择的是其他的VC
+            UIViewController *destenVC = [NSClassFromString(viewControllerIdentifier) new];
+            
+            [nav pushViewController:destenVC animated:YES];
+        }
         
-        // 取出tabBar中的第一个界面，也就是HomeViewController
-        ZyNavigationController *nav = [tabBarVC.viewControllers objectAtIndex:0];
+    }else {  // 进入登录界面
         
-        UIViewController *destenVC = [NSClassFromString(viewControllerIdentifier) new];
-        [nav pushViewController:destenVC animated:YES];
-        
-    }else {
-        
-        UIViewController *loginVC = [NSClassFromString(@"LoginViewController") new];
-        
-        ZyNavigationController *nav = [[ZyNavigationController alloc] initWithRootViewController:loginVC];
-        
-        UIWindow *window = [[UIApplication sharedApplication].delegate window];
-        
-        window.rootViewController = nav;
+        [self Action_toLoginViewController];
     }
 }
 

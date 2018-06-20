@@ -24,9 +24,7 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-        
-        self.translucent = NO;
-        
+                
         [self centerButton];
         [self centerLabel];
         

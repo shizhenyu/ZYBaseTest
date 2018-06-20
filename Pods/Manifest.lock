@@ -28,6 +28,7 @@ PODS:
   - SDWebImage/Core (4.2.2)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - IQKeyboardManager (~> 5.0.6)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - MOFSPickerManager (~> 2.0.2)
   - SDWebImage (~> 4.2.2)
   - YTKNetwork (~> 2.0.4)
+  - YYText (~> 1.0.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -52,7 +54,8 @@ SPEC CHECKSUMS:
   MOFSPickerManager: d8ab70073d03e9d69d76bc964fed5a9dae2bcafb
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 138898eee8fff878924d27a79524b60d6cfa34fd
+PODFILE CHECKSUM: 6f76553f8437a3db8cb3d31887a2fadd5f1e672a
 
 COCOAPODS: 1.4.0

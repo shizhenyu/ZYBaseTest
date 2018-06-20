@@ -9,25 +9,24 @@
 #import "AppDelegate+PressTouch.h"
 #import "ZyNavigationController.h"
 
+static NSString *const kPressTouchOrderList = @"kPressTouchOrderList";
+static NSString *const kPressTouchGoodComent = @"kPressTouchGoodComent";
+static NSString *const kPressTouchPhoneSetting = @"kPressTouchPhoneSetting";
+
 @implementation AppDelegate (PressTouch)
 
-- (void)addShortTouchItem {
+- (void)setup3DTouch:(UIApplication *)application {
     
-    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"OrderList" localizedTitle:@"订单列表" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeDate] userInfo:nil];
+    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:kPressTouchOrderList localizedTitle:@"订单列表" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeDate] userInfo:nil];
     
-    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc]initWithType:@"GoodComment" localizedTitle:@"商品评论" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeLove] userInfo:nil];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc]initWithType:kPressTouchGoodComent localizedTitle:@"商品评论" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose] userInfo:nil];
     
-    UIApplicationShortcutItem *item3 = [[UIApplicationShortcutItem alloc]initWithType:@"PhoneSetting" localizedTitle:@"个人中心" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"设置图标"] userInfo:nil];
+    UIApplicationShortcutItem *item3 = [[UIApplicationShortcutItem alloc]initWithType:kPressTouchPhoneSetting localizedTitle:@"个人中心" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"设置图标"] userInfo:nil];
     
-    [UIApplication sharedApplication].shortcutItems = @[item1, item2, item3];
+    application.shortcutItems = @[item1, item2, item3];
 }
 
-- (BOOL)pt_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    UIApplicationShortcutItem *shortcutItem = [launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey];
-    
-    ViewController *vc = [[ViewController alloc] init];
-    
+- (BOOL)pressTouch_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     /*
      如果是从快捷选项标签启动app，则根据不同标识执行不同操作，然后返回NO
@@ -35,23 +34,23 @@
      防止调用application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
      */
     
-    if (shortcutItem) {
+    UIApplicationShortcutItem *shortCutItem = [launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey];
+    
+    if (shortCutItem) {
         
-        if ([shortcutItem.type isEqualToString:@"OrderList"]) {
+        ViewController *mainVC = [[ViewController alloc] init];
+        
+        if ([shortCutItem.type isEqualToString:kPressTouchOrderList]) {  // 进入订单列表
             
-            // 进入订单列表界面
-            [vc Action_toPressTouchController:@"OrderListViewController"];
+            [mainVC Action_toPressTouchViewControllerIdentifier:@"OrderListViewController"];
             
-        }else if ([shortcutItem.type isEqualToString:@"GoodComment"]) {
+        }else if ([shortCutItem.type isEqualToString:kPressTouchGoodComent]) {  // 进入商品评论列表
             
-            // 进入商品评论列表
-            [vc Action_toPressTouchController:@"GoodCommentListViewController"];
+            [mainVC Action_toPressTouchViewControllerIdentifier:@"GoodCommentListViewController"];
             
-        }else {
+        }else {  // 进入设置界面
             
-            //进入自定义弹框
-            [vc Action_toPressTouchController:@"CustomAlertViewController"];
-            
+            [mainVC Action_toPressTouchViewControllerIdentifier:@"SettingViewController"];
         }
         
         return NO;
@@ -60,31 +59,29 @@
     return YES;
 }
 
-- (void)pt_application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+- (void)pressTouch_application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     
-    if ([shortcutItem.type isEqualToString:@"OrderList"]) {
+    if ([shortcutItem.type isEqualToString:kPressTouchOrderList]) { // 进入订单列表
         
-        //进入订单列表
-        NSDictionary *info = @{@"VCName":@"OrderListViewController"};
+        NSDictionary *infoDic = @{@"VCName":@"OrderListViewController"};
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:UserPressTouch object:nil userInfo:info];
+        [ZYNotification postNotificationName:kUserPressTouch object:nil userInfo:infoDic];
         
-    }else if ([shortcutItem.type isEqualToString:@"GoodComment"]) {
+    }else if ([shortcutItem.type isEqualToString:kPressTouchGoodComent]) {  // 进入商品评论列表
         
-        //进入商品评论列表
-        NSDictionary *info = @{@"VCName":@"GoodCommentListViewController"};
+        NSDictionary *infoDic = @{@"VCName":@"GoodCommentListViewController"};
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:UserPressTouch object:nil userInfo:info];
+        [ZYNotification postNotificationName:kUserPressTouch object:nil userInfo:infoDic];
         
-    }else {
+    }else {  // 进入设置界面
         
-        //进入自定义弹框
-        NSDictionary *info = @{@"VCName":@"CustomAlertViewController"};
+        NSDictionary *infoDic = @{@"VCName":@"SettingViewController"};
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:UserPressTouch object:nil userInfo:info];
+        [ZYNotification postNotificationName:kUserPressTouch object:nil userInfo:infoDic];
     }
     
     if (completionHandler) {
+        
         completionHandler(YES);
     }
 }
