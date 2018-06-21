@@ -115,6 +115,7 @@
 		DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE331E56208089F900997829 /* AppDelegate+ThirdService.m */; };
 		DE34C51C2089D7F500739F0A /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE34C51B2089D7F500739F0A /* QRView.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
+		DE38894620DB7E0E00677F42 /* GoodCommentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38894520DB7E0E00677F42 /* GoodCommentDetailViewController.m */; };
 		DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */; };
 		DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C6206B1C4D008AEA82 /* PersonInfoTableViewCell.m */; };
 		DE3EA5D3209EE19800D16D5C /* NoDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3EA5D2209EE19800D16D5C /* NoDataViewController.m */; };
@@ -490,6 +491,8 @@
 		DE34C51B2089D7F500739F0A /* QRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
+		DE38894420DB7E0E00677F42 /* GoodCommentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodCommentDetailViewController.h; sourceTree = "<group>"; };
+		DE38894520DB7E0E00677F42 /* GoodCommentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodCommentDetailViewController.m; sourceTree = "<group>"; };
 		DE3A69C2206B1C22008AEA82 /* PersonInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoViewController.h; sourceTree = "<group>"; };
 		DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoViewController.m; sourceTree = "<group>"; };
 		DE3A69C5206B1C4D008AEA82 /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
@@ -973,6 +976,8 @@
 				DE06CB75202A93900051550B /* GoodCommentListViewController.m */,
 				DE06CB78202A93900051550B /* CustomEstiheightViewController.h */,
 				DE06CB76202A93900051550B /* CustomEstiheightViewController.m */,
+				DE38894420DB7E0E00677F42 /* GoodCommentDetailViewController.h */,
+				DE38894520DB7E0E00677F42 /* GoodCommentDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2690,6 +2695,7 @@
 				DE5043A820650A84000C173E /* AliPayPieChartViewController.m in Sources */,
 				DE06CB9C202A95D80051550B /* ZYProgressHud.m in Sources */,
 				DE4C467F20625627001DD5D9 /* HXPhotoTools.m in Sources */,
+				DE38894620DB7E0E00677F42 /* GoodCommentDetailViewController.m in Sources */,
 				DE4C467320625627001DD5D9 /* HXAlbumListView.m in Sources */,
 				DE34C51C2089D7F500739F0A /* QRView.m in Sources */,
 				DE0D330A204FEE7A0071846B /* XYRotatedView.m in Sources */,

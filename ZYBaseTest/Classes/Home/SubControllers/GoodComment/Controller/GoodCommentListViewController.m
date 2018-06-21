@@ -10,6 +10,7 @@
 #import "ProductCommentTableViewCell.h"
 #import "ProductCommentMainViewModel.h"
 #import "ReportView.h"
+#import "GoodCommentDetailViewController.h"
 
 @interface GoodCommentListViewController ()<UITableViewDelegate,UITableViewDataSource,UIViewControllerPreviewingDelegate>
 
@@ -23,6 +24,11 @@
 
 @implementation GoodCommentListViewController
 
+- (void)dealloc {
+    
+    [ZYNotification removeObserver:self name:@"changeCommentUserName" object:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -32,6 +38,8 @@
     [self setupUI];
     
     [self fetchData];
+    
+    [ZYNotification addObserver:self selector:@selector(reloadTableViewDataIfChangedData) name:@"changeCommentUserName" object:nil];
 }
 
 - (void)setupNav
@@ -56,6 +64,11 @@
     self.dataSource = [self.viewModel fetchProcommentData];
     
     [self.dataSource addObjectsFromArray:self.dataSource];
+    
+    [self.tableView reloadData];
+}
+
+- (void)reloadTableViewDataIfChangedData {
     
     [self.tableView reloadData];
 }
@@ -112,9 +125,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *vc = [NSClassFromString(@"CustomEstiheightViewController") new];
+    GoodCommentDetailViewController *commentDetailVC = [[GoodCommentDetailViewController alloc] init];
     
-    [self.navigationController pushViewController:vc animated:YES];
+    commentDetailVC.model = [self.dataSource objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:commentDetailVC animated:YES];
 }
 
 
@@ -122,13 +137,24 @@
 // 3D Touch时预览的界面
 - (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
     
-    UIViewController *presentationVC = [NSClassFromString(@"CustomEstiheightViewController") new];
+    // 找到点击的是哪个Cell
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(ProductCommentTableViewCell *)[previewingContext sourceView]];
     
+    // 创建要预览的控制器
+    GoodCommentDetailViewController *commentDetailVC = [[GoodCommentDetailViewController alloc] init];
+    
+    commentDetailVC.model = [self.dataSource objectAtIndex:indexPath.row];
+    
+    commentDetailVC.dataSource = self.dataSource;
+    
+    commentDetailVC.indexPath = indexPath.row;
+    
+    // 指定当前上下文视图rect
     CGRect rect = CGRectMake(0, 0, kScreenWidth, 300);
     
     previewingContext.sourceRect = rect;
     
-    return presentationVC;
+    return commentDetailVC;
 }
 
 // 深度按压之后跳转的界面
