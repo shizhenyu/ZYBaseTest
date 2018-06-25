@@ -21,5 +21,6 @@
 #import "ViewController.h"
 #import "ZYProgressHud.h"
 #import "ZYUserManager.h"
+#import "MBProgressTool.h"
 
 #endif /* ZYHeaderFile_h */

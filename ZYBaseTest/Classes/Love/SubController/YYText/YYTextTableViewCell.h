@@ -10,6 +10,6 @@
 
 @interface YYTextTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) YYLabel *label;
 
 @end

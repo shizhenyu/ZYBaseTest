@@ -53,21 +53,23 @@
     
     NSMutableAttributedString *needStr = [[NSMutableAttributedString alloc] initWithString:@"Swift"];
     
-//    needStr.yy_font = kFont(15);
-//
-//    needStr.yy_color = [UIColor blueColor];
-//
-//    YYTextDecoration *decora = [YYTextDecoration decorationWithStyle:YYTextLineStyleSingle];
-//
-//    decora.color = [UIColor redColor];
-//
-//    decora.width = @(2);
+    YYTextDecoration *decora = [YYTextDecoration decorationWithStyle:YYTextLineStyleSingle];
+
+    NSRange range = [@"Swift" rangeOfString:@"wi"];
     
-    label.font = kFont(17);
+    decora.color = [UIColor redColor]; // 设置下划线颜色
+    
+    decora.width = @(2);  // 设置下划线高度
+    
+    [needStr yy_setTextUnderline:decora range:range];
     
     label.attributedText = needStr;
     
     label.textAlignment = NSTextAlignmentCenter;
+    
+    label.font = kFont(18);
+    
+    label.textColor = [UIColor blueColor];
     
     [self.view addSubview:label];
 }

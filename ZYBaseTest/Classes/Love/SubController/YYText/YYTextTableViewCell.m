@@ -32,10 +32,11 @@
 #pragma mark - Add SubViewConstraints
 - (void)addSubViewConstraints {
  
-    self.contentLabel = [[UILabel alloc] init];
-    [self.contentView addSubview:self.contentLabel];
+    self.label = [[YYLabel alloc] init];
     
-    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.contentView addSubview:self.label];
+    
+    [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.edges.mas_equalTo(UIEdgeInsetsMake(10, 15, 10, 15));
         

@@ -120,7 +120,7 @@
     
     if (!_titleArr) {
         
-        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序", @"支付宝首页", @"不规则标签集合", @"语音播报", @"简书APP", @"YYText", nil];
+        _titleArr = [[NSMutableArray alloc] initWithObjects:@"照片选择器",@"支付宝饼状图",@"滚动轮播图", @"下拉列表", @"个人信息", @"线程相关", @"空白数据展示", @"闪购小程序And Try Catch", @"支付宝首页", @"不规则标签集合", @"语音播报", @"简书APP", @"YYText", nil];
     }
     
     return _titleArr;

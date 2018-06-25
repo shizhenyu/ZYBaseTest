@@ -36,17 +36,15 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    /**
      
     // 全屏滑动返回
     self.interactivePopGestureRecognizer.enabled = YES;
     
     // 将返回按钮替换为我们的自定义按钮，并使滑动返回重新生效
     self.interactivePopGestureRecognizer.delegate = (id)self;
-     
-     */
     
+    /*
+     
     UIGestureRecognizer *gesture = self.interactivePopGestureRecognizer;
     gesture.enabled = NO;
     UIView *gestureView = gesture.view;
@@ -59,6 +57,8 @@
     
     _navTransition = [[ZYNavigationInteractiveTransition alloc] initWithViewController:self];
     [popRecognizer addTarget:_navTransition action:@selector(handleControllerPop:)];
+     
+     */
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
