@@ -90,9 +90,9 @@
     
     [btn addTargetForControlEvents:UIControlEventTouchUpInside action:^(id sender) {
         
-        UIViewController *TFVC = [NSClassFromString(@"MBProgressHUDViewController") new];
+        UIViewController *MBVC = [NSClassFromString(@"MBProgressHUDViewController") new];
         
-        [self.navigationController pushViewController:TFVC animated:YES];
+        [self.navigationController pushViewController:MBVC animated:YES];
     }];
     
     [self.view addSubview:btn];

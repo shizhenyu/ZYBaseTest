@@ -151,7 +151,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 12) {
+    if (indexPath.row == 10) {
         
         ZYWaterflowLayout *flowLayout = [[ZYWaterflowLayout alloc] init];
         
@@ -197,7 +197,19 @@
     
     if (!_dataSource) {
         
-        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中", @"商品评论", @"订单列表", @"自定义举报弹框", @"自定义弹框", @"强制横屏", @"封装MBProgressHud", @"日期转换工具", @"不同位置的图片button", @"WebViewAndH5交互", @"饼状图", @"界面之间连续Push", @"自定义瀑布流", @"绑定收款码", @"KVC&&KVO", nil];
+        _dataSource = [[NSMutableArray alloc]initWithObjects:@"TextField的placeholder水印居中",
+                       @"商品评论+举报弹框",
+                       @"订单列表",
+                       @"自定义弹框",
+                       @"封装MBProgressHud",
+                       @"日期转换工具",
+                       @"不同位置的图片button",
+                       @"WebViewAndH5交互",
+                       @"饼状图",
+                       @"界面之间连续Push",
+                       @"自定义瀑布流",
+                       @"绑定收款码",
+                       @"KVC&&KVO", nil];
     }
     
     return _dataSource;
@@ -207,7 +219,19 @@
     
     if (!_viewControllerIdentifier) {
         
-        _viewControllerIdentifier = [[NSMutableArray alloc]initWithObjects:@"TextFieldPlaceholderViewController", @"GoodCommentListViewController", @"OrderListViewController", @"ReportViewController", @"CustomAlertViewController", @"LandScapeViewController", @"MBProgressHUDViewController", @"TimeTransformToolViewController", @"ImageButtonViewController", @"WebViewAndHtmlViewController", @"PieChartViewController", @"PushHomeViewController", @"ZYCollectionViewController", @"BindQRCodeViewController", @"KVOViewController", nil];
+        _viewControllerIdentifier = [[NSMutableArray alloc]initWithObjects:@"TextFieldPlaceholderViewController",
+                                     @"GoodCommentListViewController",
+                                     @"OrderListViewController",
+                                     @"CustomAlertViewController",
+                                     @"MBProgressHUDViewController",
+                                     @"TimeTransformToolViewController",
+                                     @"ImageButtonViewController",
+                                     @"WebViewAndHtmlViewController",
+                                     @"PieChartViewController",
+                                     @"PushHomeViewController",
+                                     @"ZYCollectionViewController",
+                                     @"BindQRCodeViewController",
+                                     @"KVOViewController", nil];
     }
     
     return _viewControllerIdentifier;

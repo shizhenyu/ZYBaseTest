@@ -8,9 +8,11 @@
 
 #import "QBHomeViewController.h"
 
-@interface QBHomeViewController ()
+@interface QBHomeViewController ()<UITabBarControllerDelegate>
 
 @property (nonatomic, strong) UILabel *centerLabel;
+
+@property (nonatomic, assign) BOOL tabBarButtonItemIsEnable;
 
 @end
 
@@ -23,6 +25,9 @@
     [self setupNav];
     
     [self setupUI];
+    
+    self.tabBarButtonItemIsEnable = YES;
+    self.tabBarController.delegate = self;
 }
 
 #pragma mark - 设置导航栏
@@ -36,8 +41,11 @@
     [backButton addTarget:self action:@selector(backToRootViewController) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(learnTryCatch)];
-    self.navigationItem.rightBarButtonItem = rightButton;
+    UIBarButtonItem *tryItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(learnTryCatch)];
+    
+    UIBarButtonItem *tabBarItemTmp = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(changeTabBarItemStatus)];
+    
+    self.navigationItem.rightBarButtonItems = @[tryItem, tabBarItemTmp];
 }
 
 #pragma mark - 返回主 tabBarController
@@ -119,6 +127,55 @@
     self.centerLabel.textAlignment = NSTextAlignmentCenter;
     self.centerLabel.font = kFont(17);
     [self.view addSubview:self.centerLabel];
+}
+
+#pragma mark - 改变tabBar的可点击状态
+- (void)changeTabBarItemStatus {
+    
+    self.tabBarButtonItemIsEnable = !self.tabBarButtonItemIsEnable;
+    
+    /*  控制底部tabBar是否可点击
+    
+    UITabBar *tabBar = self.tabBarController.tabBar;
+    
+    UITabBarItem *shopItem = [tabBar.items objectAtIndex:1];
+    
+    UITabBarItem *mineItem = [tabBar.items lastObject];
+    
+    shopItem.enabled = mineItem.enabled = self.tabBarButtonItemIsEnable;
+     
+     */
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(nonnull UIViewController *)viewController {
+    
+    NSLog(@"======%ld", tabBarController.selectedIndex);
+    
+    NSLog(@"%@--%@", NSStringFromClass([tabBarController.selectedViewController class]) ,NSStringFromClass([viewController class]));
+    
+    BOOL result = YES;
+    
+    if (tabBarController.selectedIndex == 1) {
+        
+        if (self.tabBarButtonItemIsEnable == NO) {
+            
+            [[MBProgressTool sharedMBTool] showMessageInWindowMiddle:@"闪购首页不能点"];
+            
+            result = NO;
+        }
+        
+    }else if (tabBarController.selectedIndex == 2) {
+        
+        if (self.tabBarButtonItemIsEnable == NO) {
+            
+            [[MBProgressTool sharedMBTool] showMessageInWindowMiddle:@"闪购我的不能点"];
+            
+            result = NO;
+        }
+        
+    }
+    
+    return  result;
 }
 
 - (void)didReceiveMemoryWarning {

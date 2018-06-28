@@ -13,6 +13,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) UIVisualEffectView *visualEffectView;
+
 @end
 
 @implementation AppDelegate
@@ -64,6 +66,22 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     
     [self JPush_cleanApplicationBadge:application];
+    
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    
+    self.visualEffectView.alpha = 0;
+    
+    self.visualEffectView.frame = self.window.frame;
+    
+    [self.window addSubview:self.visualEffectView];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+       
+        self.visualEffectView.alpha = 0.9;
+        
+    }];
 }
 
 
@@ -80,6 +98,16 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.visualEffectView.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+       
+        [self.visualEffectView removeFromSuperview];
+        
+    }];
 }
 
 

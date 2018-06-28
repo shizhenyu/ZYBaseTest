@@ -49,8 +49,6 @@
 		DE06CB59202A918F0051550B /* OrderListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE06CB58202A918F0051550B /* OrderListData.plist */; };
 		DE06CB5F202A920F0051550B /* CustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB5E202A920F0051550B /* CustomAlertViewController.m */; };
 		DE06CB64202A921F0051550B /* AnimateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB60202A921E0051550B /* AnimateAlertView.m */; };
-		DE06CB6B202A928E0051550B /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB69202A928E0051550B /* ReportViewController.m */; };
-		DE06CB6E202A92980051550B /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB6D202A92980051550B /* ReportView.m */; };
 		DE06CB79202A93900051550B /* GoodCommentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB75202A93900051550B /* GoodCommentListViewController.m */; };
 		DE06CB7A202A93900051550B /* CustomEstiheightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB76202A93900051550B /* CustomEstiheightViewController.m */; };
 		DE06CB7D202A939B0051550B /* ProductCommentMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB7C202A939B0051550B /* ProductCommentMainViewModel.m */; };
@@ -61,7 +59,6 @@
 		DE06CB8A202A93C20051550B /* ProductCommentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE06CB89202A93C20051550B /* ProductCommentList.plist */; };
 		DE06CB8F202A941E0051550B /* TextFieldPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB8E202A941E0051550B /* TextFieldPlaceholderViewController.m */; };
 		DE06CB93202A947E0051550B /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB92202A947E0051550B /* MBProgressHUDViewController.m */; };
-		DE06CB98202A952F0051550B /* LandScapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB97202A952F0051550B /* LandScapeViewController.m */; };
 		DE06CB9C202A95D80051550B /* ZYProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06CB9B202A95D80051550B /* ZYProgressHud.m */; };
 		DE0D32F8204FCB770071846B /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D32F7204FCB770071846B /* AppDelegate+JPush.m */; };
 		DE0D3307204FEE7A0071846B /* XYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D3300204FEE7A0071846B /* XYCommon.m */; };
@@ -94,7 +91,6 @@
 		DE243A4720BFF59E00B7D438 /* JSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */; };
 		DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */; };
 		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
-		DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
 		DE2EB1A020A181C900DDB3C3 /* QuickBuyTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */; };
 		DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1A220A1823800DDB3C3 /* QuickBuyTabBarViewController.m */; };
@@ -113,7 +109,6 @@
 		DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF2D204931B800E35306 /* ZYUserManager.m */; };
 		DE31FF31204931C700E35306 /* ZYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31FF30204931C700E35306 /* ZYUser.m */; };
 		DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE331E56208089F900997829 /* AppDelegate+ThirdService.m */; };
-		DE34C51C2089D7F500739F0A /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE34C51B2089D7F500739F0A /* QRView.m */; };
 		DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */; };
 		DE38894620DB7E0E00677F42 /* GoodCommentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38894520DB7E0E00677F42 /* GoodCommentDetailViewController.m */; };
 		DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3A69C3206B1C22008AEA82 /* PersonInfoViewController.m */; };
@@ -245,6 +240,7 @@
 		DE6136AA205B50EB000ABE1E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6136A9205B50EB000ABE1E /* NotificationService.m */; };
 		DE6136AE205B50EB000ABE1E /* ZYBaseTestPushExtend.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
+		DE6722B020E47F74003EEB15 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722AF20E47F74003EEB15 /* ReportView.m */; };
 		DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */; };
 		DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */; };
 		DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */; };
@@ -364,10 +360,6 @@
 		DE06CB5E202A920F0051550B /* CustomAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertViewController.m; sourceTree = "<group>"; };
 		DE06CB60202A921E0051550B /* AnimateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateAlertView.m; sourceTree = "<group>"; };
 		DE06CB61202A921F0051550B /* AnimateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateAlertView.h; sourceTree = "<group>"; };
-		DE06CB69202A928E0051550B /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
-		DE06CB6A202A928E0051550B /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
-		DE06CB6C202A92980051550B /* ReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportView.h; sourceTree = "<group>"; };
-		DE06CB6D202A92980051550B /* ReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportView.m; sourceTree = "<group>"; };
 		DE06CB75202A93900051550B /* GoodCommentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodCommentListViewController.m; sourceTree = "<group>"; };
 		DE06CB76202A93900051550B /* CustomEstiheightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEstiheightViewController.m; sourceTree = "<group>"; };
 		DE06CB77202A93900051550B /* GoodCommentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodCommentListViewController.h; sourceTree = "<group>"; };
@@ -386,8 +378,6 @@
 		DE06CB8E202A941E0051550B /* TextFieldPlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPlaceholderViewController.m; sourceTree = "<group>"; };
 		DE06CB91202A947E0051550B /* MBProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDViewController.h; sourceTree = "<group>"; };
 		DE06CB92202A947E0051550B /* MBProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDViewController.m; sourceTree = "<group>"; };
-		DE06CB96202A952F0051550B /* LandScapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandScapeViewController.h; sourceTree = "<group>"; };
-		DE06CB97202A952F0051550B /* LandScapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandScapeViewController.m; sourceTree = "<group>"; };
 		DE06CB9A202A95D80051550B /* ZYProgressHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYProgressHud.h; sourceTree = "<group>"; };
 		DE06CB9B202A95D80051550B /* ZYProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYProgressHud.m; sourceTree = "<group>"; };
 		DE0D32F6204FCB770071846B /* AppDelegate+JPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
@@ -450,8 +440,6 @@
 		DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMineViewController.m; sourceTree = "<group>"; };
 		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
 		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
-		DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPlaceImageView.h; sourceTree = "<group>"; };
-		DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPlaceImageView.m; sourceTree = "<group>"; };
 		DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindQRCodeViewController.h; sourceTree = "<group>"; };
 		DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindQRCodeViewController.m; sourceTree = "<group>"; };
 		DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickBuyTabBarConfig.plist; sourceTree = "<group>"; };
@@ -487,8 +475,6 @@
 		DE31FF30204931C700E35306 /* ZYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUser.m; sourceTree = "<group>"; };
 		DE331E55208089F900997829 /* AppDelegate+ThirdService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdService.h"; sourceTree = "<group>"; };
 		DE331E56208089F900997829 /* AppDelegate+ThirdService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdService.m"; sourceTree = "<group>"; };
-		DE34C51A2089D7F500739F0A /* QRView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
-		DE34C51B2089D7F500739F0A /* QRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		DE36366E20439CAA00B44BD8 /* AppDelegate+PressTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PressTouch.h"; sourceTree = "<group>"; };
 		DE36366F20439CAA00B44BD8 /* AppDelegate+PressTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PressTouch.m"; sourceTree = "<group>"; };
 		DE38894420DB7E0E00677F42 /* GoodCommentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodCommentDetailViewController.h; sourceTree = "<group>"; };
@@ -684,6 +670,8 @@
 		DE6136B3205B5122000ABE1E /* ZYBaseTestPushExtend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYBaseTestPushExtend.entitlements; sourceTree = "<group>"; };
 		DE62687A2056058500CC8928 /* BindCodeStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindCodeStatusView.h; sourceTree = "<group>"; };
 		DE62687B2056058500CC8928 /* BindCodeStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindCodeStatusView.m; sourceTree = "<group>"; };
+		DE6722AE20E47F73003EEB15 /* ReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportView.h; sourceTree = "<group>"; };
+		DE6722AF20E47F74003EEB15 /* ReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportView.m; sourceTree = "<group>"; };
 		DE68669F20A4336F00CA94C3 /* AliPayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeViewController.h; sourceTree = "<group>"; };
 		DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeViewController.m; sourceTree = "<group>"; };
 		DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeTableView.h; sourceTree = "<group>"; };
@@ -831,18 +819,16 @@
 				DE06CB8B202A93D90051550B /* TFPlaceHolder */,
 				DE06CB6F202A92AB0051550B /* GoodComment */,
 				DE06CB46202A907B0051550B /* OrderList */,
-				DE06CB66202A924B0051550B /* Report */,
-				DE0D330B204FEEB90071846B /* PieChart */,
 				DE06CB5A202A91BE0051550B /* CustomAlert */,
-				DE20CB3220AEA5C600D26547 /* KVC&&KVO */,
-				DE06CB94202A94860051550B /* Landscape */,
 				DE06CB90202A94500051550B /* MBProgressHUD */,
 				DE3118CE202BE7D10073A672 /* TimeTransformTool */,
 				DE5D17A520414DF900192504 /* ImageButton */,
 				DE2EDC872047B1F8004EDB89 /* WebAndHtml */,
+				DE0D330B204FEEB90071846B /* PieChart */,
 				DE2EDC8B2047E78B004EDB89 /* ViewPushMore */,
 				DE589BB3204D3ACD00C9581D /* WaterFlowLayout */,
-				DE2E3A642053B82B007FAA6B /* CustomAlert */,
+				DE2E3A642053B82B007FAA6B /* BindQRCode */,
+				DE20CB3220AEA5C600D26547 /* KVC&&KVO */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -930,33 +916,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DE06CB66202A924B0051550B /* Report */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB67202A92590051550B /* Controller */,
-				DE06CB68202A92600051550B /* View */,
-			);
-			path = Report;
-			sourceTree = "<group>";
-		};
-		DE06CB67202A92590051550B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB6A202A928E0051550B /* ReportViewController.h */,
-				DE06CB69202A928E0051550B /* ReportViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DE06CB68202A92600051550B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB6C202A92980051550B /* ReportView.h */,
-				DE06CB6D202A92980051550B /* ReportView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		DE06CB6F202A92AB0051550B /* GoodComment */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,10 +933,10 @@
 			children = (
 				DE06CB77202A93900051550B /* GoodCommentListViewController.h */,
 				DE06CB75202A93900051550B /* GoodCommentListViewController.m */,
-				DE06CB78202A93900051550B /* CustomEstiheightViewController.h */,
-				DE06CB76202A93900051550B /* CustomEstiheightViewController.m */,
 				DE38894420DB7E0E00677F42 /* GoodCommentDetailViewController.h */,
 				DE38894520DB7E0E00677F42 /* GoodCommentDetailViewController.m */,
+				DE06CB78202A93900051550B /* CustomEstiheightViewController.h */,
+				DE06CB76202A93900051550B /* CustomEstiheightViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -994,6 +953,8 @@
 		DE06CB72202A92C80051550B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE6722AE20E47F73003EEB15 /* ReportView.h */,
+				DE6722AF20E47F74003EEB15 /* ReportView.m */,
 				DE06CB84202A93B70051550B /* CustomHeightTableViewCell.h */,
 				DE06CB81202A93B70051550B /* CustomHeightTableViewCell.m */,
 				DE06CB82202A93B70051550B /* CustomHeightTableViewCell.xib */,
@@ -1046,23 +1007,6 @@
 				DE20CB3F20AECB2400D26547 /* MBProgressTool.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		DE06CB94202A94860051550B /* Landscape */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB95202A95040051550B /* Controller */,
-			);
-			path = Landscape;
-			sourceTree = "<group>";
-		};
-		DE06CB95202A95040051550B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE06CB96202A952F0051550B /* LandScapeViewController.h */,
-				DE06CB97202A952F0051550B /* LandScapeViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		DE06CB99202A95BA0051550B /* ZYProgressHud */ = {
@@ -1306,7 +1250,6 @@
 		DE13AD9B2029C27900313655 /* Libirary */ = {
 			isa = PBXGroup;
 			children = (
-				DE34C5192089D7C600739F0A /* QRScanView */,
 				DE4900F72065E71900EB9EA8 /* SDCycleScrollView */,
 				DE4C460520625627001DD5D9 /* HXWeiboPhotoPicker */,
 				DE0D32FE204FEE7A0071846B /* PieChartView */,
@@ -1442,8 +1385,6 @@
 		DE2A181320874A8200F4E6C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE2A181920874CA700F4E6C6 /* ThreadPlaceImageView.h */,
-				DE2A181A20874CA700F4E6C6 /* ThreadPlaceImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1484,15 +1425,15 @@
 			path = SubController;
 			sourceTree = "<group>";
 		};
-		DE2E3A642053B82B007FAA6B /* CustomAlert */ = {
+		DE2E3A642053B82B007FAA6B /* BindQRCode */ = {
 			isa = PBXGroup;
 			children = (
 				DE2E3A672053B848007FAA6B /* Controller */,
 				DE2E3A662053B843007FAA6B /* Model */,
 				DE2E3A652053B840007FAA6B /* View */,
 			);
-			name = CustomAlert;
-			path = ../../Love/SubController/CustomAlert;
+			name = BindQRCode;
+			path = ../../Love/SubController/BindQRCode;
 			sourceTree = "<group>";
 		};
 		DE2E3A652053B840007FAA6B /* View */ = {
@@ -1709,15 +1650,6 @@
 				DE31FF2D204931B800E35306 /* ZYUserManager.m */,
 			);
 			path = UserManager;
-			sourceTree = "<group>";
-		};
-		DE34C5192089D7C600739F0A /* QRScanView */ = {
-			isa = PBXGroup;
-			children = (
-				DE34C51A2089D7F500739F0A /* QRView.h */,
-				DE34C51B2089D7F500739F0A /* QRView.m */,
-			);
-			path = QRScanView;
 			sourceTree = "<group>";
 		};
 		DE36366720439B0100B44BD8 /* AppDelegate+Extension */ = {
@@ -2660,7 +2592,6 @@
 				DE7BB0BF20D0F1BC00B20F0C /* YYTextTableViewCell.m in Sources */,
 				DE06CB5F202A920F0051550B /* CustomAlertViewController.m in Sources */,
 				DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */,
-				DE06CB6E202A92980051550B /* ReportView.m in Sources */,
 				DE1E369620688CA300228A94 /* TopMenuTableViewCell.m in Sources */,
 				DE06CB22202A8E810051550B /* NSAttributedString+ZYKit.m in Sources */,
 				DE13AA5920B6CA5100ECBE28 /* VoiceSpeakViewController.m in Sources */,
@@ -2697,7 +2628,6 @@
 				DE4C467F20625627001DD5D9 /* HXPhotoTools.m in Sources */,
 				DE38894620DB7E0E00677F42 /* GoodCommentDetailViewController.m in Sources */,
 				DE4C467320625627001DD5D9 /* HXAlbumListView.m in Sources */,
-				DE34C51C2089D7F500739F0A /* QRView.m in Sources */,
 				DE0D330A204FEE7A0071846B /* XYRotatedView.m in Sources */,
 				DE20CB2E20AE619E00D26547 /* QQPopMenuView.m in Sources */,
 				DE06CB2B202A8E810051550B /* NSTimer+Block.m in Sources */,
@@ -2714,7 +2644,6 @@
 				DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */,
 				DE2EB1B220A182D800DDB3C3 /* QBShopCartViewController.m in Sources */,
 				DE4901132065FB4A00EB9EA8 /* ScrollingViewController.m in Sources */,
-				DE2A181B20874CA700F4E6C6 /* ThreadPlaceImageView.m in Sources */,
 				DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */,
 				DE20CB3A20AEAA5400D26547 /* Father.m in Sources */,
 				DE06CB2D202A8E810051550B /* UIButton+ZYKit.m in Sources */,
@@ -2732,6 +2661,7 @@
 				DE5D17B1204172FA00192504 /* ImageTopTitleBottomButton.m in Sources */,
 				DE06CB28202A8E810051550B /* NSObject+Swizzle.m in Sources */,
 				DE4C468120625627001DD5D9 /* HXPhotoViewCell.m in Sources */,
+				DE6722B020E47F74003EEB15 /* ReportView.m in Sources */,
 				DE06CB79202A93900051550B /* GoodCommentListViewController.m in Sources */,
 				DE49011E2066221100EB9EA8 /* TopMenuView.m in Sources */,
 				DE4BC138204E9DCC0089D514 /* IntergerDetailViewController.m in Sources */,
@@ -2788,7 +2718,6 @@
 				DE06CB3B202A8F9B0051550B /* HomeViewController.m in Sources */,
 				DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */,
 				DE2EB1B820A188AB00DDB3C3 /* QBSettingViewController.m in Sources */,
-				DE06CB6B202A928E0051550B /* ReportViewController.m in Sources */,
 				DE243A3820BFDE7400B7D438 /* JSTabBar.m in Sources */,
 				DE2EDC952047FAAD004EDB89 /* PushTwoViewController.m in Sources */,
 				DE4C467420625627001DD5D9 /* HXAlbumModel.m in Sources */,
@@ -2805,7 +2734,6 @@
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
 				DE243A4120BFF57600B7D438 /* JSLoveViewController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
-				DE06CB98202A952F0051550B /* LandScapeViewController.m in Sources */,
 				DE4C467E20625627001DD5D9 /* HXPhotoSubViewCell.m in Sources */,
 				DE13AD7F2029C19F00313655 /* AppDelegate.m in Sources */,
 			);

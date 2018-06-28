@@ -73,7 +73,6 @@
     [self.tableView reloadData];
 }
 
-
 #pragma mark - Cell Event Response
 - (void)buttonClick:(UIButton *)sender
 {    
@@ -131,7 +130,6 @@
     
     [self.navigationController pushViewController:commentDetailVC animated:YES];
 }
-
 
 #pragma mark - UIViewControllerPreviewingDelegate
 // 3D Touch时预览的界面
