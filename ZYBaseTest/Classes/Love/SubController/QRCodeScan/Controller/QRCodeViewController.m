@@ -1,18 +1,18 @@
 //
-//  ThreadUseViewController.m
+//  QRCodeViewController.m
 //  ZYBaseTest
 //
-//  Created by youyun on 2018/4/18.
+//  Created by youyun on 2018/6/28.
 //  Copyright © 2018年 TaoSheng. All rights reserved.
 //
 
-#import "ThreadUseViewController.h"
+#import "QRCodeViewController.h"
 
-@interface ThreadUseViewController ()
+@interface QRCodeViewController ()
 
 @end
 
-@implementation ThreadUseViewController
+@implementation QRCodeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -12,4 +12,5 @@ target 'ZYBaseTest' do
   pod 'IQKeyboardManager', '~> 5.0.6'
   pod 'MOFSPickerManager', '~> 2.0.2'
   pod 'YYText', '~> 1.0.7'
+  pod 'SGQRCode', '~> 2.2.0'
 end

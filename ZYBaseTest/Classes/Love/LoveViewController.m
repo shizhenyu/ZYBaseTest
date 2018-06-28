@@ -147,7 +147,7 @@
                               @"ScrollingViewController",
                               @"DownMenuViewController",
                               @"PersonInfoViewController",
-                              @"ThreadUseViewController",
+                              @"QRCodeViewController",
                               @"NoDataViewController",
                               @"",
                               @"AliPayHomeViewController",

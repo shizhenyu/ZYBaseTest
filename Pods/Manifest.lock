@@ -26,6 +26,7 @@ PODS:
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
+  - SGQRCode (2.2.0)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYText (1.0.7)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.1)
   - MOFSPickerManager (~> 2.0.2)
   - SDWebImage (~> 4.2.2)
+  - SGQRCode (~> 2.2.0)
   - YTKNetwork (~> 2.0.4)
   - YYText (~> 1.0.7)
 
@@ -53,9 +55,10 @@ SPEC CHECKSUMS:
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   MOFSPickerManager: d8ab70073d03e9d69d76bc964fed5a9dae2bcafb
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6f76553f8437a3db8cb3d31887a2fadd5f1e672a
+PODFILE CHECKSUM: 1b10e7546283a8409a3ab03a02680957d3d8fea5
 
 COCOAPODS: 1.4.0

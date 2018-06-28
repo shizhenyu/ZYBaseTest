@@ -90,7 +90,6 @@
 		DE243A4420BFF58500B7D438 /* JSPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4320BFF58500B7D438 /* JSPublishViewController.m */; };
 		DE243A4720BFF59E00B7D438 /* JSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */; };
 		DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */; };
-		DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */; };
 		DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */; };
 		DE2EB1A020A181C900DDB3C3 /* QuickBuyTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */; };
 		DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EB1A220A1823800DDB3C3 /* QuickBuyTabBarViewController.m */; };
@@ -241,6 +240,7 @@
 		DE6136AE205B50EB000ABE1E /* ZYBaseTestPushExtend.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE6136A6205B50EB000ABE1E /* ZYBaseTestPushExtend.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
 		DE6722B020E47F74003EEB15 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722AF20E47F74003EEB15 /* ReportView.m */; };
+		DE6722B320E48F16003EEB15 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722B220E48F16003EEB15 /* QRCodeViewController.m */; };
 		DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */; };
 		DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */; };
 		DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */; };
@@ -438,8 +438,6 @@
 		DE243A4620BFF59E00B7D438 /* JSMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMessageViewController.m; sourceTree = "<group>"; };
 		DE243A4820BFF5AE00B7D438 /* JSMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMineViewController.h; sourceTree = "<group>"; };
 		DE243A4920BFF5AE00B7D438 /* JSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMineViewController.m; sourceTree = "<group>"; };
-		DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadUseViewController.h; sourceTree = "<group>"; };
-		DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadUseViewController.m; sourceTree = "<group>"; };
 		DE2E3A682053B8FA007FAA6B /* BindQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindQRCodeViewController.h; sourceTree = "<group>"; };
 		DE2E3A692053B8FA007FAA6B /* BindQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindQRCodeViewController.m; sourceTree = "<group>"; };
 		DE2EB19F20A181C900DDB3C3 /* QuickBuyTabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickBuyTabBarConfig.plist; sourceTree = "<group>"; };
@@ -672,6 +670,8 @@
 		DE62687B2056058500CC8928 /* BindCodeStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindCodeStatusView.m; sourceTree = "<group>"; };
 		DE6722AE20E47F73003EEB15 /* ReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportView.h; sourceTree = "<group>"; };
 		DE6722AF20E47F74003EEB15 /* ReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportView.m; sourceTree = "<group>"; };
+		DE6722B120E48F16003EEB15 /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		DE6722B220E48F16003EEB15 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		DE68669F20A4336F00CA94C3 /* AliPayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeViewController.h; sourceTree = "<group>"; };
 		DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeViewController.m; sourceTree = "<group>"; };
 		DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeTableView.h; sourceTree = "<group>"; };
@@ -1372,14 +1372,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DE2A181220874A5400F4E6C6 /* 线程相关 */ = {
+		DE2A181220874A5400F4E6C6 /* QRCodeScan */ = {
 			isa = PBXGroup;
 			children = (
 				DE2A181520874A9100F4E6C6 /* Controller */,
 				DE2A181420874A8F00F4E6C6 /* Model */,
 				DE2A181320874A8200F4E6C6 /* View */,
 			);
-			path = "线程相关";
+			path = QRCodeScan;
 			sourceTree = "<group>";
 		};
 		DE2A181320874A8200F4E6C6 /* View */ = {
@@ -1399,8 +1399,8 @@
 		DE2A181520874A9100F4E6C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DE2A181620874AC400F4E6C6 /* ThreadUseViewController.h */,
-				DE2A181720874AC400F4E6C6 /* ThreadUseViewController.m */,
+				DE6722B120E48F16003EEB15 /* QRCodeViewController.h */,
+				DE6722B220E48F16003EEB15 /* QRCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1413,7 +1413,7 @@
 				DE4900F62065E6C100EB9EA8 /* 轮播图 */,
 				DE49011420661D4200EB9EA8 /* 下拉菜单 */,
 				DE3A69BE206B1BD2008AEA82 /* 个人信息采集 */,
-				DE2A181220874A5400F4E6C6 /* 线程相关 */,
+				DE2A181220874A5400F4E6C6 /* QRCodeScan */,
 				DE3EA5D0209EE15B00D16D5C /* 空白TableView */,
 				DE2EB19B20A1811400DDB3C3 /* 闪购 */,
 				DE68669B20A4331700CA94C3 /* 支付宝首页 */,
@@ -2518,6 +2518,7 @@
 				"${BUILT_PRODUCTS_DIR}/MOFSPickerManager/MOFSPickerManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SGQRCode/SGQRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
@@ -2531,6 +2532,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOFSPickerManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGQRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
@@ -2727,12 +2729,12 @@
 				DE4C467C20625627001DD5D9 /* HXPhotoPreviewViewCell.m in Sources */,
 				DE3A69C4206B1C22008AEA82 /* PersonInfoViewController.m in Sources */,
 				DE3EA5D3209EE19800D16D5C /* NoDataViewController.m in Sources */,
-				DE2A181820874AC400F4E6C6 /* ThreadUseViewController.m in Sources */,
 				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
 				DE20CB3120AE7F0200D26547 /* TipGatherTableViewCell.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
 				DE243A4120BFF57600B7D438 /* JSLoveViewController.m in Sources */,
+				DE6722B320E48F16003EEB15 /* QRCodeViewController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
 				DE4C467E20625627001DD5D9 /* HXPhotoSubViewCell.m in Sources */,
 				DE13AD7F2029C19F00313655 /* AppDelegate.m in Sources */,
