@@ -18,6 +18,7 @@ PODS:
   - JCore (1.1.6)
   - JPush (3.0.7):
     - JCore (~> 1.1.6)
+  - JVFloatLabeledTextField (1.2.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.13)
@@ -34,6 +35,7 @@ PODS:
 DEPENDENCIES:
   - IQKeyboardManager (~> 5.0.6)
   - JPush (~> 3.0.7)
+  - JVFloatLabeledTextField (~> 1.2.1)
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.1.0)
   - MJExtension (~> 3.0.13)
@@ -49,6 +51,7 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
   JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
   JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -59,6 +62,6 @@ SPEC CHECKSUMS:
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1b10e7546283a8409a3ab03a02680957d3d8fea5
+PODFILE CHECKSUM: 2a4e30fb4d0849890d6fa1d952fd8b90e5d215a3
 
 COCOAPODS: 1.4.0

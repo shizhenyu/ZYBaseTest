@@ -35,3 +35,6 @@
 11.封装语音播报，调用方便简易<br>
 12.新增中间凸起的不规则的tabBar<br>
 13.新增YYText
+
+### 登录模块
+1.采用浮动标签模式的[JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField)来构建登录界面
