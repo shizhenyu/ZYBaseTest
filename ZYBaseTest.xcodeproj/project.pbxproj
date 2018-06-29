@@ -241,6 +241,10 @@
 		DE62687C2056058500CC8928 /* BindCodeStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE62687B2056058500CC8928 /* BindCodeStatusView.m */; };
 		DE6722B020E47F74003EEB15 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722AF20E47F74003EEB15 /* ReportView.m */; };
 		DE6722B320E48F16003EEB15 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722B220E48F16003EEB15 /* QRCodeViewController.m */; };
+		DE6722B620E4B024003EEB15 /* QRCodeShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722B520E4B024003EEB15 /* QRCodeShowViewController.m */; };
+		DE6722B920E4B5E0003EEB15 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6722B820E4B5E0003EEB15 /* QRCodeScanViewController.m */; };
+		DE6722BB20E4B6C5003EEB15 /* personLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE6722BA20E4B6C4003EEB15 /* personLogo.jpg */; };
+		DE6722BE20E4D1A8003EEB15 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = DE6722BD20E4D1A8003EEB15 /* sound.caf */; };
 		DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */; };
 		DE6866A420A4428400CA94C3 /* AliPayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6866A320A4428400CA94C3 /* AliPayHomeTableView.m */; };
 		DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7BB0BB20D0EFA500B20F0C /* YYTextViewController.m */; };
@@ -672,6 +676,12 @@
 		DE6722AF20E47F74003EEB15 /* ReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportView.m; sourceTree = "<group>"; };
 		DE6722B120E48F16003EEB15 /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		DE6722B220E48F16003EEB15 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		DE6722B420E4B024003EEB15 /* QRCodeShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeShowViewController.h; sourceTree = "<group>"; };
+		DE6722B520E4B024003EEB15 /* QRCodeShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeShowViewController.m; sourceTree = "<group>"; };
+		DE6722B720E4B5E0003EEB15 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
+		DE6722B820E4B5E0003EEB15 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
+		DE6722BA20E4B6C4003EEB15 /* personLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = personLogo.jpg; sourceTree = "<group>"; };
+		DE6722BD20E4D1A8003EEB15 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		DE68669F20A4336F00CA94C3 /* AliPayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeViewController.h; sourceTree = "<group>"; };
 		DE6866A020A4336F00CA94C3 /* AliPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHomeViewController.m; sourceTree = "<group>"; };
 		DE6866A220A4428400CA94C3 /* AliPayHomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHomeTableView.h; sourceTree = "<group>"; };
@@ -1079,6 +1089,7 @@
 		DE1382B1206390230065AD58 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DE6722BD20E4D1A8003EEB15 /* sound.caf */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -1094,6 +1105,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1382B4206390580065AD58 /* 750-1334.png */,
+				DE6722BA20E4B6C4003EEB15 /* personLogo.jpg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1401,6 +1413,10 @@
 			children = (
 				DE6722B120E48F16003EEB15 /* QRCodeViewController.h */,
 				DE6722B220E48F16003EEB15 /* QRCodeViewController.m */,
+				DE6722B420E4B024003EEB15 /* QRCodeShowViewController.h */,
+				DE6722B520E4B024003EEB15 /* QRCodeShowViewController.m */,
+				DE6722B720E4B5E0003EEB15 /* QRCodeScanViewController.h */,
+				DE6722B820E4B5E0003EEB15 /* QRCodeScanViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2422,6 +2438,7 @@
 				DE4C46BD20625627001DD5D9 /* video_delete_button_highlighted@2x.png in Resources */,
 				DE4C469C20625627001DD5D9 /* compose_gifbutton_background_highlighted@2x.png in Resources */,
 				DE4C46C420625627001DD5D9 /* 椭圆-1@2x.png in Resources */,
+				DE6722BB20E4B6C5003EEB15 /* personLogo.jpg in Resources */,
 				DE31FF272049308200E35306 /* LoginViewController.xib in Resources */,
 				DE1382B5206390580065AD58 /* 750-1334.png in Resources */,
 				DE5043B920650B87000C173E /* 2.png in Resources */,
@@ -2453,6 +2470,7 @@
 				DE4C46AC20625627001DD5D9 /* compose_photo_photograph_highlighted@2x.png in Resources */,
 				DE5043B720650B87000C173E /* 3.png in Resources */,
 				DE4C46C320625627001DD5D9 /* 椭圆-1-拷贝@2x.png in Resources */,
+				DE6722BE20E4D1A8003EEB15 /* sound.caf in Resources */,
 				DE4C46AA20625627001DD5D9 /* compose_photo_original_highlighted@2x.png in Resources */,
 				DE4C468F20625627001DD5D9 /* camera_flashlight_auto@2x.png in Resources */,
 				DE4C468D20625627001DD5D9 /* camera_drop_highlighted@2x.png in Resources */,
@@ -2634,6 +2652,7 @@
 				DE20CB2E20AE619E00D26547 /* QQPopMenuView.m in Sources */,
 				DE06CB2B202A8E810051550B /* NSTimer+Block.m in Sources */,
 				DE06CB41202A8FB80051550B /* MessageViewController.m in Sources */,
+				DE6722B620E4B024003EEB15 /* QRCodeShowViewController.m in Sources */,
 				DE06CB1E202A8E810051550B /* ZyTabBar.m in Sources */,
 				DE4C468420625627001DD5D9 /* HXTransition.m in Sources */,
 				DE4C46CE2062571A001DD5D9 /* PhotoPickerHomeViewController.m in Sources */,
@@ -2681,6 +2700,7 @@
 				DE4C468320625627001DD5D9 /* HXPresentTransition.m in Sources */,
 				DE2E3A6A2053B8FA007FAA6B /* BindQRCodeViewController.m in Sources */,
 				DE243A3E20BFF56400B7D438 /* JSHomeViewController.m in Sources */,
+				DE6722B920E4B5E0003EEB15 /* QRCodeScanViewController.m in Sources */,
 				DE4C46C520625627001DD5D9 /* UIButton+HXExtension.m in Sources */,
 				DE06CB93202A947E0051550B /* MBProgressHUDViewController.m in Sources */,
 				DE31FF262049308200E35306 /* LoginViewController.m in Sources */,

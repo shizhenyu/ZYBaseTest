@@ -18,7 +18,7 @@
 /** 扫描内容的 x 值 */
 #define scanBorderX 0.5 * (1 - 0.7) * self.frame.size.width
 /** 扫描内容的 Y 值 */
-#define scanBorderY 0.5 * (self.frame.size.height - scanBorderW)
+#define scanBorderY 0.2 * (self.frame.size.height - scanBorderW)
 
 @interface SGQRCodeScanningView ()
 @property (nonatomic, strong) UIView *contentView;
