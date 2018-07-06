@@ -17,6 +17,7 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <MJRefresh/MJRefresh.h>
 #import <YYText/YYText.h>
+#import "JVFloatLabeledTextField.h"
 
 #import "ViewController.h"
 #import "ZYProgressHud.h"

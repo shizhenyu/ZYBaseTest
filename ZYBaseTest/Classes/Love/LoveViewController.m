@@ -132,7 +132,9 @@
                      @"不规则标签集合",
                      @"语音播报",
                      @"简书APP",
-                     @"YYText", nil];
+                     @"YYText",
+                     @"APP新首页",
+                     @"APP新会员", nil];
     }
     
     return _titleArr;
@@ -154,7 +156,9 @@
                               @"TipGatherViewController",
                               @"VoiceSpeakViewController",
                               @"JSTabBarController",
-                              @"YYTextViewController",  nil];
+                              @"YYTextViewController",
+                              @"BossHomeViewController",
+                              @"MemberHomeViewController", nil];
     }
     
     return _viewControllerArr;

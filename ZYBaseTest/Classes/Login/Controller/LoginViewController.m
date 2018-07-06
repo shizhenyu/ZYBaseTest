@@ -7,13 +7,14 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginMainView.h"
 #import "ViewController.h"
 #import <JPUSHService.h>
 
-@interface LoginViewController ()<UINavigationControllerDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *userNameTF;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTF;
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@interface LoginViewController ()<LoginMainViewDelegate, UINavigationControllerDelegate>
+
+@property (nonatomic, strong) LoginMainView *mainView;
+
 @end
 
 @implementation LoginViewController
@@ -23,37 +24,29 @@
     // Do any additional setup after loading the view from its nib.
     
     self.navigationController.delegate = self;
+    
+    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.mas_equalTo(0);
+        
+    }];
 }
 
-#pragma mark - Login Event Response
-- (IBAction)loginBtnClick:(UIButton *)sender {
-    
-    if (self.userNameTF.text == nil || self.userNameTF.text.length == 0) {
-        
-        ShowMessage(self.navigationController.view, @"请输入用户名");
-        
-        return;
-    }
-    
-    if (self.passwordTF.text == nil || self.passwordTF.text.length == 0) {
-        
-        ShowMessage(self.view, @"请输入密码");
-        
-        return;
-    }
+#pragma mark - LoginMainViewDelegate
+- (void)confirmLoginWithUserName:(NSString *)userName userPassword:(NSString *)password {
     
     ZYUser *user = [[ZYUser alloc] init];
     
-    user.userName = self.userNameTF.text;
+    user.userName = userName;
     
-    user.userPassword = self.passwordTF.text;
+    user.userPassword = password;
     
-    user.userID = [NSString stringWithFormat:@"%@%@",self.userNameTF.text, self.passwordTF.text];
+    user.userID = [NSString stringWithFormat:@"%@%@",userName, password];
     
-   BOOL isSuccess = [ZYUserManager saveUserToLocal:user];
+    BOOL isSuccess = [ZYUserManager saveUserToLocal:user];
     
     if (isSuccess) {
-                
+        
         [JPUSHService setAlias:@"99523" completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
             
             // 回调返回对应的参数alias。并返回对应的状态码：0为成功  其他返回码则为错误
@@ -65,7 +58,6 @@
         
         [mainVC Action_toRootViewController];
     }
-    
 }
 
 #pragma mark - UINavigationControllerDelegate
@@ -75,6 +67,21 @@
     BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
     
     [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
+}
+
+#pragma mark - 懒加载
+- (LoginMainView *)mainView {
+    
+    if (!_mainView) {
+        
+        _mainView = [[LoginMainView alloc] init];
+        
+        _mainView.delegate = self;
+        
+        [self.view addSubview:_mainView];
+    }
+    
+    return _mainView;
 }
 
 - (void)didReceiveMemoryWarning {
