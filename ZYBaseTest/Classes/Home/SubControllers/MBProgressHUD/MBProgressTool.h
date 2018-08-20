@@ -21,6 +21,14 @@
 - (void)showProcessingMessage:(nonnull NSString *)message showInView:(nonnull UIView *)view;
 
 /**
+ 在指定视图上展示"自定义加载图片"的加载视图
+
+ @param message 加载中的文字
+ @param view 添加到的父视图
+ */
+- (void)showProcessingWithCustomIndicatorImageAndMessage:(nonnull NSString *)message showInView:(nonnull UIView *)view;
+
+/**
  在指定视图上展示警告视图
  
  @param message 警告的文字
@@ -68,6 +76,13 @@
 - (void)showProcessingMessageInWindow:(nullable NSString *)message;
 
 /**
+ 全屏展示“自定义加载图片”的加载视图
+
+ @param message 加载提示文字
+ */
+- (void)showProcessingWithCustomIndicatorImageInWindow:(nullable NSString *)message;
+
+/**
  全屏提示警告视图
 
  @param message 警告提示文字
@@ -101,5 +116,10 @@
  @param message 提示文字
  */
 - (void)showMessageInWindowMiddle:(nullable NSString *)message;
+
+/**
+ 手动取消视图
+ */
+- (void)hide;
 
 @end

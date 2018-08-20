@@ -505,7 +505,6 @@
 		DE3EA5D8209EE2F900D16D5C /* UIScrollView+NoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NoDataView.m"; sourceTree = "<group>"; };
 		DE3EA5F2209EF2E600D16D5C /* UITableView+NoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoDataView.h"; sourceTree = "<group>"; };
 		DE3EA5F3209EF2E600D16D5C /* UITableView+NoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoDataView.m"; sourceTree = "<group>"; };
-		DE44CA4420EB4CF200B8F4F6 /* BossHeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHeaderFile.h; sourceTree = "<group>"; };
 		DE4900F92065E71900EB9EA8 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		DE4900FA2065E71900EB9EA8 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		DE4900FB2065E71900EB9EA8 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -1248,7 +1247,6 @@
 				DE06CB37202A8ECF0051550B /* ZYHeaderFile.h */,
 				DE06CB38202A8EDE0051550B /* ZYMacro.h */,
 				DE31FF1B2048D9CF00E35306 /* ZYUseDefine.h */,
-				DE44CA4420EB4CF200B8F4F6 /* BossHeaderFile.h */,
 				DE1382B0206390180065AD58 /* Resource */,
 			);
 			name = Other;

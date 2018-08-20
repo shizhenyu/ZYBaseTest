@@ -40,6 +40,38 @@
     _hud.label.text = message;
 }
 
+- (void)showProcessingWithCustomIndicatorImageAndMessage:(NSString *)message showInView:(UIView *)view {
+    
+    [self hide];
+    
+    _hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    _hud.contentColor = [UIColor whiteColor];
+    _hud.backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+    
+    UIImageView *customImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    
+    NSMutableArray *imageArr = [[NSMutableArray alloc] init];
+    
+    for (int i = 1; i < 8; i ++) {
+        
+        NSString *imageName = [NSString stringWithFormat:@"app_dialog_%d", i];
+        
+        [imageArr addObject:kImage(imageName)];
+    }
+    
+    customImage.animationDuration = 0.8;
+    customImage.animationImages = imageArr;
+    [customImage startAnimating];
+    
+    _hud.mode = MBProgressHUDModeCustomView;
+    _hud.customView = customImage;
+    _hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    _hud.bezelView.backgroundColor = [[UIColor clearColor] colorWithAlphaComponent:0];
+    
+    _hud.removeFromSuperViewOnHide = YES;
+    _hud.label.text = message;
+}
+
 - (void)showWarningMessage:(nonnull NSString *)message showInView:(nonnull UIView *)view {
     
     [self hide];
@@ -131,6 +163,12 @@
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [self showProcessingMessage:message showInView:window];
+}
+
+- (void)showProcessingWithCustomIndicatorImageInWindow:(NSString *)message {
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [self showProcessingWithCustomIndicatorImageAndMessage:message showInView:window];
 }
 
 - (void)showWarningMessageInWindow:(NSString *)message {

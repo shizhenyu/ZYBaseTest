@@ -160,6 +160,31 @@
     [[MBProgressTool sharedMBTool] showMessageInWindowMiddle:@"我在中间"];
 }
 
+- (void)showProcessingViewWithCustomImageInView {
+    
+    MBProgressTool *hud = [MBProgressTool sharedMBTool];
+    
+    [hud showProcessingWithCustomIndicatorImageAndMessage:@"正在加载" showInView:self.view];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [hud hide];
+        
+    });
+}
+
+- (void)showProcessingViewWithCustomImageViewInWindow {
+    
+    MBProgressTool *hud = [MBProgressTool sharedMBTool];
+    
+    [hud showProcessingWithCustomIndicatorImageInWindow:@"正在加载"];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [hud hide];
+    });
+}
+
 #pragma mark - 懒加载
 - (UITableView *)tableView {
     
@@ -197,8 +222,10 @@
         NSDictionary *dic10 = @{@"title":@"全屏展示完成视图", @"selector":@"showCompleteViewInWindow"};
         NSDictionary *dic11 = @{@"title":@"在Window底部展示视图", @"selector":@"showMessageInWindowBottom"};
         NSDictionary *dic12 = @{@"title":@"在Window中间展示视图", @"selector":@"showMessageInWindowMiddle"};
+        NSDictionary *dic13 = @{@"title":@"指定视图上展示自定义加载视图", @"selector":@"showProcessingViewWithCustomImageInView"};
+        NSDictionary *dic14 = @{@"title":@"全屏展示自定义加载视图", @"selector":@"showProcessingViewWithCustomImageViewInWindow"};
 
-        _dataSource = [[NSMutableArray alloc] initWithObjects:dic1, dic2, dic3, dic4, dic5, dic6, dic7, dic8, dic9, dic10, dic11, dic12, nil];
+        _dataSource = [[NSMutableArray alloc] initWithObjects:dic1, dic2, dic3, dic4, dic5, dic6, dic7, dic8, dic9, dic10, dic11, dic12, dic13, dic14, nil];
     }
     
     return _dataSource;
