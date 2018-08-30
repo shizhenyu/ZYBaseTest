@@ -218,12 +218,6 @@
 		DE4C46C620625627001DD5D9 /* UIImage+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C467020625627001DD5D9 /* UIImage+HXExtension.m */; };
 		DE4C46C720625627001DD5D9 /* UIView+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C467220625627001DD5D9 /* UIView+HXExtension.m */; };
 		DE4C46CE2062571A001DD5D9 /* PhotoPickerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C46CD2062571A001DD5D9 /* PhotoPickerHomeViewController.m */; };
-		DE4C546520E75C61006AD987 /* BossHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C546420E75C60006AD987 /* BossHomeViewController.m */; };
-		DE4C546820E75F41006AD987 /* BossHomeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C546720E75F41006AD987 /* BossHomeMainView.m */; };
-		DE4C546B20E7670A006AD987 /* BossHomeTypeItemHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C546A20E7670A006AD987 /* BossHomeTypeItemHeaderView.m */; };
-		DE4C546E20E7730C006AD987 /* BossHomeNewsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C546D20E7730C006AD987 /* BossHomeNewsHeaderView.m */; };
-		DE4C547120E773F7006AD987 /* BossHomeAdverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C547020E773F7006AD987 /* BossHomeAdverHeaderView.m */; };
-		DE4C547420E779CC006AD987 /* BossHomeItemHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C547320E779CC006AD987 /* BossHomeItemHeaderView.m */; };
 		DE5043A820650A84000C173E /* AliPayPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5043A720650A84000C173E /* AliPayPieChartViewController.m */; };
 		DE5043B720650B87000C173E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5043A920650B87000C173E /* 3.png */; };
 		DE5043B820650B87000C173E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5043AA20650B87000C173E /* 1.png */; };
@@ -237,16 +231,9 @@
 		DE589BB8204D3BAC00C9581D /* ZYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BB7204D3BAC00C9581D /* ZYCollectionViewController.m */; };
 		DE589BBB204D3BDD00C9581D /* ZYWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */; };
 		DE589BBE204D3EA600C9581D /* ZYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */; };
-		DE58C0C520EDA3DD0011C752 /* BossOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58C0C420EDA3DD0011C752 /* BossOrderListViewController.m */; };
 		DE5A47D520E5CB6300D34A00 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47D420E5CB6300D34A00 /* LoginMainView.m */; };
 		DE5A47D820E5DE9E00D34A00 /* LoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47D720E5DE9E00D34A00 /* LoginTextField.m */; };
 		DE5A47DB20E5E54E00D34A00 /* PasswordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47DA20E5E54E00D34A00 /* PasswordButton.m */; };
-		DE5A47E220E6078400D34A00 /* MemberHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47E120E6078400D34A00 /* MemberHomeViewController.m */; };
-		DE5A47E520E60AD500D34A00 /* MemberHomeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47E420E60AD500D34A00 /* MemberHomeMainView.m */; };
-		DE5A47E820E60CA700D34A00 /* MemberHomeItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47E720E60CA700D34A00 /* MemberHomeItemCollectionViewCell.m */; };
-		DE5A47EB20E6225B00D34A00 /* MemberHomeListSectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47EA20E6225B00D34A00 /* MemberHomeListSectionReusableView.m */; };
-		DE5A47EE20E6228600D34A00 /* MemberHomeIntroduceReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47ED20E6228600D34A00 /* MemberHomeIntroduceReusableView.m */; };
-		DE5A47F120E622BC00D34A00 /* MemberHomeTypesReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A47F020E622BC00D34A00 /* MemberHomeTypesReusableView.m */; };
 		DE5D17A820414E2600192504 /* ImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17A720414E2600192504 /* ImageButtonViewController.m */; };
 		DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AA2041503500192504 /* ImageLeftTitleRightButton.m */; };
 		DE5D17AE20416BDA00192504 /* ImageRightTitleLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D17AD20416BDA00192504 /* ImageRightTitleLeftButton.m */; };
@@ -650,18 +637,6 @@
 		DE4C467220625627001DD5D9 /* UIView+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HXExtension.m"; sourceTree = "<group>"; };
 		DE4C46CC2062571A001DD5D9 /* PhotoPickerHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPickerHomeViewController.h; sourceTree = "<group>"; };
 		DE4C46CD2062571A001DD5D9 /* PhotoPickerHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerHomeViewController.m; sourceTree = "<group>"; };
-		DE4C546320E75C60006AD987 /* BossHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeViewController.h; sourceTree = "<group>"; };
-		DE4C546420E75C60006AD987 /* BossHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeViewController.m; sourceTree = "<group>"; };
-		DE4C546620E75F41006AD987 /* BossHomeMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeMainView.h; sourceTree = "<group>"; };
-		DE4C546720E75F41006AD987 /* BossHomeMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeMainView.m; sourceTree = "<group>"; };
-		DE4C546920E7670A006AD987 /* BossHomeTypeItemHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeTypeItemHeaderView.h; sourceTree = "<group>"; };
-		DE4C546A20E7670A006AD987 /* BossHomeTypeItemHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeTypeItemHeaderView.m; sourceTree = "<group>"; };
-		DE4C546C20E7730C006AD987 /* BossHomeNewsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeNewsHeaderView.h; sourceTree = "<group>"; };
-		DE4C546D20E7730C006AD987 /* BossHomeNewsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeNewsHeaderView.m; sourceTree = "<group>"; };
-		DE4C546F20E773F7006AD987 /* BossHomeAdverHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeAdverHeaderView.h; sourceTree = "<group>"; };
-		DE4C547020E773F7006AD987 /* BossHomeAdverHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeAdverHeaderView.m; sourceTree = "<group>"; };
-		DE4C547220E779CC006AD987 /* BossHomeItemHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHomeItemHeaderView.h; sourceTree = "<group>"; };
-		DE4C547320E779CC006AD987 /* BossHomeItemHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHomeItemHeaderView.m; sourceTree = "<group>"; };
 		DE5043A620650A84000C173E /* AliPayPieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayPieChartViewController.h; sourceTree = "<group>"; };
 		DE5043A720650A84000C173E /* AliPayPieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayPieChartViewController.m; sourceTree = "<group>"; };
 		DE5043A920650B87000C173E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -683,26 +658,12 @@
 		DE589BBA204D3BDD00C9581D /* ZYWaterflowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWaterflowLayout.m; sourceTree = "<group>"; };
 		DE589BBC204D3EA600C9581D /* ZYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewCell.h; sourceTree = "<group>"; };
 		DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewCell.m; sourceTree = "<group>"; };
-		DE58C0C320EDA3DD0011C752 /* BossOrderListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossOrderListViewController.h; sourceTree = "<group>"; };
-		DE58C0C420EDA3DD0011C752 /* BossOrderListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossOrderListViewController.m; sourceTree = "<group>"; };
 		DE5A47D320E5CB6300D34A00 /* LoginMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginMainView.h; sourceTree = "<group>"; };
 		DE5A47D420E5CB6300D34A00 /* LoginMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginMainView.m; sourceTree = "<group>"; };
 		DE5A47D620E5DE9E00D34A00 /* LoginTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTextField.h; sourceTree = "<group>"; };
 		DE5A47D720E5DE9E00D34A00 /* LoginTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTextField.m; sourceTree = "<group>"; };
 		DE5A47D920E5E54E00D34A00 /* PasswordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordButton.h; sourceTree = "<group>"; };
 		DE5A47DA20E5E54E00D34A00 /* PasswordButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordButton.m; sourceTree = "<group>"; };
-		DE5A47E020E6078400D34A00 /* MemberHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeViewController.h; sourceTree = "<group>"; };
-		DE5A47E120E6078400D34A00 /* MemberHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeViewController.m; sourceTree = "<group>"; };
-		DE5A47E320E60AD500D34A00 /* MemberHomeMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeMainView.h; sourceTree = "<group>"; };
-		DE5A47E420E60AD500D34A00 /* MemberHomeMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeMainView.m; sourceTree = "<group>"; };
-		DE5A47E620E60CA700D34A00 /* MemberHomeItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeItemCollectionViewCell.h; sourceTree = "<group>"; };
-		DE5A47E720E60CA700D34A00 /* MemberHomeItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeItemCollectionViewCell.m; sourceTree = "<group>"; };
-		DE5A47E920E6225B00D34A00 /* MemberHomeListSectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeListSectionReusableView.h; sourceTree = "<group>"; };
-		DE5A47EA20E6225B00D34A00 /* MemberHomeListSectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeListSectionReusableView.m; sourceTree = "<group>"; };
-		DE5A47EC20E6228600D34A00 /* MemberHomeIntroduceReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeIntroduceReusableView.h; sourceTree = "<group>"; };
-		DE5A47ED20E6228600D34A00 /* MemberHomeIntroduceReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeIntroduceReusableView.m; sourceTree = "<group>"; };
-		DE5A47EF20E622BC00D34A00 /* MemberHomeTypesReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberHomeTypesReusableView.h; sourceTree = "<group>"; };
-		DE5A47F020E622BC00D34A00 /* MemberHomeTypesReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberHomeTypesReusableView.m; sourceTree = "<group>"; };
 		DE5D17A620414E2600192504 /* ImageButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageButtonViewController.h; sourceTree = "<group>"; };
 		DE5D17A720414E2600192504 /* ImageButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageButtonViewController.m; sourceTree = "<group>"; };
 		DE5D17A92041503500192504 /* ImageLeftTitleRightButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageLeftTitleRightButton.h; sourceTree = "<group>"; };
@@ -1483,8 +1444,6 @@
 				DE13AA5320B6C9F300ECBE28 /* VoiceSpeak */,
 				DE243A3220BFDD8A00B7D438 /* 简书 */,
 				DE7BB0B920D0CD9800B20F0C /* YYText */,
-				DE4C545F20E75C0B006AD987 /* NewAppHome */,
-				DE5A47DC20E6058B00D34A00 /* NewMemberHome */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -2214,51 +2173,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DE4C545F20E75C0B006AD987 /* NewAppHome */ = {
-			isa = PBXGroup;
-			children = (
-				DE4C546220E75C1D006AD987 /* Controller */,
-				DE4C546120E75C1A006AD987 /* Model */,
-				DE4C546020E75C15006AD987 /* View */,
-			);
-			path = NewAppHome;
-			sourceTree = "<group>";
-		};
-		DE4C546020E75C15006AD987 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE4C546620E75F41006AD987 /* BossHomeMainView.h */,
-				DE4C546720E75F41006AD987 /* BossHomeMainView.m */,
-				DE4C546920E7670A006AD987 /* BossHomeTypeItemHeaderView.h */,
-				DE4C546A20E7670A006AD987 /* BossHomeTypeItemHeaderView.m */,
-				DE4C546C20E7730C006AD987 /* BossHomeNewsHeaderView.h */,
-				DE4C546D20E7730C006AD987 /* BossHomeNewsHeaderView.m */,
-				DE4C546F20E773F7006AD987 /* BossHomeAdverHeaderView.h */,
-				DE4C547020E773F7006AD987 /* BossHomeAdverHeaderView.m */,
-				DE4C547220E779CC006AD987 /* BossHomeItemHeaderView.h */,
-				DE4C547320E779CC006AD987 /* BossHomeItemHeaderView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DE4C546120E75C1A006AD987 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DE4C546220E75C1D006AD987 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE4C546320E75C60006AD987 /* BossHomeViewController.h */,
-				DE4C546420E75C60006AD987 /* BossHomeViewController.m */,
-				DE58C0C320EDA3DD0011C752 /* BossOrderListViewController.h */,
-				DE58C0C420EDA3DD0011C752 /* BossOrderListViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		DE5043A22065053D000C173E /* 支付宝饼状图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2340,49 +2254,6 @@
 				DE589BBD204D3EA600C9581D /* ZYCollectionViewCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		DE5A47DC20E6058B00D34A00 /* NewMemberHome */ = {
-			isa = PBXGroup;
-			children = (
-				DE5A47DF20E605CA00D34A00 /* Controller */,
-				DE5A47DE20E605C700D34A00 /* Model */,
-				DE5A47DD20E605C400D34A00 /* View */,
-			);
-			path = NewMemberHome;
-			sourceTree = "<group>";
-		};
-		DE5A47DD20E605C400D34A00 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE5A47E320E60AD500D34A00 /* MemberHomeMainView.h */,
-				DE5A47E420E60AD500D34A00 /* MemberHomeMainView.m */,
-				DE5A47E920E6225B00D34A00 /* MemberHomeListSectionReusableView.h */,
-				DE5A47EA20E6225B00D34A00 /* MemberHomeListSectionReusableView.m */,
-				DE5A47EC20E6228600D34A00 /* MemberHomeIntroduceReusableView.h */,
-				DE5A47ED20E6228600D34A00 /* MemberHomeIntroduceReusableView.m */,
-				DE5A47EF20E622BC00D34A00 /* MemberHomeTypesReusableView.h */,
-				DE5A47F020E622BC00D34A00 /* MemberHomeTypesReusableView.m */,
-				DE5A47E620E60CA700D34A00 /* MemberHomeItemCollectionViewCell.h */,
-				DE5A47E720E60CA700D34A00 /* MemberHomeItemCollectionViewCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DE5A47DE20E605C700D34A00 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DE5A47DF20E605CA00D34A00 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE5A47E020E6078400D34A00 /* MemberHomeViewController.h */,
-				DE5A47E120E6078400D34A00 /* MemberHomeViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		DE5D17A520414DF900192504 /* ImageButton */ = {
@@ -2750,7 +2621,6 @@
 				DE4BC11F204E47860089D514 /* MemberIntergerViewController.m in Sources */,
 				DE06CB54202A91790051550B /* OrderListViewModel.m in Sources */,
 				DE4C46C620625627001DD5D9 /* UIImage+HXExtension.m in Sources */,
-				DE5A47E820E60CA700D34A00 /* MemberHomeItemCollectionViewCell.m in Sources */,
 				DE13AD822029C19F00313655 /* ViewController.m in Sources */,
 				DE7BB0BC20D0EFA500B20F0C /* YYTextViewController.m in Sources */,
 				DE7BB0BF20D0F1BC00B20F0C /* YYTextTableViewCell.m in Sources */,
@@ -2762,7 +2632,6 @@
 				DE20CB2720AE606F00D26547 /* TipGatherViewController.m in Sources */,
 				DE13AD8D2029C19F00313655 /* main.m in Sources */,
 				DE13AA5F20B6D0B300ECBE28 /* ZYSpeechSynthesizer.m in Sources */,
-				DE4C546520E75C61006AD987 /* BossHomeViewController.m in Sources */,
 				DE0D32F8204FCB770071846B /* AppDelegate+JPush.m in Sources */,
 				DE4C467520625627001DD5D9 /* HXAlbumTitleButton.m in Sources */,
 				DE06CB3E202A8FAA0051550B /* LoveViewController.m in Sources */,
@@ -2775,7 +2644,6 @@
 				DE4901092065E71900EB9EA8 /* TADotView.m in Sources */,
 				DE31FF2E204931B800E35306 /* ZYUserManager.m in Sources */,
 				DE06CB80202A93A80051550B /* ProductCommentModel.m in Sources */,
-				DE4C546B20E7670A006AD987 /* BossHomeTypeItemHeaderView.m in Sources */,
 				DE20CB4020AECB2400D26547 /* MBProgressTool.m in Sources */,
 				DE06CB24202A8E810051550B /* NSDateFormatter+ZYKit.m in Sources */,
 				DE065C7620B9678B00FF6A09 /* ZYPopAnimation.m in Sources */,
@@ -2811,7 +2679,6 @@
 				DE3A69C7206B1C4D008AEA82 /* PersonInfoTableViewCell.m in Sources */,
 				DE4BC12B204E47FD0089D514 /* DownloadViewController.m in Sources */,
 				DE2EB1B220A182D800DDB3C3 /* QBShopCartViewController.m in Sources */,
-				DE5A47F120E622BC00D34A00 /* MemberHomeTypesReusableView.m in Sources */,
 				DE4901132065FB4A00EB9EA8 /* ScrollingViewController.m in Sources */,
 				DE2EB1A320A1823800DDB3C3 /* QuickBuyTabBarViewController.m in Sources */,
 				DE20CB3A20AEAA5400D26547 /* Father.m in Sources */,
@@ -2839,12 +2706,9 @@
 				DE20CB3D20AEAA6000D26547 /* Children.m in Sources */,
 				DE4901072065E71900EB9EA8 /* TAAbstractDotView.m in Sources */,
 				DE5D17AB2041503500192504 /* ImageLeftTitleRightButton.m in Sources */,
-				DE4C547420E779CC006AD987 /* BossHomeItemHeaderView.m in Sources */,
 				DE4C467D20625627001DD5D9 /* HXPhotoPreviewViewController.m in Sources */,
 				DE06CB64202A921F0051550B /* AnimateAlertView.m in Sources */,
 				DE4C467A20625627001DD5D9 /* HXPhotoManager.m in Sources */,
-				DE5A47EE20E6228600D34A00 /* MemberHomeIntroduceReusableView.m in Sources */,
-				DE4C546820E75F41006AD987 /* BossHomeMainView.m in Sources */,
 				DE36367020439CAA00B44BD8 /* AppDelegate+PressTouch.m in Sources */,
 				DE5D17AE20416BDA00192504 /* ImageRightTitleLeftButton.m in Sources */,
 				DE4C46C720625627001DD5D9 /* UIView+HXExtension.m in Sources */,
@@ -2864,7 +2728,6 @@
 				DE06CB30202A8E810051550B /* UIImage+Extension.m in Sources */,
 				DE4C467620625627001DD5D9 /* HXCameraPreviewViewController.m in Sources */,
 				DE06CB29202A8E810051550B /* NSObject+ZYKit.m in Sources */,
-				DE5A47E520E60AD500D34A00 /* MemberHomeMainView.m in Sources */,
 				DE331E57208089F900997829 /* AppDelegate+ThirdService.m in Sources */,
 				DE4C460120620D01001DD5D9 /* SettingViewController.m in Sources */,
 				DE06CB34202A8E810051550B /* UIView+ZYKit.m in Sources */,
@@ -2882,7 +2745,6 @@
 				DE06CB1D202A8E810051550B /* ZyNavigationController.m in Sources */,
 				DE06CB44202A8FC40051550B /* MineViewController.m in Sources */,
 				DE0D3311204FEF030071846B /* PieChartViewController.m in Sources */,
-				DE4C546E20E7730C006AD987 /* BossHomeNewsHeaderView.m in Sources */,
 				DE06CB57202A91850051550B /* OrderListTableViewCell.m in Sources */,
 				DE6866A120A4336F00CA94C3 /* AliPayHomeViewController.m in Sources */,
 				DE31FF31204931C700E35306 /* ZYUser.m in Sources */,
@@ -2892,7 +2754,6 @@
 				DE06CB88202A93B70051550B /* ProductCommentTableViewCell.m in Sources */,
 				DE4C467920625627001DD5D9 /* HXPhotoConst.m in Sources */,
 				DE06CB3B202A8F9B0051550B /* HomeViewController.m in Sources */,
-				DE4C547120E773F7006AD987 /* BossHomeAdverHeaderView.m in Sources */,
 				DE243A4A20BFF5AE00B7D438 /* JSMineViewController.m in Sources */,
 				DE2EB1B820A188AB00DDB3C3 /* QBSettingViewController.m in Sources */,
 				DE243A3820BFDE7400B7D438 /* JSTabBar.m in Sources */,
@@ -2907,15 +2768,12 @@
 				DE4BC118204E3D1F0089D514 /* DiscussTabBarController.m in Sources */,
 				DE20CB3120AE7F0200D26547 /* TipGatherTableViewCell.m in Sources */,
 				DE4C467820625627001DD5D9 /* HXCollectionView.m in Sources */,
-				DE5A47EB20E6225B00D34A00 /* MemberHomeListSectionReusableView.m in Sources */,
 				DE49011A2066210900EB9EA8 /* DownMenuViewController.m in Sources */,
 				DE243A4120BFF57600B7D438 /* JSLoveViewController.m in Sources */,
 				DE6722B320E48F16003EEB15 /* QRCodeViewController.m in Sources */,
-				DE58C0C520EDA3DD0011C752 /* BossOrderListViewController.m in Sources */,
 				DE06CB4E202A91650051550B /* OrderListViewController.m in Sources */,
 				DE4C467E20625627001DD5D9 /* HXPhotoSubViewCell.m in Sources */,
 				DE13AD7F2029C19F00313655 /* AppDelegate.m in Sources */,
-				DE5A47E220E6078400D34A00 /* MemberHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
