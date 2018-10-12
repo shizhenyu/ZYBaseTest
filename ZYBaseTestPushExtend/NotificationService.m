@@ -76,7 +76,7 @@ typedef void(^PlayVoiceBlock)(void);
     
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc]initWithString:content];//设置语音内容
     
-    utterance.voice  = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];//设置语言
+    utterance.voice  = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-TW"];//设置语言
     
     utterance.rate   = 0.5;  //设置语速
     

@@ -42,7 +42,7 @@ NSString *const kTabBar = @"tabBar";
     
     [self setValue:tabBar forKey:@"tabBar"];
     
-//    self.tabBar.translucent = YES;
+    self.tabBar.translucent = NO;
     
 }
 
@@ -50,8 +50,6 @@ NSString *const kTabBar = @"tabBar";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - orientation
 
 #pragma mark - 是否支持转屏
 - (BOOL)shouldAutorotate
@@ -85,20 +83,19 @@ NSString *const kTabBar = @"tabBar";
     
     touchBtn = [touchBtn.subviews objectAtIndex:0];
 
+    [UIView animateWithDuration:0.1 animations:^{
+    
+        touchBtn.transform = CGAffineTransformMakeScale(1.1, 1.1);
+    
+    } completion:^(BOOL finished) {
+    
         [UIView animateWithDuration:0.1 animations:^{
-    
-            touchBtn.transform = CGAffineTransformMakeScale(1.1, 1.1);
-    
-        } completion:^(BOOL finished) {
-    
-            [UIView animateWithDuration:0.1 animations:^{
                 
-               touchBtn.transform = CGAffineTransformIdentity;
+            touchBtn.transform = CGAffineTransformIdentity;
                 
-            }];
-            
         }];
-    
+            
+    }];
 }
 
 #pragma mark - Private Method

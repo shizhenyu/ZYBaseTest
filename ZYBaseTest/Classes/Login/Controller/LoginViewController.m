@@ -47,7 +47,7 @@
     
     if (isSuccess) {
         
-        [JPUSHService setAlias:@"99523" completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
+        [JPUSHService setAlias:@"148709" completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
             
             // 回调返回对应的参数alias。并返回对应的状态码：0为成功  其他返回码则为错误
             NSLog(@"%ld--%@--%ld", iResCode, iAlias, seq);
